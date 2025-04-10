@@ -5,7 +5,7 @@ This project aims to provide methodological tools for managing AI-related risks.
 
 It comprises a set of documents, developed collaboratively and under continuous improvement, designed to help organizations manage AI-related risks:
 
-1. examples of micro-cases of use ;
+1. examples of micro-usecases ;
 
 2. harmonized trust criteria;
 
