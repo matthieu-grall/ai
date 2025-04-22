@@ -17,7 +17,7 @@
 
 ### Documents de référence
 Les références suivantes sont utilisées entre crochets dans le corps du document :
-<center>Libellé court</center> | <center>Libellé long</center>
+| <center>Libellé court</center> | <center>Libellé long</center> |
 | --- | --- |
 | [RAPPORT TASK FORCE IA] | L’intelligence artificielle au service de la Défense, Rapport de la Task Force IA, ministère des Armées (2019)<br/>[Lien](<https://www.defense.gouv.fr/sites/default/files/aid/20200108-NP-Rapport de la Task Force IA Septembre.pdf>) |
 
@@ -76,8 +76,8 @@ En synthèse, le [RAPPORT TASK FORCE IA] fournit l’explication suivante :
 
 ## 3.Exemple : liste de cas d'usages
 Le tableau suivant présente une liste non exhaustive de cas d’usages qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples d’outils qui les mettent effectivement en œuvre :
-<center>**Micro-cas d’usages**</center> | <center>**Principales techniques d’IA**</center> | <center>**Exemples d’outils**</center>
-| --- | --- | ---
+| <center>**Micro-cas d’usages**</center> | <center>**Principales techniques d’IA**</center> | <center>**Exemples d’outils**</center> |
+| --- | --- | --- |
 | Détecter certains types de sons dans un signal audio (alarmes, moteurs, dispositifs spécifiques) | Apprentissage supervisé, réseaux de neurones convolutifs (CNN), modèles de reconnaissance sonore | SONARWORKS, GOOGLE AudioSet | 
 | Reconnaître les visages et les états émotionnels dans des images ou vidéos | CNN, apprentissage profond (*deep learning*), analyse des expressions faciales | LIGHTON, AFFECTIVA, MICROSOFT Face API | 
 | Reconnaître certains types d'objets dans des images ou vidéos | CNN, YOLO, Mask R-CNN, transformateurs de vision (vision transformers – ViT) | HUGGING FACE, GOOGLE Vision AI, AMAZON Rekognition | 
@@ -112,8 +112,8 @@ Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représent
 
 ![XPRIZE AI periodic table](https://danielschristian.com/learning-ecosystems/wp-content/uploads/2017/01/AI-PeriodicTable-Dec2016.jpg)
 
-<center>**Acron.**</center> | <center>**Cas d'usage**</center> | <center>**Description synthétique**</center>
-| --- | --- | ---
+| <center>**Acron.**</center> | <center>**Cas d'usage**</center> | <center>**Description synthétique**</center> |
+| --- | --- | --- |
 | Ar | *Audio Recognition* | Détecter certains types de sons (alarmes, contrainte du dispositif, automoteur) dans un signal audio | 
 | Fr | *Face Recognition* | Reconnaître les visages et les états émotionnels dans les images ou les signaux vidéo | 
 | Ir | *Image Recognition* | Reconnaître certains types d'objets dans des images ou des signaux vidéo | 
