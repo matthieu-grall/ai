@@ -1,6 +1,6 @@
 # Methodological tools for artificial intelligence (AI)
 
-This project aims to provide methodological tools for managing AI-related risks.
+This project aims to **provide methodological tools for managing AI-related risks**.
 
 
 It comprises a set of documents, developed collaboratively and under continuous improvement, designed to help organizations manage AI-related risks:
