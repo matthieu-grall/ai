@@ -1,6 +1,15 @@
 # Intelligence artificielle
 ## Micro-cas d'usages : exemples
 
+[Contributeurs](#contributeurs)<br/>
+[Versions](#versions)<br/>
+[Documents de référence](#documents-de-référence)<br/>
+[Ressources utilisées](#ressources-utilisées)<br/>
+1. [Objet du document](#1-objet-du-document)
+2. [Introduction](#2-introduction)
+3. [Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)
+4. [Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)
+
 ### Contributeurs
 **Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
 
@@ -19,62 +28,44 @@
 Les références suivantes sont utilisées entre crochets dans le corps du document :
 | <center>Libellé court</center> | <center>Libellé long</center> |
 | --- | --- |
-| [RAPPORT TASK FORCE IA] | L’intelligence artificielle au service de la Défense, Rapport de la Task Force IA, ministère des Armées (2019)<br/>[Lien](<https://www.defense.gouv.fr/sites/default/files/aid/20200108-NP-Rapport de la Task Force IA Septembre.pdf>) |
-
+| [Rapport _Task Force_ IA] | L’intelligence artificielle au service de la Défense, Rapport de la Task Force IA, ministère des Armées (2019)<br/>[Lien](<https://www.defense.gouv.fr/sites/default/files/aid/20200108-NP-Rapport de la Task Force IA Septembre.pdf>) |
 
 ### Ressources utilisées
-
-**Page de garde** : Grid, par Magic Creative, de PIXABAY.
-
 **Tableau périodique de cas d’usages** : par XPRIZE.
 
-### Sommaire
-1.[Objet du document](#1objet-du-document)
-
-2.[Introduction](#2introduction)
-
-3.[Exemple : liste de cas d'usages](#3exemple--liste-de-cas-dusages)
-
-4.[Exemple : tableau périodique de cas d'usages](#4exemple--tableau-périodique-de-cas-dusages)
-
- 
-# 1.Objet du document
+# 1. Objet du document
 **Ce document propose des exemples de typologies de micro-cas d’usages d’utilisation de l’intelligence artificielle (IA).**
 
 Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
-1. [Exemples de micro-cas d'usages de L'IA] (Lien à mettre) ;
-2. [Critères de confiance de l'IA] (Lien à mettre);
-3. [Bbonnes pratiques de l'IA] (Lien à mettre);
-4. [Méthode de gestion des risques de l'IA] (Lien à mettre).
+1. [Exemples de micro-cas d'usages de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Micro-cas%20d'usages%20-%20Exemples.md) ;
+2. [Critères de confiance de l’IA]([https://github.com/matthieu-grall/ai/xxxxx.md](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md)) ;
+3. [Bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/xxxxx.md) ;
+4. [Méthode de gestion des risques de l’IA](https://github.com/matthieu-grall/ai/xxxxx.md).
 
 Il n’a pas pour vocation à servir de référence, mais à souligner la variété des cas d’usages et des techniques sous-jacentes, et il peut également être utile à la description d’un système dans une démarche de gestion des risques ou de projets.
 
-## 2.Introduction
-[Pour le Parlement européen](https://www.europarl.europa.eu/topics/fr/article/20200827STO85804/intelligence-artificielle-definition-et-utilisation), l’IA représente tout outil utilisé par une machine afin de « _reproduire des comportements liés aux humains, tels que le raisonnement, la planification et la créativité_ ». Cette définition peut être élargie en incluant les comportements dépassant les capacités humaines, puisque les ordinateurs actuels parviennent aujourd’hui à les surpasser dans certaines tâches (bien que la compétence de l’ordinateur s’arrête généralement à l’exécution de cette tâche).
+## 2. Introduction
+[Pour le Parlement européen](https://www.europarl.europa.eu/topics/fr/article/20200827STO85804/intelligence-artificielle-definition-et-utilisation), **l’IA représente tout outil utilisé par une machine afin de « _reproduire des comportements liés aux humains, tels que le raisonnement, la planification et la créativité_ »**. Cette définition peut être élargie en incluant les comportements dépassant les capacités humaines, puisque les ordinateurs actuels parviennent aujourd’hui à les surpasser dans certaines tâches (bien que la compétence de l’ordinateur s’arrête généralement à l’exécution de cette tâche).
 
-C’est un domaine de l'informatique né en 1956<sup><a href="#note1" id="ref1">[1]</a></sup> qui vise à créer des machines capables de réaliser des tâches qui nécessitent normalement l'intelligence humaine. Il s'agit de simuler des processus cognitifs tels que l'apprentissage, la résolution de problèmes, la prise de décision et la compréhension du langage naturel. Contrairement à une simple programmation de règles précises, l'IA cherche à donner aux machines la capacité d'apprendre et de s'adapter à de nouvelles situations sans être explicitement programmées pour chaque éventualité.
+**C’est un domaine de l'informatique né en 1956<sup><a href="#note1" id="ref1">[1]</a></sup> qui vise à créer des machines capables de réaliser des tâches qui nécessitent normalement l'intelligence humaine**. Il s'agit de simuler des processus cognitifs tels que l'apprentissage, la résolution de problèmes, la prise de décision et la compréhension du langage naturel. Contrairement à une simple programmation de règles précises, l'IA cherche à donner aux machines la capacité d'apprendre et de s'adapter à de nouvelles situations sans être explicitement programmées pour chaque éventualité.
 
-En synthèse, le [RAPPORT TASK FORCE IA] fournit l’explication suivante : 
+En synthèse, le [Rapport _Task Force_ IA] fournit l’explication suivante : 
 
-*« L’IA est utilisée dans les applications où il s’agit de* :
--*détecter/reconnaître des données (texte, sons, images, vidéos), ou prédire des données futures ;*
--*rechercher des corrélations entre des données pour en déduire un comportement générique ou lever une alerte en cas de comportement anormal ;*
--*optimiser des problèmes à forte combinatoire (ex : flux logistiques ou trajectoires d’aéronef) ;*
--*raisonner sur des données symboliques pour déduire ou pour diagnostiquer.*
+_« L’IA est utilisée dans les applications où il s’agit de :_
+- _**détecter/reconnaître des données** (texte, sons, images, vidéos), ou prédire des données futures ;_
+- _**rechercher des corrélations entre des données** pour en déduire un comportement générique ou lever une alerte en cas de comportement anormal ;_
+- _**optimiser des problèmes à forte combinatoire** (ex : flux logistiques ou trajectoires d’aéronef) ;_
+- _**raisonner sur des données symboliques pour déduire** ou pour diagnostiquer._
 
-*Du point de vue technique<sup><a href="#note2" id="ref2">[2]</a></sup>, l’intelligence artificielle comprend deux branches majoritaires :*
--*les approches symboliques basées sur le raisonnement (systèmes à base de règles) ; et*
--*les approches connexionnistes plus proches de l’empirisme, fondées sur l’apprentissage à partir de grandes bases de données (réseaux de neurones). »* 
+_Du point de vue technique<sup><a href="#note2" id="ref2">[2]</a></sup>, l’intelligence artificielle comprend deux branches majoritaires :_
+- _les **approches symboliques** basées sur le raisonnement (systèmes à base de règles) ; et_
+- _les **approches connexionnistes** plus proches de l’empirisme, fondées sur l’apprentissage à partir de grandes bases de données (réseaux de neurones). »_ 
 
 **Il est toutefois très difficile d’établir une typologie de cas d’usages détaillés**, tant les domaines de recherche et applications liées à l’IA sont nombreux, variés, parfois croisés, et en évolution permanente.
 
 **Ce document propose donc uniquement des exemples de typologies.**
 
-<a name="note1" id="note1">[1]</a> Cf. [conférence de Dartmouth](https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Dartmouth). [↩](#ref1)
-
-<a name="note2" id="note2">[2]</a> L'étendue de l'IA est vaste et englobe plusieurs branches interdépendantes. On retrouve l'apprentissage automatique (machine learning), où les systèmes apprennent à partir de données sans être explicitement programmés, l’apprentissage profond (deep learning), utilisant des réseaux neuronaux artificiels à plusieurs couches pour traiter des informations complexes, le traitement du langage naturel (TLN - NLP) permettant aux machines de comprendre et de générer du langage humain, la vision par ordinateur (computer vision) permettant aux machines de "voir" et d'interpréter des images, et la robotique, combinant l'IA avec des systèmes physiques pour créer des robots intelligents. [↩](#ref2)
-
-## 3.Exemple : liste de cas d'usages
+## 3. Exemple : liste de cas d'usages
 Le tableau suivant présente une liste non exhaustive de cas d’usages qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples d’outils qui les mettent effectivement en œuvre :
 | <center>**Micro-cas d’usages**</center> | <center>**Principales techniques d’IA**</center> | <center>**Exemples d’outils**</center> |
 | --- | --- | --- |
@@ -107,7 +98,7 @@ Le tableau suivant présente une liste non exhaustive de cas d’usages qui repo
 | Contrôler d'autres machines sans action physique nécessaire (ex. commerce automatisé) | IA décisionnelle, algorithmes de commerce (*trading*), automatisation logicielle | BLOOMBERG Terminal, TRADE IDEAS AI, KENSHO | 
 
  
-## 4.Exemple : tableau périodique de cas d'usages
+## 4. Exemple : tableau périodique de cas d'usages
 Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représentés sous la forme d’un tableau périodique, comme le propose [XPRIZE](https://community.digilogic.africa/resource/the-periodic-table-of-ai/) :
 
 ![XPRIZE AI periodic table](https://danielschristian.com/learning-ecosystems/wp-content/uploads/2017/01/AI-PeriodicTable-Dec2016.jpg)
@@ -142,3 +133,8 @@ Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représent
 | Ma | *Manipulation* | Manipuler des objets avec lesquels les gens travaillent régulièrement | 
 | Cm | *Communication* | Soutenir l'exécution de différentes formes de communication entre l'Homme et la machine | 
 | Cn | *Control* | Contrôler d'autres machines lorsqu'aucune action n'est nécessaire dans le monde physique (ex : commerce automatisé) | 
+
+<a name="note1" id="note1">[1]</a> Cf. [conférence de Dartmouth](https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Dartmouth). [↩](#ref1)
+<br/>
+<br/>
+<a name="note2" id="note2">[2]</a> L'étendue de l'IA est vaste et englobe plusieurs branches interdépendantes. On retrouve l'apprentissage automatique (machine learning), où les systèmes apprennent à partir de données sans être explicitement programmés, l’apprentissage profond (deep learning), utilisant des réseaux neuronaux artificiels à plusieurs couches pour traiter des informations complexes, le traitement du langage naturel (TLN - NLP) permettant aux machines de comprendre et de générer du langage humain, la vision par ordinateur (computer vision) permettant aux machines de "voir" et d'interpréter des images, et la robotique, combinant l'IA avec des systèmes physiques pour créer des robots intelligents. [↩](#ref2)
