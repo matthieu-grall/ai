@@ -19,10 +19,10 @@
 
 | <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | <center>**État**</center> | 
 | --- | --- | --- | --- | 
-| 05/04/2025 | Création du document, ajout d’une liste empirique de cas d’usages et du tableau périodique proposée par XPRIZE | Matthieu GRALL | Document de travail | 
-| 10/04/2025 | Ajout d’une introduction, améliorations mineures (clarifications, compléments, mise en cohérence avec les autres documents) | Matthieu GRALL | Document de travail | 
-| 16/04/2025 | Transformation du document en _markdown_ | Cécile LAMARQUE | Document de travail | 
-| 18/04/2025 | Amélioration du _markdown_ | Matthieu GRALL | Document de travail | 
+| 05/04/2025 (v0.1) | Création du document, ajout d’une liste empirique de cas d’usages et du tableau périodique proposée par XPRIZE | Matthieu GRALL | Document de travail | 
+| 10/04/2025 (v0.2) | Ajout d’une introduction, améliorations mineures (clarifications, compléments, mise en cohérence avec les autres documents) | Matthieu GRALL | Document de travail | 
+| 16/04/2025 (v0.3) | Transformation du document en _markdown_ | Cécile LAMARQUE | Document de travail | 
+| 18/04/2025 (v0.4) | Amélioration du _markdown_ | Matthieu GRALL | Document de travail | 
 
 ### Documents de référence
 Les références suivantes sont utilisées entre crochets dans le corps du document :
