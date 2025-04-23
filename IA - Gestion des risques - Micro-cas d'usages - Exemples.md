@@ -38,7 +38,7 @@ Les références suivantes sont utilisées entre crochets dans le corps du docum
 
 Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
 1. [Exemples de micro-cas d'usages de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Micro-cas%20d'usages%20-%20Exemples.md) ;
-2. [Critères de confiance de l’IA]([https://github.com/matthieu-grall/ai/xxxxx.md](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md)) ;
+2. [Critères de confiance de l’IA]([https://github.com/matthieu-grall/ai/xxxxx.md](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md) ;
 3. [Bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/xxxxx.md) ;
 4. [Méthode de gestion des risques de l’IA](https://github.com/matthieu-grall/ai/xxxxx.md).
 
