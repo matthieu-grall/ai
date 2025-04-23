@@ -3,12 +3,11 @@
 
 [Contributeurs](#contributeurs)<br/>
 [Versions](#versions)<br/>
-[Documents de référence](#documents-de-reference)<br/>
-[Ressources utilisées](#ressources-utilisees)
+[Documents de référence](#documents-de-référence)<br/>
+[Ressources utilisées](#ressources-utilisées)
 1. [Objet du document](#1-objet-du-document)
 2. [Introduction](#2-introduction)
-3. [Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)
-4. [Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)
+3. [Critères de confiance](#3-critères-de-confiance)
 
 ### Contributeurs
 **Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies.
@@ -18,9 +17,9 @@
 ### Versions
 | <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | <center>**État**</center> |
 | --- | --- | --- | ---|
-| v0.1 du 06/04/2025 | Création du document | Matthieu GRALL | Document de travail
-| v0.2 du 10/04/2025 | Transformation des « descriptions » des critères de confiance en « Portées » (pour mieux distinguer « Portées », qui désignent ce qui est couvert, et « objectifs », qui sont présentés dans les bonnes pratiques), corrections mineures (mises en cohérence avec les autres documents) | Matthieu GRALL | Document de travail
-| v0.3 du 23/04/2025 | Transformation en _markdown_ | Matthieu GRALL | Document de travail
+| 06/04/2025 (v0.1) | Création du document | Matthieu GRALL | Document de travail
+| 10/04/2025 (v0.2) | Transformation des « descriptions » des critères de confiance en « Portées » (pour mieux distinguer « Portées », qui désignent ce qui est couvert, et « objectifs », qui sont présentés dans les bonnes pratiques), corrections mineures (mises en cohérence avec les autres documents) | Matthieu GRALL | Document de travail
+| 23/04/2025 (v0.3) | Transformation en _markdown_ | Matthieu GRALL | Document de travail
 
 ### Documents de référence
 | <center>**Libellé court**</center> | <center>**Libellé long**</center> |
