@@ -4,7 +4,6 @@
 [Contributeurs](#contributeurs)<br/>
 [Versions](#versions)<br/>
 [Documents de référence](#documents-de-référence)<br/>
-[Ressources utilisées](#ressources-utilisées)
 1. [Objet du document](#1-objet-du-document)
 2. [Introduction](#2-introduction)
 3. [Critères de confiance](#3-critères-de-confiance)
@@ -38,9 +37,6 @@
 | [RGESN] | Référentiel général d’écoconception de services numériques (RGESN), Autorité de régulation de la communication audiovisuelle et numérique (ARCOM, 2024)<br/>[Lien](https://ecoresponsable.numerique.gouv.fr/docs/2024/rgesn-mai2024/referentiel_general_ecoconception_des_services_numeriques_version_2024.pdf) |
 | [RGI] | Référentiel général d’interopérabilité (RGI), Direction interministérielle du numérique (DINUM, 2020)<br/>[Lien](https://www.numerique.gouv.fr/uploads/Referentiel_General_Interoperabilite_V2.pdf) |
 | [RGIAF] | Référentiel général pour l’IA frugale (RGIAF), ministère de la transition écologique et de la cohésion des territoires (2024)<br/>[Lien](https://greentechinnovation.fr/storage/2024/06/Referentiel-general-pour-lIA-frugale.pdf) |
-
-### Ressources utilisées
-**Page de garde** : Grid, par Magic Creative, de PIXABAY.
 
 ### 1. Objet du document
 **Ce document propose une liste de critères de confiance, qui harmonise les différents critères des nombreux documents de références en matière d’intelligence artificielle (IA)**.
