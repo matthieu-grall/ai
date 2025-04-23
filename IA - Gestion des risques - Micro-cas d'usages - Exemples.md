@@ -1,4 +1,4 @@
-# Intelligence artificielle
+# Intelligence artificielle (IA)
 ## Micro-cas d'usages : exemples
 
 [Contributeurs](#contributeurs)<br/>
