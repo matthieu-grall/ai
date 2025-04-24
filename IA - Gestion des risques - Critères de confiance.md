@@ -43,9 +43,9 @@
 
 Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
 1. [Exemples de micro-cas d'usages de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Micro-cas%20d'usages%20-%20Exemples.md) ;
-2. [Critères de confiance de l’IA](https://github.com/matthieu-grall/ai/xxxxx.md) ;
-3. [Bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/xxxxx.md) ;
-4. [Méthode de gestion des risques de l’IA](https://github.com/matthieu-grall/ai/xxxxx.md).
+2. [Critères de confiance de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md) ;
+3. [Bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) ;
+4. [Méthode de gestion des risques de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md).
 
 Il sert de base à la constitution de bonnes pratiques harmonisées, et pourrait également servir à affiner les critères utilisés dans une démarche de gestion des risques.
 
