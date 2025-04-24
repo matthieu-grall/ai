@@ -10,6 +10,15 @@ Ce document est sous licence
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
+[Contributeurs](#contributeurs)<br/>
+[Versions](#versions)<br/>
+[Documents de référence](#documents-de-référence)<br/>
+1. [Objet du document](#1-objet-du-document)
+2. [Introduction](#2-introduction)
+3. [Étape 1 : estimer le niveau de risque du projet basé sur l'IA](#3-étape-1--estimer-le-niveau-de-risque-du-projet-basé-sur-lia)
+4. [Étape 2 : l'approche par conformité](#4-étape-2--lapproche-par-conformité)
+5. [Étape 3 : l'approche par scénarios](#5-étape-3--lapproche-par-scénarios)
+
 ### Contributeurs
 **Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
 
