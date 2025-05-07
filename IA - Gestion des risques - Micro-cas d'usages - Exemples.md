@@ -1,5 +1,4 @@
-# Intelligence artificielle (IA)
-## Micro-cas d'usages : exemples
+# Intelligence artificielle (IA) - Micro-cas d'usages : exemples
 
 Ce document est sous licence 
 [Creative Commons Attribution 4.0 International License][cc-by].
@@ -14,17 +13,18 @@ Ce document est sous licence
 [Versions](#versions)<br/>
 [Documents de référence](#documents-de-référence)<br/>
 [Ressources utilisées](#ressources-utilisées)<br/>
-1. [Objet du document](#1-objet-du-document)
-2. [Introduction](#2-introduction)
-3. [Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)
-4. [Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)
+[1. Objet du document](#1-objet-du-document)
+[2. Introduction](#2-introduction)
+[3. Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)
+[4. Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)
 
-### Contributeurs
+## Contributeurs
 
 **Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
+
 **Cécile LAMARQUE**, sociologue
 
-### Versions
+## Versions
 
 | <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | <center>**État**</center> | 
 | --- | --- | --- | --- | 
@@ -32,18 +32,19 @@ Ce document est sous licence
 | 10/04/2025 (v0.2) | Ajout d’une introduction, améliorations mineures (clarifications, compléments, mise en cohérence avec les autres documents) | Matthieu GRALL | Document de travail | 
 | 16/04/2025 (v0.3) | Transformation du document en _markdown_ | Cécile LAMARQUE | Document de travail | 
 | 18/04/2025 (v0.4) | Amélioration du _markdown_ | Matthieu GRALL | Document de travail | 
+| 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL | Amélioration continue |
 
-### Documents de référence
+## Documents de référence
 
 Les références suivantes sont utilisées entre crochets dans le corps du document :
 | <center>Libellé court</center> | <center>Libellé long</center> |
 | --- | --- |
 | [Rapport _Task Force_ IA] | L’intelligence artificielle au service de la Défense, Rapport de la Task Force IA, ministère des Armées (2019)<br/>[Lien](<https://www.defense.gouv.fr/sites/default/files/aid/20200108-NP-Rapport de la Task Force IA Septembre.pdf>) |
 
-### Ressources utilisées
+## Ressources utilisées
 **Tableau périodique de cas d’usages** : par XPRIZE.
 
-# 1. Objet du document
+## 1. Objet du document
 
 **Ce document propose des exemples de typologies de micro-cas d’usages d’utilisation de l’intelligence artificielle (IA).**
 
@@ -110,7 +111,6 @@ Le tableau suivant présente une liste non exhaustive de cas d’usages qui repo
 | Faciliter la communication Homme-machine | NLP, assistants virtuels (*chatbots*, interfaces vocales) | VIVOKA, GOOGLE Assistant, APPLE Siri, AMAZON Alexa | 
 | Contrôler d'autres machines sans action physique nécessaire (ex. commerce automatisé) | IA décisionnelle, algorithmes de commerce (*trading*), automatisation logicielle | BLOOMBERG Terminal, TRADE IDEAS AI, KENSHO | 
 
- 
 ## 4. Exemple : tableau périodique de cas d'usages
 
 Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représentés sous la forme d’un tableau périodique, comme le propose [XPRIZE](https://community.digilogic.africa/resource/the-periodic-table-of-ai/) :

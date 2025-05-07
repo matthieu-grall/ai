@@ -1,5 +1,4 @@
-# Intelligence artificielle (IA)
-## Critères de confiance
+# Intelligence artificielle (IA) - Critères de confiance
 
 Ce document est sous licence 
 [Creative Commons Attribution 4.0 International License][cc-by].
@@ -10,26 +9,28 @@ Ce document est sous licence
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
+## Sommaire
 [Contributeurs](#contributeurs)<br/>
 [Versions](#versions)<br/>
 [Documents de référence](#documents-de-référence)<br/>
-1. [Objet du document](#1-objet-du-document)
-2. [Introduction](#2-introduction)
-3. [Critères de confiance](#3-critères-de-confiance)
+[1. Objet du document](#1-objet-du-document)<br/>
+[2. Introduction](#2-introduction)<br/>
+[3. Critères de confiance](#3-critères-de-confiance)<br/>
 
-### Contributeurs
+## Contributeurs
 **Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies.
 
 <autres contributeurs>
 
-### Versions
+## Versions
 | <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | <center>**État**</center> |
 | --- | --- | --- | ---|
 | 06/04/2025 (v0.1) | Création du document | Matthieu GRALL | Document de travail
 | 10/04/2025 (v0.2) | Transformation des « descriptions » des critères de confiance en « Portées » (pour mieux distinguer « Portées », qui désignent ce qui est couvert, et « objectifs », qui sont présentés dans les bonnes pratiques), corrections mineures (mises en cohérence avec les autres documents) | Matthieu GRALL | Document de travail
 | 23/04/2025 (v0.3) | Transformation en _markdown_ | Matthieu GRALL | Document de travail
+| 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL | Amélioration continue |
 
-### Documents de référence
+## Documents de référence
 | <center>**Libellé court**</center> | <center>**Libellé long**</center> |
 | --- | --- |
 | [EN 301 549] | Exigences d’accessibilité pour les produits et services ICT, _European Telecommunications Standards Institute_ (ETSI, 2018)<br/>[Lien](https://accessibilite.numerique.gouv.fr/doc/fr_301549v020102p.pdf) |
@@ -47,7 +48,7 @@ Ce document est sous licence
 | [RGI] | Référentiel général d’interopérabilité (RGI), Direction interministérielle du numérique (DINUM, 2020)<br/>[Lien](https://www.numerique.gouv.fr/uploads/Referentiel_General_Interoperabilite_V2.pdf) |
 | [RGIAF] | Référentiel général pour l’IA frugale (RGIAF), ministère de la transition écologique et de la cohésion des territoires (2024)<br/>[Lien](https://greentechinnovation.fr/storage/2024/06/Referentiel-general-pour-lIA-frugale.pdf) |
 
-### 1. Objet du document
+## 1. Objet du document
 **Ce document propose une liste de critères de confiance, qui harmonise les différents critères des nombreux documents de références en matière d’intelligence artificielle (IA)**.
 
 Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
@@ -58,7 +59,7 @@ Il s’inscrit dans un ensemble de documents méthodologiques en amélioration c
 
 Il sert de base à la constitution de bonnes pratiques harmonisées, et pourrait également servir à affiner les critères utilisés dans une démarche de gestion des risques.
 
-### 2. Introduction
+## 2. Introduction
 **Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA. Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision globale.
 
 **Toutefois, les idées convergent toutes, ou se complètent plutôt bien**. On peut donc faire émerger une liste de ces critères de confiance, exhaustive et « non recouvrante », qui traite de l’ensemble des aspects qui peuvent devoir être considérés quand on crée un système basé sur l’IA.
@@ -75,58 +76,60 @@ Ainsi, tout système basé sur l’IA devrait :
 9. respecter l’**environnement** ;
 10. assurer l’**accessibilité**.
 
-### 3. Critères de confiance
-#### 3.1. Gouvernance responsable
+## 3. Critères de confiance
+### 3.1. Gouvernance responsable
 Portée : pilotage éthique, transparent et responsable, incluant la mise en place de mécanismes de contrôle, de _reporting_ et de gestion des conflits d’intérêts.
 <br/>
 <br/>
 Principaux risques : décisions unilatérales, conflits d’intérêts, manque de supervision, opacité décisionnelle.
-#### 3.2. Fiabilité et sûreté
+### 3.2. Fiabilité et sûreté
 Portée : robustesse, performance, stabilité, résilience, précision, absence d'erreurs, capacité à fonctionner correctement, sans mettre en danger la vie humaine, les biens ou l'environnement, dans des conditions variées, incertaines ou inattendues, même en conditions de stress ou d’attaque.
 <br/>
 <br/>
 Principaux risques : dysfonctionnements, accidents, attaques malveillantes, défaillances techniques.
-#### 3.3. Équité
+### 3.3. Équité
 Portée : fonctionnement de l’IA sans biais, traitement impartial et équitable des usagers, non-discrimination.
 <br/>
 <br/>
 Principaux risques : discriminations ou inégalités d’accès, du fait de biais dans la formulation des cas d’usages<sup><a href="#note2" id="ref2">[2]</a></sup>, liés aux données d’entrée<sup><a href="#note3" id="ref3">[3]</a></sup>, aux données d’entrainement et de validation<sup><a href="#note4" id="ref4">[4]</a></sup>, à l’algorithme d’entrainement / à l’architecture du modèle<sup><a href="#note5" id="ref5">[5]</a></sup>, aux données de sortie<sup><a href="#note6" id="ref6">[6]</a></sup>.
-#### 3.4. Transparence
+### 3.4. Transparence
 Portée : compréhension des processus et décisions, explicabilité, traçabilité des données, possibilité de contester et vérifier le fonctionnement.
 <br/>
 <br/>
 Principaux risques : opacité, incompréhension des mécanismes, perte de confiance.
-#### 3.5. Sécurité des informations
+### 3.5. Sécurité des informations
 Portée : protection de la disponibilité, de l’intégrité et de la confidentialité des données, gestion des risques liés à la sécurité de l’information engendrés par les systèmes d’IA (au-delà du critère de confiance de fiabilité).
 <br/>
 <br/>
 Principaux risques : cyberattaques, fuites de données, corruption de systèmes.
-#### 3.6. Protection des droits et libertés
+### 3.6. Protection des droits et libertés
 Portée : respect de la vie privée, protection des données à caractère personnel et des droits fondamentaux, gestion des risques sur les droits et libertés des personnes concernées engendrés par les systèmes d’IA (au-delà du critère de confiance d’équité).
 <br/>
 <br/>
 Principaux risques : atteintes à la vie privée, usage abusif des données personnelles.
-#### 3.7. Maintenance et évolutivité
+### 3.7. Maintenance et évolutivité
 Portée : maintien en conditions opérationnelle et de sécurité, adaptation du système d’IA au fil du temps pour résoudre des problèmes et être utilisé pour de nouveaux besoins.
 <br/>
 <br/>
 Principaux risques : obsolescence logicielle, incompatibilités, pertes de performance.
-#### 3.8. Interopérabilité
+### 3.8. Interopérabilité
 Portée : compatibilité entre différents systèmes d'IA, intégration du système d’IA avec d’autres outils et normes existants, capacité à échanger des informations.
 <br/>
 <br/>
 Principaux risques : verrouillage technologique, incompatibilités de formats<sup><a href="#note7" id="ref7">[7]</a></sup>.
-#### 3.9. Respect de l’environnement
+### 3.9. Respect de l’environnement
 Portée : maîtrise de l’empreinte écologique globale associée au développement, au déploiement et à l’exploitation de technologies d’IA, maîtrise de la consommation énergétique, gestion des risques sur l’environnement engendrés par les systèmes d’IA.
 <br/>
 <br/>
 Principaux risques : consommation excessive d’énergie, émissions de CO₂.
-#### 3.10. Accessibilité
+### 3.10. Accessibilité
 Portée : accès aux systèmes d'IA, notamment pour les personnes handicapées, gestion des risques d’inégalités engendrés par les systèmes d’IA.
 <br/>
 <br/>
 Principaux risques : exclusion numérique, inégalités d’accès, manque de compatibilité avec les technologies d’assistance.
 
+<br/>
+<br/>
 <a name="note1" id="note1">[1]</a> Notamment [Règlement IA], [ISO/IEC 42001], [Lignes directrices IA de l'UE], [Loi I&L], [NIST AI RMF], [Principes de l'OCDE sur l’IA], [Recommandation IA de l’OCDE], [Recommandations IA de l’ANSSI - 2024], [Recommandations IA de l’ANSSI - 2025], [Recommandations IA de la CNIL], [RGAA], [RGESN], [RGI], et [RGIAF]. [↩](#ref1)
 <br/>
 <br/>
