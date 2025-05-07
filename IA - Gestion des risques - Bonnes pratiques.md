@@ -1,92 +1,82 @@
 # Intelligence artificielle
 ## Bonnes pratiques
 
- 
+Ce document est sous licence 
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+[Contributeurs](#contributeurs)<br/>
+[Versions](#versions)<br/>
+[Documents de référence](#documents-de-référence)<br/>
+[1. Object du document](#Object_du_document)<br/>
+[2. Introduction](#2introduction)<br/>
+[3. Bonnes pratiques pour l'IA](#3bonnes-pratiques-pour-lia)<br/>
+[3.1. Gouvernance responsable](#31gouvernance-responsable)<br/>
+[3.2. Fiabilité et sûreté](#32fiabilité-et-sûreté)<br/>
+[3.3. Équité](#33équité)<br/>
+[3.3.1. Réduction des biais liés à la formulation du cas d’usage](#331réduction-des-biais-liés-à-la-formulation-du-cas-dusage)<br/>
+[3.3.2. Réduction des biais liés aux données d’entrée](#332réduction-des-biais-liés-aux-données-dentrée)<br/>
+[3.3.3. Réduction des biais liés aux données d’entrainement](#333réduction-des-biais-liés-aux-données-dentrainement)<br/>
+[3.3.4. Réduction des biais liés à l’algorithme d’entrainement / l’architecture du modèle](#334réduction-des-biais-liés-à-lagorithme-dentrainement--architecture-du-modèle)<br/>
+[3.3.5. Réduction des biais liés aux données de sortie](#335réduction-des-biais-liés-aux-données-de-sortie)<br/>
+[3.4. Transparence](#34transparence)<br/>
+[3.5. Sécurité des informations](#35sécurité-des-informations)<br/>
+[3.6. Protection des droits et libertés](#36protection-des-droits-et-libertés)<br/>
+[3.7. Maintenabilité et évolutivité](#37maintenabilité-et-évolutivité)<br/>
+[3.8. Interopérabilité](#38interopérabilité)<br/>
+[3.9. Respect de l'environnement](#39respect-de-lenvironnement)<br/>
+[3.10. Accessibilité](#310accessibilité)<br/>
+[Annexe : « Déclaration d'applicabilité »](#annexe---déclaration-dapplicabilité-)<br/>
+
 ### Contributeurs
 **Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
 
-<autres contributeurs>
+**Cécile LAMARQUE**, sociologue
 
 ### Versions
-<center> **Version**</center>|<center> **Action**</center> |<center> **Éditeur**</center>|<center>**État**</center>|
---- |---|---|---
-06/04/2025|Création du document|Matthieu GRALL|Document de travail|
-10/04/2025|Rédaction de l’introduction, réorganisation et harmonisation des bonnes pratiques, ajout de l’annexe, corrections mineures (reformulations, mises en cohérences)|Matthieu GRALL|Document de travail|
+| <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | <center>**État**</center> | 
+| --- | --- | --- | --- | 
+| 06/04/2025 (v0.1) | Création du document | Matthieu GRALL | Document de travail |
+| 10/04/2025 (v0.2) | Rédaction de l’introduction, réorganisation et harmonisation des bonnes pratiques, ajout de l’annexe, corrections mineures (reformulations, mises en cohérences) | Matthieu GRALL | Document de travail |
+| 30/04/2025 (v0.3) | Transformation du document en _markdown_ | Cécile LAMARQUE | Document de travail |
+| 07/05/2025 (v0.4) | Harmonisation du document avec les autres | Matthieu GRALL | Document de travail |
 
 ### Document de référence
 Les références suivantes sont utilisées entre crochets dans le corps du document :
-<center>**Libellé court**</center>|<center>**Libellé long**</center>
---- |---|
-[EN 301 549]|Exigences d’accessibilité pour les produits et services ICT, European Telecommunications Standards Institute (ETSI, 2018) [Lien](https://accessibilite.numerique.gouv.fr/doc/fr_301549v020102p.pdf)
-[GUIDE D’HYGIENE DE L’ANSSI] | Guide d’hygiène informatique, Agence nationale de la sécurité des systèmes d’information (ANSSI, 2017) [Lien](https://cyber.gouv.fr/sites/default/files/2017/01/guide_hygiene_informatique_anssi.pdf)
-[GUIDE SECURITE DE LA CNIL]|Sécurité des données personnelles, Commission nationale de l’informatique et des libertés (CNIL, 2024) [Lien](https://www.cnil.fr/sites/cnil/files/2024-03/cnil_guide_securite_personnelle_2024.pdf)
-[ISO/IEC 27002]|Sécurité de l'information, cybersécurité et protection de la vie privée — Mesures de sécurité de l'information, International Organization for Standardization (ISO, 2022) [Lien](https://www.iso.org/fr/standard/75652.html)
-[ISO/IEC 42001]|Technologies de l’information – Intelligence artificielle – Système de management, International Organization for Standardization (ISO, 2023) [Lien](https://www.iso.org/fr/standard/81230.html)
-[LIGNES DIRECTRICES IA DE L’UE]|Communication de la Commission au Parlement européen, au Conseil, au Comité économique et social européen et au Comité des régions – Renforcer la confiance dans l'intelligence artificielle axée sur le facteur humain COM(2019) 168 final (2019) [Lien](https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:52019DC0168)
-[LOI I&L]|Loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et libertés, modifiée [Lien](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/)
-[RECOMMANDATIONS IA DE L’ANSSI - 2024]|Recommandations de sécurité pour un système d’IA générative, Agence nationale de la sécurité des systèmes d’information (ANSSI, 2024) [Lien](https://cyber.gouv.fr/sites/default/files/document/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf)
-[RECOMMANDATIONS IA DE L’ANSSI - 2025]|Développer la confiance dans l’IA par une approche par les risques cyber (ANSSI, 2025) [Lien](https://cyber.gouv.fr/sites/default/files/document/analyse_commune_haut_niveau_des_risques_cyber_ia.pdf)
-[RECOMMANDATIONS IA DE LA CNIL]|Recommandations sur le développement des systèmes d’intelligence artificielle, Commission nationale de l’informatique et des libertés (CNIL, 2024) [Lien](https://www.cnil.fr/fr/les-fiches-pratiques-ia)
-[REGLEMENT IA]|Règlement (UE) 2024/1689 du Parlement européen et du Conseil du 13 juin 2024 établissant des règles harmonisées concernant l’intelligence artificielle […] (règlement sur l’intelligence artificielle, 2024) [Lien](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689)
-[RGAA]|Référentiel général d’amélioration de l’accessibilité (RGAA), Direction interministérielle du numérique (DINUM, 2023) [Lien](https://accessibilite.numerique.gouv.fr/doc/RGAA-v4.1.2.pdf)
-[RGESN]|Référentiel général d’écoconception de services numériques (RGESN), Autorité de régulation de la communication audiovisuelle et numérique (ARCOM, 2024) [Lien](https://ecoresponsable.numerique.gouv.fr/docs/2024/rgesn-mai2024/referentiel_general_ecoconception_des_services_numeriques_version_2024.pdf)
-[RGI]|Référentiel général d’interopérabilité (RGI), Direction interministérielle du numérique (DINUM, 2020) [Lien](https://cellar-c2.services.clever-cloud.com/storage-demo/numerique-gouv-website/documents/Referentiel_General_Interoperabilite_V2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ZWM9OJBMLHVWM86C0Y2S%2F20250430%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250430T125123Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9b72dabec2c535c569bfc6a1e30b1c55cb1b0d002e98f68b88e1814b61e9d3ff)
-[RGIAF]|Référentiel général pour l’IA frugale (RGIAF), ministère de la transition écologique et de la cohésion des territoires (2024) [Lien](https://greentechinnovation.fr/storage/2024/06/Referentiel-general-pour-lIA-frugale.pdf)
-[RGPD]|Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016, relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données [Lien](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=fr)
-[US EO 13960]|Promoting the Use of Trustworthy Artificial Intelligence in the Federal Government, Executive Order 13960 (2020) [Lien](https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-promoting-use-trustworthy-artificial-intelligence-federal-government/)
-[WCAG]|Règles pour l’accessibilité des contenus Web (Web Content Accessibility Guidelines - WCAG), World Wide Web Consortium (W3C, 2023) [Lien](https://www.w3.org/WAI/standards-guidelines/wcag/fr)
+| <center>Libellé court</center> | <center>Libellé long</center> |
+| --- | --- |
+| [EN 301 549] | Exigences d’accessibilité pour les produits et services ICT, European Telecommunications Standards Institute (ETSI, 2018) [Lien](https://accessibilite.numerique.gouv.fr/doc/fr_301549v020102p.pdf) |
+| [GUIDE D’HYGIENE DE L’ANSSI] | Guide d’hygiène informatique, Agence nationale de la sécurité des systèmes d’information (ANSSI, 2017) [Lien](https://cyber.gouv.fr/sites/default/files/2017/01/guide_hygiene_informatique_anssi.pdf) |
+| [GUIDE SECURITE DE LA CNIL] | Sécurité des données personnelles, Commission nationale de l’informatique et des libertés (CNIL, 2024) [Lien](https://www.cnil.fr/sites/cnil/files/2024-03/cnil_guide_securite_personnelle_2024.pdf) |
+| [ISO/IEC 27002] | Sécurité de l'information, cybersécurité et protection de la vie privée — Mesures de sécurité de l'information, International Organization for Standardization (ISO, 2022) [Lien](https://www.iso.org/fr/standard/75652.html) |
+| [ISO/IEC 42001] | Technologies de l’information – Intelligence artificielle – Système de management, International Organization for Standardization (ISO, 2023) [Lien](https://www.iso.org/fr/standard/81230.html) |
+| [LIGNES DIRECTRICES IA DE L’UE] | Communication de la Commission au Parlement européen, au Conseil, au Comité économique et social européen et au Comité des régions – Renforcer la confiance dans l'intelligence artificielle axée sur le facteur humain COM(2019) 168 final (2019) [Lien](https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=CELEX:52019DC0168) |
+| [LOI I&L] | Loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et libertés, modifiée [Lien](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/) |
+| [RECOMMANDATIONS IA DE L’ANSSI - 2024] | Recommandations de sécurité pour un système d’IA générative, Agence nationale de la sécurité des systèmes d’information (ANSSI, 2024) [Lien](https://cyber.gouv.fr/sites/default/files/document/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf) |
+| [RECOMMANDATIONS IA DE L’ANSSI - 2025] | Développer la confiance dans l’IA par une approche par les risques cyber (ANSSI, 2025) [Lien](https://cyber.gouv.fr/sites/default/files/document/analyse_commune_haut_niveau_des_risques_cyber_ia.pdf) |
+| [RECOMMANDATIONS IA DE LA CNIL] | Recommandations sur le développement des systèmes d’intelligence artificielle, Commission nationale de l’informatique et des libertés (CNIL, 2024) [Lien](https://www.cnil.fr/fr/les-fiches-pratiques-ia) |
+| [REGLEMENT IA] | Règlement (UE) 2024/1689 du Parlement européen et du Conseil du 13 juin 2024 établissant des règles harmonisées concernant l’intelligence artificielle […] (règlement sur l’intelligence artificielle, 2024) [Lien](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32024R1689) |
+| [RGAA] | Référentiel général d’amélioration de l’accessibilité (RGAA), Direction interministérielle du numérique (DINUM, 2023) [Lien](https://accessibilite.numerique.gouv.fr/doc/RGAA-v4.1.2.pdf) |
+| [RGESN] | Référentiel général d’écoconception de services numériques (RGESN), Autorité de régulation de la communication audiovisuelle et numérique (ARCOM, 2024) [Lien](https://ecoresponsable.numerique.gouv.fr/docs/2024/rgesn-mai2024/referentiel_general_ecoconception_des_services_numeriques_version_2024.pdf) |
+| [RGI] | Référentiel général d’interopérabilité (RGI), Direction interministérielle du numérique (DINUM, 2020) [Lien](https://cellar-c2.services.clever-cloud.com/storage-demo/numerique-gouv-website/documents/Referentiel_General_Interoperabilite_V2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ZWM9OJBMLHVWM86C0Y2S%2F20250430%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20250430T125123Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=9b72dabec2c535c569bfc6a1e30b1c55cb1b0d002e98f68b88e1814b61e9d3ff) |
+| [RGIAF] | Référentiel général pour l’IA frugale (RGIAF), ministère de la transition écologique et de la cohésion des territoires (2024) [Lien](https://greentechinnovation.fr/storage/2024/06/Referentiel-general-pour-lIA-frugale.pdf) |
+| [RGPD] | Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016, relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données [Lien](https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=fr) |
+| [US EO 13960] | Promoting the Use of Trustworthy Artificial Intelligence in the Federal Government, Executive Order 13960 (2020) [Lien](https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-promoting-use-trustworthy-artificial-intelligence-federal-government/) |
+| [WCAG] | Règles pour l’accessibilité des contenus Web (Web Content Accessibility Guidelines - WCAG), World Wide Web Consortium (W3C, 2023) [Lien](https://www.w3.org/WAI/standards-guidelines/wcag/fr) |
 
-### Ressources utilisées
-Page de garde : Grid, par Magic Creative, de PIXABAY.
- 
-### Sommaire
-[1.Object du document](#Object_du_document)
-
-[2.	Introduction](#2introduction)
-
-[3.	Bonnes pratiques pour l'IA](#3bonnes-pratiques-pour-lia)
-
-[3.1	Gouvernance responsable](#31gouvernance-responsable)
-
-[3.2	Fiabilité et sûreté](#32fiabilité-et-sûreté)
-
-[3.3	Équité](#33équité)
-
-[3.3.1	Réduction des biais liés à la formulation du cas d’usage](#331réduction-des-biais-liés-à-la-formulation-du-cas-dusage)
-
-[3.3.2	Réduction des biais liés aux données d’entrée](#332réduction-des-biais-liés-aux-données-dentrée)
-
-[3.3.3	Réduction des biais liés aux données d’entrainement](#333réduction-des-biais-liés-aux-données-dentrainement)
-
-[3.3.4	Réduction des biais liés à l’algorithme d’entrainement / l’architecture du modèle](#334réduction-des-biais-liés-à-lagorithme-dentrainement--architecture-du-modèle)
-
-[3.3.5	Réduction des biais liés aux données de sortie](#335réduction-des-biais-liés-aux-données-de-sortie)
-
-[3.4	Transparence](#34transparence)
-
-[3.5	Sécurité des informations](#35sécurité-des-informations)
-
-[3.6	Protection des droits et libertés](#36protection-des-droits-et-libertés)
-
-[3.7	Maintenabilité et évolutivité](#37maintenabilité-et-évolutivité)
-
-[3.8	Interopérabilité](#38interopérabilité)
-
-[3.9	Respect de l'environnement](#39respect-de-lenvironnement)
-
-[3.10	Accessibilité](#310accessibilité)
-
-[Annexe : « Déclaration d'applicabilité »](#annexe---déclaration-dapplicabilité-)
-
- 
 # 1	Objet du document
-Ce document propose une liste de bonnes pratiques qui permettent de respecter les critères de confiance que tout système d’intelligence artificielle (IA) devrait respecter.
+**Ce document propose une liste de bonnes pratiques qui permettent de respecter les critères de confiance que tout système d’intelligence artificielle (IA) devrait respecter**.
 
 Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
-1.	[EXEMPLES DE MICRO-CAS D’USAGES DE L’IA] [Lien](A METTRE) ;
-2.	[CRITERES DE CONFIANCE DE L’IA] [Lien](A METTRE) ;
-3.	[BONNES PRATIQUES DE L’IA] [Lien](A METTRE) ;
-4.	[METHODE DE GESTION DES RISQUES DE L’IA] [Lien](A METTRE).
+1. [Exemples de micro-cas d'usages de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Micro-cas%20d'usages%20-%20Exemples.md) ;
+2. [Critères de confiance de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md) ;
+3. [Bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) ;
+4. [Méthode de gestion des risques de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md).
 
 Il peut être directement utilisé dans le cadre des projets de nouveaux services qui reposent sur l’IA pour comparer ce qui est prévu ou mis en œuvre aux bonnes pratiques, et peut également être intégré à une démarche de gestion des risques.
 
@@ -112,7 +102,7 @@ Note : un renvoi vers les documents de référence est privilégié quand cela e
 
 <a name="note3" id="note3">[3]</a> LLM : large language models (grands modèles linguistiques).
 
- <a name="note4" id="note4">[4]</a> Ex : [ISO/IEC 42001].
+<a name="note4" id="note4">[4]</a> Ex : [ISO/IEC 42001].
 
 # 3	Bonnes pratiques pour l'IA
 ## 3.1	Gouvernance responsable
@@ -331,75 +321,75 @@ Se conformer au [RGAA] en appliquant les bonnes pratiques applicables de l’[EN
 -	les bonnes pratiques ne sont pas toutes applicables à un projet donné : certaines ne sont pas applicables (ex : si elles concernent un type d’IA qui n’est pas celui considéré), n’ont pas besoin d’être appliquées (ex : si le sujet est traité par ailleurs), ou sont exclues par l’organisation.
 
 #### Gouvernance responsable
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Formaliser les responsabilités des parties intéressées| ☐ Oui ☐ Non ☐ Ne sait pas|
-Partager les valeurs éthiques | ☐ Oui ☐ Non ☐ Ne sait pas|
-Déterminer des mécanismes de contrôle| ☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Formaliser les responsabilités des parties intéressées | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Partager les valeurs éthiques | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Déterminer des mécanismes de contrôle | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Fiabilité et sûreté
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Vérifier les données d’entrée possibles| ☐ Oui ☐ Non ☐ Ne sait pas|
-Vérifier la robustesse du modèle | ☐ Oui ☐ Non ☐ Ne sait pas|
-Éprouver les limites du système dans sa globalité| ☐ Oui ☐ Non ☐ Ne sait pas|
-Évaluer les performances du système|☐ Oui ☐ Non ☐ Ne sait pas
-Mettre en place les mesures de sûreté nécessaires|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Vérifier les données d’entrée possibles | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Vérifier la robustesse du modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Éprouver les limites du système dans sa globalité | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Évaluer les performances du système | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Mettre en place les mesures de sûreté nécessaires | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Équité
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Définir clairement le(s) cas d’usage(s)| ☐ Oui ☐ Non ☐ Ne sait pas|
-Diversifier les données d’entrée| ☐ Oui ☐ Non ☐ Ne sait pas|
-Rendre les données exploitables|☐ Oui ☐ Non ☐ Ne sait pas|
-S’assurer de la qualité des données d’entrainement|☐ Oui ☐ Non ☐ Ne sait pas|
-Faire des échantillonnages équilibrés des données d’entrainement| ☐ Oui ☐ Non ☐ Ne sait pas|
-Corriger les corrélations indésirables| ☐ Oui ☐ Non ☐ Ne sait pas|
-Collecter de nouvelles données dès que cela est nécessaire|☐ Oui ☐ Non ☐ Ne sait pas|
-Évaluer la qualité du modèle|☐ Oui ☐ Non ☐ Ne sait pas|
-Évaluer les performances du modèle|☐ Oui ☐ Non ☐ Ne sait pas|
-Faire auditer le modèle|☐ Oui ☐ Non ☐ Ne sait pas|
-Valider les données de sorties|☐ Oui ☐ Non ☐ Ne sait pas|
-Obtenir les retours des usagers|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Définir clairement le(s) cas d’usage(s) | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Diversifier les données d’entrée | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Rendre les données exploitables | ☐ Oui ☐ Non ☐ Ne sait pas |
+| S’assurer de la qualité des données d’entrainement | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Faire des échantillonnages équilibrés des données d’entrainement | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Corriger les corrélations indésirables | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Collecter de nouvelles données dès que cela est nécessaire | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Évaluer la qualité du modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Évaluer les performances du modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Faire auditer le modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Valider les données de sorties | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Obtenir les retours des usagers | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Transparence
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Formaliser les éléments utiles à la transparence|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Formaliser les éléments utiles à la transparence | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Sécurité des informations
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Respecter les recommandations de l’ANSSI| ☐ Oui ☐ Non ☐ Ne sait pas|
-Adopter des bonnes pratiques de sécurité de l’information|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Respecter les recommandations de l’ANSSI | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Adopter des bonnes pratiques de sécurité de l’information | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Protection des droits et libertés
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Respecter les recommandations de la CNIL|☐ Oui ☐ Non ☐ Ne sait pas|
-Mettre le traitement en conformité avec la réglementation|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Respecter les recommandations de la CNIL | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Mettre le traitement en conformité avec la réglementation | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Maintenabilité et évolutivité
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Adopter un principe de modularité et de réutilisabilité|☐ Oui ☐ Non ☐ Ne sait pas|
-Documenter le système|☐ Oui ☐ Non ☐ Ne sait pas|
-Contrôler la qualité du code|☐ Oui ☐ Non ☐ Ne sait pas|
-Permettre l’évolutivité|☐ Oui ☐ Non ☐ Ne sait pas|
-Maîtriser les évolutions|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Adopter un principe de modularité et de réutilisabilité|☐ Oui ☐ Non ☐ Ne sait pas |
+| Documenter le système | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Contrôler la qualité du code | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Permettre l’évolutivité | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Maîtriser les évolutions | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Interopérabilité
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Assurer la comptabilité des données|☐ Oui ☐ Non ☐ Ne sait pas|
-Adopter des bonnes pratiques d’interopérabilité|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Assurer la comptabilité des données | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Adopter des bonnes pratiques d’interopérabilité | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Respect de l’environnement
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Adopter des bonnes pratiques d’écoconception|☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Adopter des bonnes pratiques d’écoconception | ☐ Oui ☐ Non ☐ Ne sait pas |
 
 #### Accessibilité
-<center>**Bonnes pratiques**</center>|<center>**Applicabilité**</center>|<center>**Si oui, comment ? Si non, pourquoi ?**</center>
---- |---|---|
-Adopter des bonnes pratiques d’accessibilité| ☐ Oui ☐ Non ☐ Ne sait pas|
+| <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
+| --- | --- | --- |
+| Adopter des bonnes pratiques d’accessibilité | ☐ Oui ☐ Non ☐ Ne sait pas |
