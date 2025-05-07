@@ -1,7 +1,7 @@
 # Intelligence artificielle (IA) - Micro-cas d'usages : exemples
 
 Ce document est sous licence 
-[Creative Commons Attribution 4.0 International License][cc-by].
+_[Creative Commons Attribution 4.0 International License][cc-by]_.
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
@@ -13,10 +13,10 @@ Ce document est sous licence
 [Versions](#versions)<br/>
 [Documents de référence](#documents-de-référence)<br/>
 [Ressources utilisées](#ressources-utilisées)<br/>
-[1. Objet du document](#1-objet-du-document)
-[2. Introduction](#2-introduction)
-[3. Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)
-[4. Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)
+[1. Objet du document](#1-objet-du-document)<br/>
+[2. Introduction](#2-introduction)<br/>
+[3. Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)<br/>
+[4. Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)<br/>
 
 ## Contributeurs
 
