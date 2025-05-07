@@ -3,20 +3,15 @@
 This project aims to **provide methodological tools for managing AI-related risks**.
 
 
-It comprises a set of documents, developed collaboratively and under continuous improvement, designed to help organizations manage AI-related risks:
-
-1. examples of micro-usecases;
-
-2. harmonized trust criteria;
-
-3. harmonized best practices;
-
-4. a risk management method.
-
+It comprises a set of documents, developed collaboratively and under continuous improvement:
+1. [examples of micro-usecases](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Micro-cas%20d'usages%20-%20Exemples.md);
+2. [harmonized trust criteria](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md);
+3. [harmonized best practices](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md);
+4. [a risk management method](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md).
 
 It is **intended to fit in with existing approaches within organizations**, notably system certification processes. However, some or all of these documents may also be used directly, together or separately.
 
-The backlog is currently the following (maybe one day)...:
+The **backlog** is currently the following (maybe one day!):
 - use trust criteria to estimate risks on micro-usecases;
 - translate documents in english, once they're mature enough.
 

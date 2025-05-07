@@ -1,6 +1,15 @@
 # Intelligence artificielle (IA)
 ## Micro-cas d'usages : exemples
 
+Ce document est sous licence 
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
 [Contributeurs](#contributeurs)<br/>
 [Versions](#versions)<br/>
 [Documents de référence](#documents-de-référence)<br/>
@@ -11,9 +20,9 @@
 4. [Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)
 
 ### Contributeurs
-**Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
 
-**Cécile LAMARQUE**, <titre ?>
+**Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
+**Cécile LAMARQUE**, sociologue
 
 ### Versions
 
@@ -25,6 +34,7 @@
 | 18/04/2025 (v0.4) | Amélioration du _markdown_ | Matthieu GRALL | Document de travail | 
 
 ### Documents de référence
+
 Les références suivantes sont utilisées entre crochets dans le corps du document :
 | <center>Libellé court</center> | <center>Libellé long</center> |
 | --- | --- |
@@ -34,6 +44,7 @@ Les références suivantes sont utilisées entre crochets dans le corps du docum
 **Tableau périodique de cas d’usages** : par XPRIZE.
 
 # 1. Objet du document
+
 **Ce document propose des exemples de typologies de micro-cas d’usages d’utilisation de l’intelligence artificielle (IA).**
 
 Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
@@ -45,6 +56,7 @@ Il s’inscrit dans un ensemble de documents méthodologiques en amélioration c
 Il n’a pas pour vocation à servir de référence, mais à souligner la variété des cas d’usages et des techniques sous-jacentes, et il peut également être utile à la description d’un système dans une démarche de gestion des risques ou de projets.
 
 ## 2. Introduction
+
 [Pour le Parlement européen](https://www.europarl.europa.eu/topics/fr/article/20200827STO85804/intelligence-artificielle-definition-et-utilisation), **l’IA représente tout outil utilisé par une machine afin de « _reproduire des comportements liés aux humains, tels que le raisonnement, la planification et la créativité_ »**. Cette définition peut être élargie en incluant les comportements dépassant les capacités humaines, puisque les ordinateurs actuels parviennent aujourd’hui à les surpasser dans certaines tâches (bien que la compétence de l’ordinateur s’arrête généralement à l’exécution de cette tâche).
 
 **C’est un domaine de l'informatique né en 1956<sup><a href="#note1" id="ref1">[1]</a></sup> qui vise à créer des machines capables de réaliser des tâches qui nécessitent normalement l'intelligence humaine**. Il s'agit de simuler des processus cognitifs tels que l'apprentissage, la résolution de problèmes, la prise de décision et la compréhension du langage naturel. Contrairement à une simple programmation de règles précises, l'IA cherche à donner aux machines la capacité d'apprendre et de s'adapter à de nouvelles situations sans être explicitement programmées pour chaque éventualité.
@@ -66,6 +78,7 @@ _Du point de vue technique<sup><a href="#note2" id="ref2">[2]</a></sup>, l’int
 **Ce document propose donc uniquement des exemples de typologies.**
 
 ## 3. Exemple : liste de cas d'usages
+
 Le tableau suivant présente une liste non exhaustive de cas d’usages qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples d’outils qui les mettent effectivement en œuvre :
 | <center>**Micro-cas d’usages**</center> | <center>**Principales techniques d’IA**</center> | <center>**Exemples d’outils**</center> |
 | --- | --- | --- |
@@ -99,6 +112,7 @@ Le tableau suivant présente une liste non exhaustive de cas d’usages qui repo
 
  
 ## 4. Exemple : tableau périodique de cas d'usages
+
 Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représentés sous la forme d’un tableau périodique, comme le propose [XPRIZE](https://community.digilogic.africa/resource/the-periodic-table-of-ai/) :
 
 ![XPRIZE AI periodic table](https://danielschristian.com/learning-ecosystems/wp-content/uploads/2017/01/AI-PeriodicTable-Dec2016.jpg)
