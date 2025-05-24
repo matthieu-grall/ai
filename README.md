@@ -11,9 +11,15 @@ It comprises a set of documents, developed collaboratively and under continuous 
 
 It is **intended to fit in with existing approaches within organizations**, notably system certification processes. However, some or all of these documents may also be used directly, together or separately.
 
-The **backlog** is currently the following (maybe one day!):
-- use trust criteria to estimate risks on micro-usecases;
-- translate documents in english, once they're mature enough.
+The **strategic plan (and backlog)** is currently the following:
+| <center>**Priority**</center> | <center>**Documents**</center> | <center>**Main value**</center> | <center>**Main limits**</center> | <center>**Main actions on documents**</center> | <center>**Main actions on references**</center> | <center>**Main actions in organizations**</center> | 
+| --- | --- | --- | --- | --- | --- | --- | 
+| - | General | Maybe the only global approach (needed by organizations) | Institutions not legitimate on global scope, currently only in French | Validate the general value, promote the approach (e.g. LINKEDIN, CESIN, Club EBIOS), translate into English | None | Test the approach | 
+| 1 | Method | 1. Huge | Qualification not mature enough | Consolidate qualification, add redirection to other reference documents (e.g. attacks proposed by Hub France IA) | Propose improvements as soon as possible (e.g. ISO and EU projects and standards) | Test the method | 
+| 2 | Trust criteria | 2. High | Absolutely no worldwide consensus | Validate | Propose convergence (e.g. in [ISO/IEC 42001]) | None | 
+| 3 | Best practices | 2. High | Very wide and complicated | Refine practices that contained in reference documents OR only redirect to them, add redirection to other reference documents (e.g. controls proposed by Hub France IA) | Determine the most effective way to converge (e.g. thru MITRE) | Test the statement of applicability | 
+| 4 | Micro-usecases | 3. Low | Controversial, difficult to use and maintain | Apply qualification (first step of the method) to each usecase | None | None | 
+
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
