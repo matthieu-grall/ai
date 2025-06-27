@@ -1,7 +1,7 @@
 # Methodological tools for artificial intelligence (AI)
 
 This project aims to **provide methodological tools for managing AI-related risks**.
-A presentation is provided in [.pdf](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Pr%C3%A9sentation.pdf) and [.pptx](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Pr%C3%A9sentation.pdf) formats.
+A presentation is provided in [.pdf](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Pr%C3%A9sentation.pdf) and [.pptx](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Pr%C3%A9sentation.pptx) formats.
 
 
 It comprises a set of documents, developed collaboratively and under continuous improvement:
@@ -21,7 +21,7 @@ The **strategic plan (and backlog)** is currently the following*:
 | 3 | Best practices | 2. High | Very wide and complicated | (S) Add "tags" for satisfaction criteria/proof</br>(S) Add "tags" to state who has to implement/answer</br>(M) Refine practices that contained in reference documents OR only redirect to them</br>(M) Add redirection to other reference documents (e.g. controls proposed by Hub France IA) | (C) Determine the most effective way to converge (e.g. thru MITRE) | (S) Test the statement of applicability | 
 | 4 | Micro-usecases | 3. Low | Controversial</br>Difficult to use and maintain | (S) Organize usecases</br>(C) Apply qualification (first step of the method) to each usecase</br>(M) Check if [ISO/IEC 24030] can bring added value | (C) Contribute to [ISO/IEC 24030] | (S) Test | 
 
-* (M) Must have | (S) Should have | (C) Could Have | (W) Won't have
+(M) Must have | (S) Should have | (C) Could Have | (W) Won't have
 
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
