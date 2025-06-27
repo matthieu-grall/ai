@@ -1,7 +1,7 @@
 # Intelligence artificielle (IA) - Méthode de gestion des risques
 
 Ce document est sous licence 
-[Creative Commons Attribution 4.0 International License][cc-by].
+_[Creative Commons Attribution 4.0 International License][cc-by]_.
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 

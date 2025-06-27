@@ -297,76 +297,76 @@ Se conformer au [RGAA] en appliquant les bonnes pratiques applicables de l’[EN
 ### Gouvernance responsable
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Formaliser les responsabilités des parties intéressées | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Partager les valeurs éthiques | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Déterminer des mécanismes de contrôle | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Formaliser les responsabilités des parties intéressées | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Partager les valeurs éthiques | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Déterminer des mécanismes de contrôle | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Fiabilité et sûreté
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Vérifier les données d’entrée possibles | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Vérifier la robustesse du modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Éprouver les limites du système dans sa globalité | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Évaluer les performances du système | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Mettre en place les mesures de sûreté nécessaires | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Vérifier les données d’entrée possibles | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Vérifier la robustesse du modèle | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Éprouver les limites du système dans sa globalité | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Évaluer les performances du système | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Mettre en place les mesures de sûreté nécessaires | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Équité
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Définir clairement le(s) cas d’usage(s) | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Diversifier les données d’entrée | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Rendre les données exploitables | ☐ Oui ☐ Non ☐ Ne sait pas |
-| S’assurer de la qualité des données d’entrainement | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Faire des échantillonnages équilibrés des données d’entrainement | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Corriger les corrélations indésirables | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Collecter de nouvelles données dès que cela est nécessaire | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Évaluer la qualité du modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Évaluer les performances du modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Faire auditer le modèle | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Valider les données de sorties | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Obtenir les retours des usagers | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Définir clairement le(s) cas d’usage(s) | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Diversifier les données d’entrée | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Rendre les données exploitables | ☐ Oui ☐ Non ☐ Ne sais pas |
+| S’assurer de la qualité des données d’entrainement | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Faire des échantillonnages équilibrés des données d’entrainement | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Corriger les corrélations indésirables | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Collecter de nouvelles données dès que cela est nécessaire | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Évaluer la qualité du modèle | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Évaluer les performances du modèle | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Faire auditer le modèle | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Valider les données de sorties | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Obtenir les retours des usagers | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Transparence
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Formaliser les éléments utiles à la transparence | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Formaliser les éléments utiles à la transparence | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Sécurité des informations
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Respecter les recommandations de l’ANSSI | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Adopter des bonnes pratiques de sécurité de l’information | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Respecter les recommandations de l’ANSSI | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Adopter des bonnes pratiques de sécurité de l’information | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Protection des droits et libertés
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Respecter les recommandations de la CNIL | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Mettre le traitement en conformité avec la réglementation | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Respecter les recommandations de la CNIL | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Mettre le traitement en conformité avec la réglementation | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Maintenabilité et évolutivité
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Adopter un principe de modularité et de réutilisabilité|☐ Oui ☐ Non ☐ Ne sait pas |
-| Documenter le système | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Contrôler la qualité du code | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Permettre l’évolutivité | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Maîtriser les évolutions | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Adopter un principe de modularité et de réutilisabilité|☐ Oui ☐ Non ☐ Ne sais pas |
+| Documenter le système | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Contrôler la qualité du code | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Permettre l’évolutivité | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Maîtriser les évolutions | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Interopérabilité
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Assurer la comptabilité des données | ☐ Oui ☐ Non ☐ Ne sait pas |
-| Adopter des bonnes pratiques d’interopérabilité | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Assurer la comptabilité des données | ☐ Oui ☐ Non ☐ Ne sais pas |
+| Adopter des bonnes pratiques d’interopérabilité | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Respect de l’environnement
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Adopter des bonnes pratiques d’écoconception | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Adopter des bonnes pratiques d’écoconception | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 ### Accessibilité
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> |
 | --- | --- | --- |
-| Adopter des bonnes pratiques d’accessibilité | ☐ Oui ☐ Non ☐ Ne sait pas |
+| Adopter des bonnes pratiques d’accessibilité | ☐ Oui ☐ Non ☐ Ne sais pas |
 
 <br/>
 <br/>
