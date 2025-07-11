@@ -1,4 +1,4 @@
-# Intelligence artificielle (IA) - Micro-cas d'usages : exemples
+# Intelligence artificielle (IA) - Cas d'usages : exemples de typologies
 
 Ce document est sous licence 
 _[Creative Commons Attribution 4.0 International License][cc-by]_.
@@ -26,13 +26,14 @@ _[Creative Commons Attribution 4.0 International License][cc-by]_.
 
 ## Versions
 
-| <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | <center>**État**</center> | 
-| --- | --- | --- | --- | 
-| 05/04/2025 (v0.1) | Création du document, ajout d’une liste empirique de cas d’usages et du tableau périodique proposée par XPRIZE | Matthieu GRALL | Document de travail | 
-| 10/04/2025 (v0.2) | Ajout d’une introduction, améliorations mineures (clarifications, compléments, mise en cohérence avec les autres documents) | Matthieu GRALL | Document de travail | 
-| 16/04/2025 (v0.3) | Transformation du document en _markdown_ | Cécile LAMARQUE | Document de travail | 
-| 18/04/2025 (v0.4) | Amélioration du _markdown_ | Matthieu GRALL | Document de travail | 
-| 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL | Amélioration continue |
+| <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | 
+| --- | --- | --- | 
+| 05/04/2025 (v0.1) | Création du document, ajout d’une liste empirique de cas d’usages et du tableau périodique proposée par XPRIZE | Matthieu GRALL | 
+| 10/04/2025 (v0.2) | Ajout d’une introduction, améliorations mineures (clarifications, compléments, mise en cohérence avec les autres documents) | Matthieu GRALL | 
+| 16/04/2025 (v0.3) | Transformation du document en _markdown_ | Cécile LAMARQUE | 
+| 18/04/2025 (v0.4) | Amélioration du _markdown_ | Matthieu GRALL | 
+| 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL |
+| 11/07/2025 (v1.1) | Changement du titre du document, ajout d'exemples de produits et services et du pays de provenance dans la liste des cas d'usages | Matthieu GRALL |
 
 ## Documents de référence
 
@@ -83,33 +84,33 @@ _Du point de vue technique<sup><a href="#note2" id="ref2">[2]</a></sup>, l’int
 Le tableau suivant présente une liste non exhaustive de cas d’usages qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples d’outils qui les mettent effectivement en œuvre :
 | <center>**Micro-cas d’usages**</center> | <center>**Principales techniques d’IA**</center> | <center>**Exemples d’outils**</center> |
 | --- | --- | --- |
-| Détecter certains types de sons dans un signal audio (alarmes, moteurs, dispositifs spécifiques) | Apprentissage supervisé, réseaux de neurones convolutifs (CNN), modèles de reconnaissance sonore | SONARWORKS, GOOGLE AudioSet | 
-| Reconnaître les visages et les états émotionnels dans des images ou vidéos | CNN, apprentissage profond (*deep learning*), analyse des expressions faciales | LIGHTON, AFFECTIVA, MICROSOFT Face API | 
-| Reconnaître certains types d'objets dans des images ou vidéos | CNN, YOLO, Mask R-CNN, transformateurs de vision (vision transformers – ViT) | HUGGING FACE, GOOGLE Vision AI, AMAZON Rekognition | 
-| Analyser les données du capteur pour détecter des objets et/ou situations à partir d’un signal | Apprentissage supervisé/non supervisé, analyse de séries temporelles, fusion de capteurs | SIEMENS MindSphere, GE DIGITAL | 
-| Reconnaître la langue parlée et/ou les états émotionnels dans un signal audio | Traitement automatique du langage naturel (TAL ou *natural language processing* – NLP), modèles de classification audio, transformateurs | VOXYGEN, GOOGLE Speech API, IBM Watson Speech to Text, OPENAI Whisper | 
-| Reconnaître une voix individuelle dans un signal audio | Identification biométrique vocale, CNN appliqués à l’audio | NUANCE Gatekeeper, MICROSOFT Azure Speaker Recognition | 
-| Détecter des signatures audio spécifiques (moteur, sonnette, etc.) | Modèles de classification audio, spectrogrammes et CNN | ZOUNDREAM, GOOGLE AudioSet | 
-| Reconnaître des personnes spécifiques dans des images ou vidéos | Apprentissage supervisé, *deep learning*, bases de données d’empreintes faciales | CLEARVIEW AI, PIMEYES | 
-| Reconnaître un objet concret dans une image ou vidéo | Mise en correspondance de similarités (feature matching), CNN, vision assistée | GOOGLE Lens, APPLE Vision Pro, OPENCV | 
-| Analyser les données pour identifier certains faits et événements | TAL, modèles de classification, transformateurs | PALANTIR, IBM Watson Discovery, BIGML | 
-| Analyser des textes pour extraire des informations sur les entités, temps, lieux et faits | TAL, reconnaissance des entités nommées (*named entity recognition* – NER), transformateurs | SPACY, STANFORD NLP, IBM Watson NLU | 
-| Prévoir des événements ou conditions futures | Modèles prédictifs, réseaux de neurones, analyse de séries temporelles (*autoregressive integrated moving average* – ARIMA, *long short-term memory* – LSTM) | PREVISION.IO, FACEBOOK Prophet, GOOGLE Forecast | 
-| Expliquer des événements en fonction des états passés | Modélisation causale, réseaux bayésiens, IA explicable (XAI) | GRAKN.AI, IBM Explainable AI, MIT Model-based AI | 
-| Utiliser des preuves pour appuyer des conclusions | Raisonnement bayésien, inférence logique, XAI | WOLFRAM Alpha, IBM Watson, KNOWLEDGE GRAPHS | 
-| Créer un plan d’action basé sur des objectifs et la connaissance des actions | Planification automatique, apprentissage par renforcement (*reinforcement learning* – RL, modèles décisionnels | OPENAI Gym, DEEP MIND AlphaZero, AUTOGPT | 
-| Créer une solution à un problème | Algorithmes heuristiques, génération de solutions | IBM Solver CPLEX, GOOGLE OR-Tools | 
-| Choisir une direction ou solution basée sur les faits | Systèmes de recommandation, IA décisionnelle | SALESFORCE Einstein, IBM Watson Decision Platform, GOOGLE Optimize | 
-| Créer des textes et/ou des explications en langage naturel | TAL, grands modèles linguistiques (*large language models* – LLM), IA générative | LIGHTON, OPENAI ChatGPT, GOOGLE Bard | 
-| Créer une représentation sémantique du sens d'un texte | Modèles de représentation sémantique, graphes de connaissances (*knowledge graphs*) | GOOGLE Knowledge Graph, WORD2VEC, CONCEPTNET | 
-| Reconnaître les relations entre caractéristiques visibles et cachées | Apprentissage non supervisé, division en groupes (*clustering*), IA causale | SCIKIT-LEARN, TENSORFLOW, PYCARET | 
-| Reconnaître de nouvelles catégories de valeurs sémantiques | Apprentissage non supervisé, *clustering* (K-Means, DBSCAN) | H2O.AI, BIGML, RAPIDMINER | 
-| Répondre à des connaissances ou règles existantes | Raisonnement basé sur règles, ontologies, *knowledge graphs* | CYC, IBM Watson Knowledge Studio, NEO4J | 
-| Contrôler des véhicules autonomes en interaction avec d'autres véhicules | *Deep learning*, RL, télédétection par laser (*light detection and ranging* – LIDAR), perception multimodale | NAVYA, TESLA Autopilot, WAYMO, CRUISE | 
-| Contrôler des robots qui interagissent avec des humains en zones intérieures | Vision par ordinateur, RL, NLP | ALDEBARAN Robotics (NAO, Pepper), BOSTON DYNAMICS Spot, NVIDIA Isaac | 
-| Manipuler des objets dans un environnement collaboratif avec les humains | Robotique cognitive, préhension adaptative, vision par ordinateur | UNIVERSAL ROBOTS (UR Cobot), ABB YuMi, EVERYDAY ROBOTS (GOOGLE) | 
-| Faciliter la communication Homme-machine | NLP, assistants virtuels (*chatbots*, interfaces vocales) | VIVOKA, GOOGLE Assistant, APPLE Siri, AMAZON Alexa | 
-| Contrôler d'autres machines sans action physique nécessaire (ex. commerce automatisé) | IA décisionnelle, algorithmes de commerce (*trading*), automatisation logicielle | BLOOMBERG Terminal, TRADE IDEAS AI, KENSHO | 
+| Détecter certains types de sons dans un signal audio (alarmes, moteurs, dispositifs spécifiques) | Apprentissage supervisé, Réseaux de neurones convolutifs (CNN), Modèles de reconnaissance sonore | IA DUST — Dust Audio Classifier (FR), SONARWORKS — Sound Calibration (EE), GOOGLE — AudioSet (US), RESEMBLE.AI — Voice Cloning (CA) |
+| Reconnaître les visages et les états émotionnels dans des images ou vidéos | CNN, Deep Learning, Analyse d'expressions faciales | OPTACARE — Emotion Analytics (FR), LIGHTON — Vision Emotion (FR), AFFECTIVA — Emotion AI (US), MICROSOFT — Face API (US), NTECHLAB — FindFace (RU) |
+| Reconnaître certains types d'objets dans des images ou vidéos | CNN, YOLO, Mask R-CNN, Vision Transformers (ViT) | PHOTOROOM — Object Remover (FR), HUGGING FACE — Transformers Vision (FR), GOOGLE — Vision AI (US), AMAZON — Rekognition (US), OPENCV — Computer Vision Lib (INTL) |
+| Analyser les données du capteur pour détecter des objets/situations | Apprentissage supervisé/non supervisé, Séries temporelles, Fusion de capteurs | DIAGRAMS TECHNOLOGIES — Sensor Fusion (FR), NVIDIA — Isaac Sim (US), SIEMENS — MindSphere (DE), GE DIGITAL — Predix (US) |
+| Reconnaître la langue parlée et/ou états émotionnels dans un signal audio | NLP, Classification audio, Transformateurs | PRIMAA — Emotion Speech API (FR), VOXYGEN — TTS/STT Solutions (FR), GOOGLE — Speech API (US), IBM — Watson Speech to Text (US), SONANTIC — Emotional Speech (UK) |
+| Reconnaître une voix individuelle dans un signal audio | Biometrie vocale, CNN audio | DIGEIZ — Voice ID (FR), NUANCE — Gatekeeper (US), MICROSOFT — Azure Speaker Recognition (US) |
+| Détecter des signatures audio spécifiques (moteur, sonnette, etc.) | Classification audio, CNN spectrogrammes | IA DUST — Device Sound Identifier (FR), ZOUNDREAM — BabyCry AI (FR), GOOGLE — AudioSet (US), FREESOUND — Annotated Sounds (ES) |
+| Reconnaître des personnes spécifiques dans des images/vidéos | Supervised Learning, Deep Learning, Visages | PHOTOROOM — Person Finder (FR), CLEARVIEW AI — Face Search (US), PIMEYES — Face Match (PL), AMAZON — Rekognition (US) |
+| Reconnaître un objet concret dans une image ou vidéo | Matching, CNN, Vision par ordinateur | PHOTOROOM — Smart Selector (FR), GOOGLE — Lens (US), APPLE — Vision Pro (US), OPENCV — Template Matching (INTL) |
+| Analyser les données pour identifier des faits/événements | NLP, Classification, Transformers | GISKARD — Data Event Extractor (FR), PALANTIR — Gotham (US), IBM — Watson Discovery (US), BIGML — Predictive Modelling (ES) |
+| Analyser des textes pour extraire entités, temps, lieux, faits | NLP, NER, Transformers | GISKARD — NER Tagger (FR), SPACY — NLP lib (US), STANFORD NLP — CoreNLP (US), IBM — Watson NLU (US) |
+| Prévoir des événements/conditions futures | Prédiction, Réseaux neuronaux, ARIMA, LSTM | BEINK DREAM — Forecast Engine (FR), PREVISION.IO — AutoML Platform (FR), FACEBOOK — Prophet (US), AMAZON — Forecast (US), GOOGLE — Cloud Forecast (US) |
+| Expliquer des événements à partir d’états passés | Causalité, Bayesian nets, XAI | SHIFT TECHNOLOGY — Claims Analytics (FR), IBM — Explainable AI (US), GRAKN.AI — Knowledge Base (UK) |
+| Utiliser des preuves pour appuyer conclusions ou prédictions | Raisonnement, Logique, XAI | DOCAPOST — ProofChain (FR), WOLFRAM — Alpha (US), IBM — Watson (US), ONTOTEXT — GraphDB (BG) |
+| Créer un plan d’action selon objectifs & conséquences | Planification, RL, Modèles décisionnels | MISTRAL AI — Magistral (FR), OPENAI — Gym (US), DEEPMIND — AlphaZero (UK), AUTOGPT — Goal Planning (INTL) |
+| Créer une solution à un problème (avec/sans action) | Algorithmes, IA heuristique | MISTRAL AI — Codestral (FR), IBM — CPLEX (US), GOOGLE — OR-Tools (US), MICROSOFT — Solver Foundation (US) |
+| Choisir une solution selon les faits & objectifs | Recommandation, IA décisionnelle | SHIFT TECHNOLOGY — Claims AI (FR), SALESFORCE — Einstein (US), IBM — Decision Platform (US), GOOGLE — Optimize (US) |
+| Générer des textes ou explications en langage naturel | NLP, LLM, Génération | MISTRAL AI — Le Chat (FR), LIGHTON — Text Generator (FR), OPENAI — ChatGPT (US), GOOGLE — Gemini/Bard (US), ANTHROPIC — Claude (US) |
+| Représenter le sens sémantique d’un texte | Embeddings, Graphes de connaissance | MISTRAL AI — Magistral (FR), GOOGLE — Knowledge Graph (US), WORD2VEC — Embeddings (US), CONCEPTNET — Commonsense (INTL) |
+| Découvrir relations entre caractéristiques visibles et cachées | Clustering, Apprentissage non supervisé, IA causale | GISKARD — Feature Explorer (FR), SCIKIT-LEARN — Clustering (FR), TENSORFLOW — Embedding Projector (US), PYCARET — AutoML (US) |
+| Découvrir de nouvelles catégories sémantiques | Clustering (K-means, DBSCAN), Non supervisé | GISKARD — Category Modeler (FR), H2O.AI — AutoML (US), BIGML — Cluster Analysis (ES), RAPIDMINER — Studio (DE) |
+| Appliquer des règles pour soutenir actions/conclusions | Règles, Ontologies, Graphes | DIAGRAMS TECHNOLOGIES — Rule Engine (FR), CYC — Knowledge Engine (US), IBM — Watson Knowledge Studio (US), NEO4J — Graph DB (SE) |
+| Contrôler des véhicules autonomes | RL, LIDAR, Perception visuelle | NAVYA — Autonom Shuttle (FR), TESLA — Autopilot (US), WAYMO — Driver (US), CRUISE — Origin (US) |
+| Contrôler des robots en zone intérieure, avec humains | Vision, RL, NLP | DOCAPOST — Robot Pepper AI (FR), BOSTON DYNAMICS — Spot (US), NVIDIA — Isaac (US), SOFTBANK — NAO/Pepper (JP) |
+| Manipuler des objets dans environnement humain | Robotique, Vision, Préhension | DIAGRAMS TECHNOLOGIES — Cobot Systems (FR), UNIVERSAL ROBOTS — UR (DK), ABB — YuMi (CH), GOOGLE — Everyday Robots (US) |
+| Communiquer entre humain et machine | NLP, Chatbot, Vocale | ALBERT — Chatbot État (FR), DIGEIZ — Voice Assistant (FR), GOOGLE — Assistant (US), APPLE — Siri (US), AMAZON — Alexa (US) |
+| Contrôler des systèmes non physiques (ex : commerce) | IA décisionnelle, Trading, RPA | SHIFT TECHNOLOGY — Payment Integrity (FR), BLOOMBERG — Terminal (US), TRADE IDEAS — AI Trader (US), KENSHO — Analytics (US) |
 
 ## 4. Exemple : tableau périodique de cas d'usages
 
