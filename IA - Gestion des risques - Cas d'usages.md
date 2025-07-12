@@ -1,6 +1,20 @@
-# Intelligence artificielle (IA) - Cas d'usages : exemples de typologies
+# Intelligence artificielle - Cas d'usages
 
-Ce document est sous licence 
+## Objet du document
+**Ce document propose des exemples de typologies de cas d’usages qui reposent sur de l’intelligence artificielle (IA).**
+Il n’a pas pour vocation à servir de référence, mais à souligner la variété des cas d’usages et des techniques sous-jacentes, et il peut également être utile à la description d’un système dans une démarche de gestion des risques ou de projets.
+
+[Avant-propos](#avant-propos)<br/>
+[Introduction](#introduction)<br/>
+[1. Exemple : [ISO/IEC 24030]](#1-exemple---iso-iec-24030)<br/>
+[2. Exemple : liste de cas d'usages](#2-exemple--liste-de-cas-dusages)<br/>
+[3. Exemple : tableau périodique de cas d'usages](#3-exemple--tableau-périodique-de-cas-dusages)<br/>
+
+## Avant-propos
+Ce document s’inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai), en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément.
+Les [documents de référence](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) sont utilisés entre crochets dans le corps du document.
+
+Il est placé sous la **licence** suivante :
 _[Creative Commons Attribution 4.0 International License][cc-by]_.
 
 [![CC BY 4.0][cc-by-image]][cc-by]
@@ -9,23 +23,11 @@ _[Creative Commons Attribution 4.0 International License][cc-by]_.
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
-[Contributeurs](#contributeurs)<br/>
-[Versions](#versions)<br/>
-[Documents de référence](#documents-de-référence)<br/>
-[Ressources utilisées](#ressources-utilisées)<br/>
-[1. Objet du document](#1-objet-du-document)<br/>
-[2. Introduction](#2-introduction)<br/>
-[3. Exemple : liste de cas d'usages](#3-exemple--liste-de-cas-dusages)<br/>
-[4. Exemple : tableau périodique de cas d'usages](#4-exemple--tableau-périodique-de-cas-dusages)<br/>
+Les principaux **contributeurs** sont les suivants :
+- Matthieu GRALL, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies ;
+- Cécile LAMARQUE, sociologue.
 
-## Contributeurs
-
-**Matthieu GRALL**, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies
-
-**Cécile LAMARQUE**, sociologue
-
-## Versions
-
+Les **versions** du document sont les suivantes :
 | <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | 
 | --- | --- | --- | 
 | 05/04/2025 (v0.1) | Création du document, ajout d’une liste empirique de cas d’usages et du tableau périodique proposée par XPRIZE | Matthieu GRALL | 
@@ -33,32 +35,12 @@ _[Creative Commons Attribution 4.0 International License][cc-by]_.
 | 16/04/2025 (v0.3) | Transformation du document en _markdown_ | Cécile LAMARQUE | 
 | 18/04/2025 (v0.4) | Amélioration du _markdown_ | Matthieu GRALL | 
 | 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL |
-| 11/07/2025 (v1.1) | Changement du titre du document, ajout d'exemples de produits et services et du pays de provenance dans la liste des cas d'usages | Matthieu GRALL |
+| 11/07/2025 (v1.1) | Changement du titre du document, ajout d'exemples de produits et services et du pays de provenance dans la liste des cas d'usages, simplification et harmonisation des chapitres introductifs, corrections mineures | Matthieu GRALL |
 
-## Documents de référence
+Les **ressources** suivantes ont été utilisées :
+- Tableau périodique de cas d’usages : par XPRIZE.
 
-Les références suivantes sont utilisées entre crochets dans le corps du document :
-| <center>Libellé court</center> | <center>Libellé long</center> |
-| --- | --- |
-| [Rapport _Task Force_ IA] | L’intelligence artificielle au service de la Défense, Rapport de la Task Force IA, ministère des Armées (2019)<br/>[Lien](<https://www.defense.gouv.fr/sites/default/files/aid/20200108-NP-Rapport de la Task Force IA Septembre.pdf>) |
-
-## Ressources utilisées
-**Tableau périodique de cas d’usages** : par XPRIZE.
-
-## 1. Objet du document
-
-**Ce document propose des exemples de typologies de micro-cas d’usages d’utilisation de l’intelligence artificielle (IA).**
-
-Il s’inscrit dans un ensemble de documents méthodologiques en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément :
-1. [Exemples de micro-cas d'usages de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Micro-cas%20d'usages%20-%20Exemples.md) ;
-2. [Critères de confiance de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Crit%C3%A8res%20de%20confiance.md) ;
-3. [Bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) ;
-4. [Méthode de gestion des risques de l’IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md).
-
-Il n’a pas pour vocation à servir de référence, mais à souligner la variété des cas d’usages et des techniques sous-jacentes, et il peut également être utile à la description d’un système dans une démarche de gestion des risques ou de projets.
-
-## 2. Introduction
-
+## Introduction
 [Pour le Parlement européen](https://www.europarl.europa.eu/topics/fr/article/20200827STO85804/intelligence-artificielle-definition-et-utilisation), **l’IA représente tout outil utilisé par une machine afin de « _reproduire des comportements liés aux humains, tels que le raisonnement, la planification et la créativité_ »**. Cette définition peut être élargie en incluant les comportements dépassant les capacités humaines, puisque les ordinateurs actuels parviennent aujourd’hui à les surpasser dans certaines tâches (bien que la compétence de l’ordinateur s’arrête généralement à l’exécution de cette tâche).
 
 **C’est un domaine de l'informatique né en 1956<sup><a href="#note1" id="ref1">[1]</a></sup> qui vise à créer des machines capables de réaliser des tâches qui nécessitent normalement l'intelligence humaine**. Il s'agit de simuler des processus cognitifs tels que l'apprentissage, la résolution de problèmes, la prise de décision et la compréhension du langage naturel. Contrairement à une simple programmation de règles précises, l'IA cherche à donner aux machines la capacité d'apprendre et de s'adapter à de nouvelles situations sans être explicitement programmées pour chaque éventualité.
@@ -79,7 +61,12 @@ _Du point de vue technique<sup><a href="#note2" id="ref2">[2]</a></sup>, l’int
 
 **Ce document propose donc uniquement des exemples de typologies.**
 
-## 3. Exemple : liste de cas d'usages
+## 1. Exemple : [ISO/IEC 24030]
+
+Cette norme internationale, payante et dont le contenu ne peut être reproduit ici, recense des cas d'usage de l'IA et les classe par secteur d'activité.
+Elle peut utilement servir de référence pour positionner ses projets.
+
+## 2. Exemple : liste de cas d'usages
 
 Le tableau suivant présente une liste non exhaustive de cas d’usages qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples d’outils qui les mettent effectivement en œuvre :
 | <center>**Micro-cas d’usages**</center> | <center>**Principales techniques d’IA**</center> | <center>**Exemples d’outils**</center> |
@@ -112,7 +99,7 @@ Le tableau suivant présente une liste non exhaustive de cas d’usages qui repo
 | Communiquer entre humain et machine | NLP, Chatbot, Vocale | ALBERT — Chatbot État (FR), DIGEIZ — Voice Assistant (FR), GOOGLE — Assistant (US), APPLE — Siri (US), AMAZON — Alexa (US) |
 | Contrôler des systèmes non physiques (ex : commerce) | IA décisionnelle, Trading, RPA | SHIFT TECHNOLOGY — Payment Integrity (FR), BLOOMBERG — Terminal (US), TRADE IDEAS — AI Trader (US), KENSHO — Analytics (US) |
 
-## 4. Exemple : tableau périodique de cas d'usages
+## 3. Exemple : tableau périodique de cas d'usages
 
 Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représentés sous la forme d’un tableau périodique, comme le propose [XPRIZE](https://community.digilogic.africa/resource/the-periodic-table-of-ai/) :
 
@@ -149,6 +136,8 @@ Les cas d’usages de systèmes basés sur l’IA peuvent aussi être représent
 | Cm | *Communication* | Soutenir l'exécution de différentes formes de communication entre l'Homme et la machine | 
 | Cn | *Control* | Contrôler d'autres machines lorsqu'aucune action n'est nécessaire dans le monde physique (ex : commerce automatisé) | 
 
+<br/>
+<br/>
 <a name="note1" id="note1">[1]</a> Cf. [conférence de Dartmouth](https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Dartmouth). [↩](#ref1)
 <br/>
 <br/>
