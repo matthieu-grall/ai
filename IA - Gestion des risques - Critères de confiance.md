@@ -41,9 +41,10 @@ Les **versions** du document sont les suivantes :
 | 23/04/2025 (v0.3) | Transformation en _markdown_ | Matthieu GRALL |
 | 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL |
 | 11/07/2025 (v1.1) | Simplification et harmonisation des chapitres introductifs, corrections mineures | Matthieu GRALL |
+| 16/07/2025 (v1.2) | Ajouts mineurs | Matthieu GRALL |
 
 ## Introduction
-**Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA. Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision globale.
+**Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA (objectifs de l'[ISO/IEC 42001], principes de la [Recommandation IA de l'OCDE], etc.). Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision globale.
 
 **Toutefois, les idées convergent toutes, ou se complètent plutôt bien**. On peut donc faire émerger une liste de ces critères de confiance, exhaustive et « non recouvrante », qui traite de l’ensemble des aspects qui peuvent devoir être considérés quand on crée un système basé sur l’IA.
 
@@ -58,6 +59,8 @@ Ainsi, tout système basé sur l’IA devrait :
 8. permettre l’**interopérabilité** ;
 9. respecter l’**environnement** ;
 10. assurer l’**accessibilité**.
+
+**Ce document décrit ces 10 critères de confiance** en précisant leur portée et les principaux risques qu'ils contribuent à traiter.
 
 ## 1. Gouvernance responsable
 Portée : pilotage éthique, transparent et responsable, incluant la mise en place de mécanismes de contrôle, de _reporting_ et de gestion des conflits d’intérêts.
