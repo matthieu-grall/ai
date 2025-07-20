@@ -6,7 +6,7 @@ Il n’a pas pour vocation à servir de référence, mais à souligner la varié
 
 [Avant-propos](#avant-propos)<br/>
 [Introduction](#introduction)<br/>
-[1. Cas d'usages : exemples]](#1-cas-dusages--exemples)<br/>
+[1. Cas d'usages : exemples](#1-cas-dusages--exemples)<br/>
 [2. Fonctionnalités : exemples](#2-fonctionnalités--exemples)<br/>
 [3. Fonctionnalités : tableau périodique](#3-fonctionnalités--tableau-périodique)<br/>
 
@@ -186,7 +186,7 @@ Le tableau suivant présente une liste non exhaustive de fonctionnalités qui re
 | Communiquer entre humain et machine                                                               | NLP, Chatbot, Vocale                                                                               | ALBERT — Chatbot État (FR), DIGEIZ — Voice Assistant (FR), GOOGLE — Assistant (US), APPLE — Siri (US), AMAZON — Alexa (US)                                        | 2                                                                | 3                                                              | 1                                                                  | 3                                     | Interaction modérée, influence sur l'expérience utilisateur                  |
 | Contrôler des systèmes non physiques (ex : commerce)                                              | IA décisionnelle, Trading, RPA                                                                     | SHIFT TECHNOLOGY — Payment Integrity (FR), BLOOMBERG — Terminal (US), TRADE IDEAS — AI Trader (US), KENSHO — Analytics (US)                                       | 3                                                                | 4                                                              | 1                                                                  | **4**                                 | Impact organisationnel fort, risques pour la confidentialité                 |
 
-## 3. Fonctionnalités : tableau périodique de fonctionnalités
+## 3. Fonctionnalités : tableau périodique
 
 Les fonctionnalités d’IA peuvent aussi être représentées sous la forme d’un tableau périodique, comme le propose [XPRIZE](https://community.digilogic.africa/resource/the-periodic-table-of-ai/) :
 
