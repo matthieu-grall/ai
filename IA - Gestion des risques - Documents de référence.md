@@ -28,6 +28,7 @@ Les **versions** du document sont les suivantes :
 | 11/07/2025 (v1.0) | Création du document, qui fusionne et remplace les documents de référence qui figuraient précédemment dans les autres documents, corrections mineures (mises en cohérence) | Matthieu GRALL | 
 | 18/07/2025 (v1.1) | Ajout de références utilisées dans les autres documents ([Guide de France IA], [Guide PIA-3 de la CNIL], [ISO 14001], [ISO 14004], [ISO 31000], [ISO/IEC 23894], [ISO/IEC 42005], [NF X30-205]), corrections mineures | Matthieu GRALL | 
 | 14/07/2025 (v1.2) | Ajout de [ISO/IEC 27090], mise à jour de la référence aux [Recommandations de la CNIL] | Matthieu GRALL | 
+| 02/10/2025 (v1.3) | Ajout de [IEC 61508] | Matthieu GRALL | 
 
 ## Références
 Les références suivantes sont utilisées entre crochets dans le corps du document :
@@ -41,6 +42,7 @@ Les références suivantes sont utilisées entre crochets dans le corps du docum
 | [Guide de France IA] | Analyse des attaques sur les systèmes de l'IA, Campus Cyber / Hub France IA (2025) |
 | [Guide PIA-3 de la CNIL] | Analyse d'impact relative à la protection des données — Privacy Impact Assessment (PIA) — Les bases de connaissances, Commission nationale de l’informatique et des libertés (CNIL, 2018)<br/>[Lien](https://www.cnil.fr/sites/cnil/files/atoms/files/cnil-pia-3-fr-basesdeconnaissances.pdf) |
 | [Guide sécurité de la CNIL] | Sécurité des données personnelles, Commission nationale de l’informatique et des libertés (CNIL, 2024)<br/>[Lien](https://www.cnil.fr/sites/cnil/files/2024-03/cnil_guide_securite_personnelle_2024.pdf) |
+| [IEC 61508] | Sécurité fonctionnelle des systèmes électriques/électroniques/électroniques programmables relatifs à la sécurité - Partie 1: Exigences générales, _International Electrotechnical Commission_ (IEC, 2010)<br/>[Lien](https://www.boutique.afnor.org/fr-fr/norme/iec-6150812010/securite-fonctionnelle-des-systemes-electriques-electroniques-electroniques/xs121824/244493) |
 | [ISO 14001] | Systèmes de management environnemental — Exigences et lignes directrices pour son utilisation, _International Organization for Standardization_ (ISO, 2015)<br/>[Lien](https://www.iso.org/fr/standard/60857.html) |
 | [ISO 14004] | Systèmes de management environnemental — Lignes directrices générales pour la mise en application, _International Organization for Standardization_ (ISO, 2016)<br/>[Lien](https://www.iso.org/fr/standard/60856.html) |
 | [ISO 31000] | Management du risque — Lignes directrices, _International Organization for Standardization_ (ISO, 2018)<br/>[Lien](https://www.iso.org/fr/standard/65694.html) |
