@@ -37,6 +37,7 @@ Les **versions** du document sont les suivantes :
 | 07/05/2025 (v1.0) | Finalisation d'une première version complète, cohérente, et en _markdown_ | Matthieu GRALL |
 | 11/07/2025 (v1.1) | Changement du titre du document, ajout d'exemples de produits et services et du pays de provenance dans la liste des cas d'usages, simplification et harmonisation des chapitres introductifs, corrections mineures | Matthieu GRALL |
 | 20/07/2025 (v1.2) | Ajout des cas d'usages de l'[ISO/IEC 24030] et d'une estimation indicative de niveau de risque pour ceux-ci et les exemples de fonctionnalités, corrections mineures | Matthieu GRALL |
+| 23/10/2025 (v1.3) | Corrections des notes de bas de page | Matthieu GRALL |
 
 Les **ressources** suivantes ont été utilisées :
 - Tableau périodique de cas d’usages : par XPRIZE.
@@ -225,7 +226,7 @@ Les fonctionnalités d’IA peuvent aussi être représentées sous la forme d�
 
 <br/>
 <br/>
-<a name="note1" id="note1">[1]</a> Cf. [conférence de Dartmouth](https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Dartmouth). [↩](#ref1)
+<a id="note1">[1]</a> Cf. <a id="dartmouth" href="https://fr.wikipedia.org/wiki/Conf%C3%A9rence_de_Dartmouth">conférence de Dartmouth</a>. <a href="#ref1">↩</a>
 <br/>
 <br/>
-<a name="note2" id="note2">[2]</a> L'étendue de l'IA est vaste et englobe plusieurs branches interdépendantes. On retrouve l'apprentissage automatique (machine learning), où les systèmes apprennent à partir de données sans être explicitement programmés, l’apprentissage profond (deep learning), utilisant des réseaux neuronaux artificiels à plusieurs couches pour traiter des informations complexes, le traitement du langage naturel (TLN - NLP) permettant aux machines de comprendre et de générer du langage humain, la vision par ordinateur (computer vision) permettant aux machines de "voir" et d'interpréter des images, et la robotique, combinant l'IA avec des systèmes physiques pour créer des robots intelligents. [↩](#ref2)
+<a id="note2">[2]</a> L'étendue de l'IA est vaste et englobe plusieurs branches interdépendantes. On retrouve l'apprentissage automatique (machine learning), où les systèmes apprennent à partir de données sans être explicitement programmés, l’apprentissage profond (<i>deep learning</i>), utilisant des réseaux neuronaux artificiels à plusieurs couches pour traiter des informations complexes, le traitement du langage naturel (TLN - NLP) permettant aux machines de comprendre et de générer du langage humain, la vision par ordinateur (<i>computer vision</i>) permettant aux machines de "voir" et d'interpréter des images, et la robotique, combinant l'IA avec des systèmes physiques pour créer des robots intelligents. <a href="#ref2">↩</a>

@@ -5,19 +5,19 @@
 Il harmonise les différents critères ou objectifs, ainsi que les bonnes pratiques associées, qui figurent dans les nombreux documents de références en matière d'IA.
 Il peut être directement utilisé dans le cadre des projets de nouveaux services qui reposent sur l’IA pour comparer ce qui est prévu ou mis en œuvre aux bonnes pratiques, et peut également être intégré à une démarche de gestion des risques.
 
-[Avant-propos](#avant-propos)<br/>
-[Introduction](#introduction)<br/>
-[1. Gouvernance responsable](#1-gouvernance-responsable)<br/>
-[2. Fiabilité et sûreté](#2-fiabilité-et-sûreté)<br/>
-[3. Équité](#3-équité)<br/>
-[4. Transparence](#4-transparence)<br/>
-[5. Sécurité de l'information](#5-sécurité-de-linformation)<br/>
-[6. Protection des droits et libertés](#6-protection-des-droits-et-libertés)<br/>
-[7. Maintenabilité et évolutivité](#7-maintenabilité-et-évolutivité)<br/>
-[8. Interopérabilité](#8-interopérabilité)<br/>
-[9. Respect de l'environnement](#9-respect-de-lenvironnement)<br/>
-[10. Accessibilité](#10-accessibilité)<br/>
-[Annexe : déclaration d'applicabilité (DdA)](#annexe--déclaration-dapplicabilité-dda)<br/>
+[Avant-propos](#avant-propos)<br>
+[Introduction](#introduction)<br>
+[1. Gouvernance responsable](#1-gouvernance-responsable)<br>
+[2. Fiabilité et sûreté](#2-fiabilité-et-sûreté)<br>
+[3. Équité](#3-équité)<br>
+[4. Transparence](#4-transparence)<br>
+[5. Sécurité de l'information](#5-sécurité-de-linformation)<br>
+[6. Protection des droits et libertés](#6-protection-des-droits-et-libertés)<br>
+[7. Maintenabilité et évolutivité](#7-maintenabilité-et-évolutivité)<br>
+[8. Interopérabilité](#8-interopérabilité)<br>
+[9. Respect de l'environnement](#9-respect-de-lenvironnement)<br>
+[10. Accessibilité](#10-accessibilité)<br>
+[Annexe : déclaration d'applicabilité (DdA)](#annexe--déclaration-dapplicabilité-dda)<br>
 
 ## Avant-propos
 Ce document s’inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai) en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément.
@@ -47,9 +47,10 @@ Les **versions** du document sont les suivantes :
 | 11/07/2025 (v1.1) | Simplification et harmonisation des chapitres introductifs, corrections mineures | Matthieu GRALL |
 | 20/07/2025 (v1.2) | Ajout de _tags_ pour indiquer la correspondance avec les mesures de l'[ISO/IEC 42001], les phases du cycle de vie de la [Recommandation de l'OCDE], des observables illustratifs et des fonctions types concernées, transformation des bonnes pratiques en tableaux, corrections mineures | Matthieu GRALL |
 | 02/10/2025 (v1.3) | Intégration du contenu du document qui définissait indépendamment les critères de confiance, ajout de références à [ISO/IEC 27090] et [IEC 61508], correction des liens de retour des références | Matthieu GRALL |
+| 23/10/2025 (v1.4) | Corrections mineures (mise en cohérence des libellés courts des documents de référence qui ont été changés, harmonisation des balises "br", correction des notes de bas de page) | Matthieu GRALL |
 
 ## Introduction
-**Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA (objectifs de l'[ISO/IEC 42001], principes de la [Recommandation IA de l'OCDE], etc.). Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision globale.
+**Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA (objectifs de l'[ISO/IEC 42001], principes des [Recos OCDE], etc.). Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision globale.
 
 **Toutefois, les idées convergent toutes, ou se complètent plutôt bien**. On peut donc faire émerger une liste de ces critères de confiance, exhaustive et « non recouvrante », qui traite de l’ensemble des aspects qui peuvent devoir être considérés quand on crée un système basé sur l’IA.
 
@@ -80,7 +81,7 @@ La portée de chaque critère de confiance et les principaux risques qu'il contr
 
 Des _tags_ sont ajoutés, à titre indicatif, pour orienter vers :
 - les principales mesures de l'annexe A de l'[ISO/IEC 42001] correspondantes ;
-- les principales phases du cycle de vie de la [Recommandation de l'OCDE] concernées ;
+- les principales phases du cycle de vie des [Recos OCDE] concernées ;
 - des exemples de preuve de mise en œuvre observables ;
 - les principales fonctions types d'entreprise concernées.
 
@@ -95,7 +96,7 @@ Note : un renvoi vers les documents de référence est privilégié quand cela e
 
 <ins>Objectif</ins> : instaurer un cadre de gouvernance qui permet de partager et contrôler l’éthique des processus mis en œuvre dans les projets qui reposent sur l’IA.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Lignes directrices IA de l'UE], [ISO/IEC 42001].
+<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recos UE], [ISO/IEC 42001].
 
 **BP01.	Formaliser les responsabilités des parties intéressées**
 
@@ -114,7 +115,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : assurer la robustesse des systèmes qui reposent sur l’IA afin d’améliorer leur fiabilité et la sécurité des biens et des personnes.
 
-<ins>Principale(s) référence(s)</ins> : [IEC 61508], [Règlement IA], [Lignes directrices IA de l'UE].
+<ins>Principale(s) référence(s)</ins> : [IEC 61508], [Règlement IA], [Recos UE].
 
 | <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**[ISO/IEC 42001]**</center> | <center>**Phase(s)**</center> | <center>**Observables illustratifs**</center> | <center>**Fonctions illustratives**</center> | 
 |---|---|---|---|---|---| 
@@ -131,7 +132,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : détecter et corriger les biais par des mécanismes de vérification et d’audit des algorithmes.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recommandations IA de la CNIL], [Guide de France IA].
+<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recos CNIL], [Guide France IA].
 
 ### 3.1. Réduction des biais liés à la formulation du cas d'usage
 
@@ -177,7 +178,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : rendre explicites les algorithmes et les processus de décision via une documentation accessible, des interfaces interactives et des explications techniques adaptées aux différents publics.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Lignes directrices IA de l'UE].
+<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recos UE].
 
 | <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**[ISO/IEC 42001]**</center> | <center>**Phase(s)**</center> | <center>**Observables illustratifs**</center> | <center>**Fonctions illustratives**</center> |
 |---|---|---|---|---|---|
@@ -190,12 +191,12 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : appliquer les bonnes pratiques de sécurité de l’information au système d’IA, pour réduire les risques sur l’organisme en cas de disparition de données, de modification non désirée de données ou d’accès non autorisé à des données, tout le long du cycle de vie du système.
 
-<ins>Principale(s) référence(s)</ins> : [Recommandations IA de l'ANSSI - 2024], [Recommandations IA de l'ANSSI - 2025], [ISO/IEC 27090], [Guide de France IA].
+<ins>Principale(s) référence(s)</ins> : [Recos ANSSI], [ISO/IEC 27090], [Guide France IA].
 
 | <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**[ISO/IEC 42001]**</center> | <center>**Phase(s)**</center> | <center>**Observables illustratifs**</center> | <center>**Fonctions illustratives**</center> |
 |---|---|---|---|---|---|
-| **BP22.	Respecter les recommandations de l’ANSSI** | Appliquer les [Recommandations IA de l'ANSSI - 2024] (chapitre 5) applicables dans le cas d’un système d’IA générative et les [Recommandations IA de l'ANSSI - 2025] (annexe I). | Sécurité des systèmes (A.10.1)<br>Gestion des vulnérabilités (A.11.4) | Construction ou adaptation du modèle<br>Exploitation et maintenance | Rapports de conformité ANSSI<br>Plans d’action<br>Tests de sécurité | RSSI<br>Responsable sécurité IA<br>DSI |
-| **BP23.	Adopter des bonnes pratiques de sécurité de l’information** | Appliquer la politique de sécurité des systèmes d’information, ou les bonnes pratiques de sécurité de l’information applicables selon la maturité de l’organisme en la matière (ex : [Guide sécurité de la CNIL], [Guide d'hygiène de l'ANSSI], [ISO/IEC 27002]). | Politique de sécurité (A.2.2)<br>Contrôle d’accès (A.9.1)<br>Protection des actifs (A.8.1) | Toutes phases | Politiques formalisées<br>Rapports d’audit<br>Logs d’accès | RSSI<br>DSI<br>Responsable sécurité |
+| **BP22.	Respecter les recommandations de l’ANSSI** | Appliquer les [Recos ANSSI] (chapitre 5 de celles de 2024) applicables dans le cas d’un système d’IA générative et les [Recos ANSSI] (annexe I de celles de 2025). | Sécurité des systèmes (A.10.1)<br>Gestion des vulnérabilités (A.11.4) | Construction ou adaptation du modèle<br>Exploitation et maintenance | Rapports de conformité ANSSI<br>Plans d’action<br>Tests de sécurité | RSSI<br>Responsable sécurité IA<br>DSI |
+| **BP23.	Adopter des bonnes pratiques de sécurité de l’information** | Appliquer la politique de sécurité des systèmes d’information, ou les bonnes pratiques de sécurité de l’information applicables selon la maturité de l’organisme en la matière (ex : [Guide sécurité de la CNIL], [Guide d'hygiène], [ISO/IEC 27002]). | Politique de sécurité (A.2.2)<br>Contrôle d’accès (A.9.1)<br>Protection des actifs (A.8.1) | Toutes phases | Politiques formalisées<br>Rapports d’audit<br>Logs d’accès | RSSI<br>DSI<br>Responsable sécurité |
 
 ## 6. Protection des droits et libertés
 <ins>Portée</ins> : respect de la vie privée, protection des données à caractère personnel et des droits fondamentaux, gestion des risques sur les droits et libertés des personnes concernées engendrés par les systèmes d’IA (au-delà du critère de confiance d’équité).
@@ -204,11 +205,11 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : appliquer les grands principes de la protection de la vie privée au traitement de données par IA, pour réduire les risques sur les personnes concernées en cas de disparition de données, de modification non désirée de données ou d’accès non autorisé à des données.
 
-<ins>Principale(s) référence(s)</ins> : [Recommandations IA de la CNIL], [Loi I&L], [RGPD].
+<ins>Principale(s) référence(s)</ins> : [Recos CNIL], [Loi I&L], [RGPD].
 
 | <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**[ISO/IEC 42001]**</center> | <center>**Phase(s)**</center> | <center>**Observables illustratifs**</center> | <center>**Fonctions illustratives**</center> |
 |---|---|---|---|---|---|
-| **BP24.	Respecter les recommandations de la CNIL** | Appliquer les [Recommandations IA de la CNIL] applicables dans le cas d’une phase de développement. | Protection des données personnelles (A.9.2)<br>Conformité réglementaire (A.9.1) | Collecte et traitement des données<br>Construction ou adaptation du modèle | Rapports de conformité CNIL<br>Registres des traitements<br>DPIA | DPO<br>Juriste<br>Responsable conformité |
+| **BP24.	Respecter les recommandations de la CNIL** | Appliquer les [Recos CNIL] applicables dans le cas d’une phase de développement. | Protection des données personnelles (A.9.2)<br>Conformité réglementaire (A.9.1) | Collecte et traitement des données<br>Construction ou adaptation du modèle | Rapports de conformité CNIL<br>Registres des traitements<br>DPIA | DPO<br>Juriste<br>Responsable conformité |
 | **BP25.	Mettre le traitement en conformité avec la réglementation** | Formaliser les éléments nécessaires<sup><a href="#note14" id="ref14">[14]</a></sup> à la personne / au service en charge de la protection de la vie privée pour bâtir la conformité du traitement de données à caractère personnel à la [Loi I&L] / au [RGPD]. | Conformité réglementaire (A.9.1)<br>Gestion des risques liés à la vie privée (A.9.3) | Collecte et traitement des données<br>Exploitation et maintenance | Registres de traitement<br>Rapports de conformité<br>Preuves de DPIA | DPO<br>Responsable conformité<br>Juriste |
 
 ## 7. Maintenabilité et évolutivité
@@ -348,57 +349,57 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 | --- | --- | --- |
 | Adopter des bonnes pratiques d’accessibilité | ☐ Oui ☐ Non ☐ Ne sais pas |
 
-<br/>
-<br/>
-<a id="note1">[1]</a> Notamment [Règlement IA], [ISO/IEC 42001], [Lignes directrices IA de l'UE], [Loi I&L], [NIST AI RMF], [Principes de l'OCDE sur l’IA], [Recommandation IA de l’OCDE], [Recommandations IA de l’ANSSI - 2024], [Recommandations IA de l’ANSSI - 2025], [Recommandations IA de la CNIL], [RGAA], [RGESN], [RGI], et [RGIAF]. <a href="#ref1">↩</a>
-<br/>
-<br/>
-<a id="note2">[2]</a> Notamment [ISO/IEC 42001], [Guide France IA], [Recommandation IA de l'OCDE], [Recommandations IA de l'ANSSI - 2024], [Recommandations IA de l'ANSSI - 2025], [Recommandations IA de la CNIL], [Règlement IA] et [RGIAF]. <a href="#ref2">↩</a>
-<br/>
-<br/>
+<br>
+<br>
+<a id="note1">[1]</a> Notamment [Règlement IA], [ISO/IEC 42001], [Recos UE], [Loi I&L], [NIST AI RMF], [Recos OCDE], [Recos  ANSSI, [Recos CNIL], [RGAA], [RGESN], [RGI], et [RGIAF]. <a href="#ref1">↩</a>
+<br>
+<br>
+<a id="note2">[2]</a> Notamment [ISO/IEC 42001], [Guide France IA], [Recos OCDE], [Recos ANSSI], [Recos CNIL], [Règlement IA] et [RGIAF]. <a href="#ref2">↩</a>
+<br>
+<br>
 <a id="note3">[3]</a> Notamment [Loi I&L] (dont [RGPD]), [RGAA], [RGESN], et [RGI]. <a href="#ref3">↩</a>
-<br/>
-<br/>
-<a id="note4">[4]</a> LLM : _large language models_ (grands modèles linguistiques). <a href="#ref4">↩</a>
-<br/>
-<br/>
+<br>
+<br>
+<a id="note4">[4]</a> LLM : <i>large language models</i> (grands modèles linguistiques). <a href="#ref4">↩</a>
+<br>
+<br>
 <a id="note5">[5]</a> Ex : [ISO/IEC 42001]. <a href="#ref5">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note6">[6]</a> Manque d’équité par défaut de cadrage du cas d’usage. <a href="#ref6">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note7">[7]</a> Prises de décisions basées sur des données incomplètes ou non équilibrées. <a href="#ref7">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note8">[8]</a> Biais dans les données de l'échantillon (si l'ensemble de données d’entrainement n'est pas représentatif de la population), identification et transformation des caractéristiques sensibles (si un groupe défavorisé est présent dans l'échantillon, modifier les pondérations du modèle de manière à modifier le résultat pour ce groupe défavorisé), biais dans la représentation des différentes classes ou catégories de données (ce qui peut entraîner des résultats non représentatifs, inexacts ou injustes), biais dans les corrélations entre les caractéristiques ou les variables utilisées (ce qui peut conduire à des prédictions biaisées). <a href="#ref8">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note9">[9]</a> Biais introduits à la suite de la conception du modèle, donnant des résultats trompeurs même à partir de données fiables et de qualité, du fait de la construction du modèle (l'architecture du modèle elle-même peut présenter des problèmes inhérents, entraînant des biais tels que le biais de régression, le biais de classification, le biais de clustering, etc. ; il peut y avoir des erreurs de calcul dans les paramètres du modèle, entraînant des modèles sur/sous-ajustés, qui introduisent des biais et du bruit dans les données de sortie) ou de la dérive du modèle (le cas d’usage peut évoluer avec le temps, de sorte que le modèle peut devenir obsolète et nécessiter une re-modélisation et un recyclage au fil du temps, réintroduisant les biais mentionnés ci-dessus à chaque étape). Les impacts potentiels concernent des décisions discriminatoires ou injustes basées sur des caractéristiques personnelles ou des groupes de personnes spécifiques, la partialité ou les préjugés dans les résultats produits par l'algorithme. <a href="#ref9">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note10">[10]</a> Risque de produire des résultats de sortie discriminatoires ou injustes, qui peuvent avoir un impact négatif sur les utilisateurs ou les parties prenantes concernées, risque de renforcer les stéréotypes ou les préjugés existants à travers les résultats produits par l'IA. <a href="#ref10">↩</a>
-<br/>
-<br/>
-<a id="note11">[11]</a> L’explicabilité peut reposer sur des méthodes agnostiques ou spécifiques, intrinsèques ou _post-hoc_, locales ou globales, _a priori_ ou _a posteriori_. Des outils tels que LIME ou SHAP peuvent notamment contribuer à cette explicabilité. <a href="#ref11">↩</a>
-<br/>
-<br/>
+<br>
+<br>
+<a id="note11">[11]</a> L’explicabilité peut reposer sur des méthodes agnostiques ou spécifiques, intrinsèques ou <i>post-hoc</i>, locales ou globales, <i>a priori</i> ou <i>a posteriori</i>. Des outils tels que LIME ou SHAP peuvent notamment contribuer à cette explicabilité. <a href="#ref11">↩</a>
+<br>
+<br>
 <a id="note12">[12]</a> La transparence s’applique aux algorithmes (logique et modèle), aux interactions (via l’interface utilisateur), et à la société (impact social de cette interaction). <a href="#ref12">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note13">[13]</a> Ex : publier de la documentation technique, développer des interfaces explicatives, créer des tutoriels et guides d’usage, organiser des ateliers d’information. <a href="#ref13">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note14">[14]</a> Finalité, données traitées, durées de conservation, destinataires, mesures prévues pour assurer la minimisation et la qualité des données, mesures prévues pour assurer l’information et les droits des personnes concernées (le cas échéant, d’accès, à la portabilité, de rectification, d’effacement, de limitation et d’opposition) et, le cas échéant, mesures prévues pour encadrer la sous-traitance et le transfert en dehors de l’UE. <a href="#ref14">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note15">[15]</a> Recourir à un système de contrôle de version permet de suivre les modifications, de collaborer avec d'autres et de revenir aux versions précédentes si nécessaire. <a href="#ref15">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note16">[16]</a> Comme tout service numérique, ceux qui reposent sur l’IA peuvent ne pas pouvoir interagir avec les autres si les technologies ou les données utilisées ne sont pas cohérentes ou compatibles entre elles. <a href="#ref16">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note17">[17]</a> Notamment : utiliser des standards ouverts, respecter les API publiques, favoriser la portabilité des données, assurer la documentation des interfaces. <a href="#ref17">↩</a>
-<br/>
-<br/>
+<br>
+<br>
 <a id="note18">[18]</a> Cela implique notamment de concevoir des interfaces ergonomiques, ou plusieurs modes d’interactions, en tenant compte de facteurs tels que la diversité linguistique et l’accessibilité pour les personnes handicapées, et de les tester avec des usagers en situation de handicap. <a href="#ref18">↩</a>
