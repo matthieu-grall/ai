@@ -31,6 +31,7 @@ Les **versions** du document sont les suivantes :
 | 14/07/2025 (v1.2) | Ajout de [ISO/IEC 27090], mise à jour de la référence aux [Recommandations de la CNIL] | Matthieu GRALL | 
 | 02/10/2025 (v1.3) | Ajout de [IEC 61508] | Matthieu GRALL | 
 | 23/10/2025 (v1.4) | Ajout de références ([ATT&CK], [EBIOS générique], [Guide PIA-1 de la CNIL], [IEC 61508], [ISO/IEC 27000], [ISO/IEC 27701], [ISO/IEC 29134]), ajout d'une annexe présentant le positionnnement des documents de référence et des livrables, corrections mineures (harmonisation des balises "br", améliorations de forme des liens externes, simplification des libellés courts, regroupement de références, etc.) | Matthieu GRALL | 
+| 01/11/2025 (v1.5) | Ajout de [Lignes directrices AIPD] | Matthieu GRALL | 
 
 ## Références
 Les références suivantes sont utilisées [entre crochets] dans le corps des documents :
@@ -63,6 +64,7 @@ Les références suivantes sont utilisées [entre crochets] dans le corps des do
 | [ISO/IEC 29134] | Technologies de l'information — Techniques de sécurité — Lignes directrices pour l'étude d'impacts sur la vie privée, _International Organization for Standardization_ (ISO, 2023) [↗](https://www.iso.org/fr/standard/86012.html) |
 | [ISO/IEC 42001] | Technologies de l’information – Intelligence artificielle – Système de management, _International Organization for Standardization_ (ISO, 2023) [↗](https://www.iso.org/fr/standard/81230.html) |
 | [ISO/IEC 42005] | Technologies de l'information — Intelligence artificielle — Évaluation de l'impact des systèmes d'IA, _International Organization for Standardization_ (ISO, 2025) [↗](https://www.iso.org/fr/standard/42005) |
+| [Lignes directrices AIPD] | Lignes directrices concernant l’analyse d’impact relative à la protection des données (AIPD) et la manière de déterminer si le traitement est « susceptible d’engendrer un risque élevé » aux fins du règlement (UE) 2016/679, Groupe de travail "Article 29" sur la protection des données (G29, 2017) [↗](https://ec.europa.eu/newsroom/article29/items/611236) |
 | [Loi I&L] | Loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et libertés, modifiée [↗](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000886460/) |
 | [NF X30-205] | Systèmes de management environnemental - Guide pour la mise en place par étapes d'un système de management environnemental, Association française de normalisation (AFNOR, 2018) [↗](https://www.boutique.afnor.org/fr-fr/norme/nf-x30205/systemes-de-management-environnemental-guide-pour-la-mise-en-place-par-etap/fa191164/81407) |
 | [NIST AI RMF] | Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1, _National Institute of Standards and Technology_ (NIST, 2024) [↗](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf) |
