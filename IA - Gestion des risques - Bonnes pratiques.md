@@ -17,7 +17,9 @@ Il peut être directement utilisé dans le cadre des projets de nouveaux service
 [8. Interopérabilité](#8-interopérabilité)<br>
 [9. Respect de l'environnement](#9-respect-de-lenvironnement)<br>
 [10. Accessibilité](#10-accessibilité)<br>
-[Annexe : déclaration d'applicabilité (DdA)](#annexe--déclaration-dapplicabilité-dda)<br>
+[Annexe - Déclaration d'applicabilité (DdA)](#annexe---déclaration-dapplicabilité-dda)<br>
+[Annexe - Couverture des droits fondamentaux de la [Charte UE]](#annexe---couverture-des-droits-fondamentaux-de-la-charte-ue)<br>
+[Annexe - Couverture des exigences du [Règlement IA]](#annexe---couverture-des-exigences-du-règlement-ia)<br>
 
 ## Avant-propos
 Ce document s’inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai) en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément.
@@ -49,6 +51,7 @@ Les **versions** du document sont les suivantes :
 | 02/10/2025 (v1.3) | Intégration du contenu du document qui définissait indépendamment les critères de confiance, ajout de références à [ISO/IEC 27090] et [IEC 61508], correction des liens de retour des références | Matthieu GRALL |
 | 23/10/2025 (v1.4) | Corrections mineures (mise en cohérence des libellés courts des documents de référence qui ont été changés, harmonisation des balises "br", correction des notes de bas de page) | Matthieu GRALL |
 | 06/11/2025 (v1.5) | Ajout de risques liés à la protection des droits fondamentaux dans chaque section, ajout de références au [Règlement IA] dans les bonnes pratiques concernées, ajout de mesures additionnelles dans la DdA, amélioration de la lisibilité des tableaux | Matthieu GRALL |
+| 07/11/2025 (v1.6) | Ajout d'annexes relatives à la couverture des droits fondamentaux de la [Charte UE] et des exigences du [Règlement IA] par les bonnes pratiques, corrections mineures (cohérence avec l'étude de cas) | Matthieu GRALL |
 
 ## Introduction
 **Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA (objectifs de l'[ISO/IEC 42001], principes des [Recos OCDE], etc.). Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision globale.
@@ -201,8 +204,8 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 | <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondances**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
-| **BP22.	Respecter les recommandations de l’ANSSI** | Appliquer les [Recos ANSSI] (chapitre 5 de celles de 2024) applicables dans le cas d’un système d’IA générative et les [Recos ANSSI] (annexe I de celles de 2025). | [Recos OCDE] :<br>- Construction ou adaptation du modèle<br>Exploitation et maintenance<br>[ISO/IEC 42001] :<br>- A.10.1. Sécurité des systèmes<br>- A.11.4. Gestion des vulnérabilités<br>[Règlement IA] :<br>- Art. 12 sur la tenue des enregistrements<br>- Art. 15 sur la robustesse, précision et cybersécurité | - Rapports de conformité<br>- Plans d’action<br>- Tests de sécurité | - Personne en charge de la sécurité de l'information<br>- Personne en charge des systèmes informatiques |
-| **BP23.	Adopter des bonnes pratiques de sécurité de l’information** | Appliquer la politique de sécurité des systèmes d’information, ou les bonnes pratiques de sécurité de l’information applicables selon la maturité de l’organisme en la matière (ex : [Guide sécurité de la CNIL], [Guide d'hygiène], [ISO/IEC 27002]). | [Recos OCDE] : toutes les phases<br>[ISO/IEC 42001] :<br>- A.2.2. Politique de sécurité<br>- A.9.1. Contrôle d’accès<br>- A.8.1. Protection des actifs<br>[Règlement IA] :<br>- Art. 12 sur la tenue des enregistrements<br>- Art. 15 sur la robustesse, précision et cybersécurité | - Politiques formalisées<br>- Rapports d’audit | - Personne en charge de la sécurité de l'information<br>- Personne en charge des systèmes informatiques |
+| **BP22.	Adopter des bonnes pratiques de sécurité de l’information** | Appliquer la politique de sécurité des systèmes d’information, ou les bonnes pratiques de sécurité de l’information applicables selon la maturité de l’organisme en la matière (ex : [Guide sécurité de la CNIL], [Guide d'hygiène], [ISO/IEC 27002]). | [Recos OCDE] : toutes les phases<br>[ISO/IEC 42001] :<br>- A.2.2. Politique de sécurité<br>- A.9.1. Contrôle d’accès<br>- A.8.1. Protection des actifs<br>[Règlement IA] :<br>- Art. 12 sur la tenue des enregistrements<br>- Art. 15 sur la robustesse, précision et cybersécurité | - Politiques formalisées<br>- Rapports d’audit | - Personne en charge de la sécurité de l'information<br>- Personne en charge des systèmes informatiques |
+| **BP23.	Respecter les [Recos ANSSI]** | Appliquer les [Recos ANSSI] (chapitre 5 de celles de 2024) applicables dans le cas d’un système d’IA générative et les [Recos ANSSI] (annexe I de celles de 2025). | [Recos OCDE] :<br>- Construction ou adaptation du modèle<br>Exploitation et maintenance<br>[ISO/IEC 42001] :<br>- A.10.1. Sécurité des systèmes<br>- A.11.4. Gestion des vulnérabilités<br>[Règlement IA] :<br>- Art. 12 sur la tenue des enregistrements<br>- Art. 15 sur la robustesse, précision et cybersécurité | - Rapports de conformité<br>- Plans d’action<br>- Tests de sécurité | - Personne en charge de la sécurité de l'information<br>- Personne en charge des systèmes informatiques |
 
 ## 6. Protection des droits et libertés
 <ins>Portée</ins> : respect de la vie privée, protection des données à caractère personnel et des droits fondamentaux, gestion des risques sur les droits et libertés des personnes concernées engendrés par les systèmes d’IA (au-delà du critère de confiance d’équité).
@@ -215,8 +218,8 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 | <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondances**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
-| **BP24.	Respecter les recommandations de la CNIL** | Appliquer les [Recos CNIL] applicables dans le cas d’une phase de développement. | [Recos OCDE] :<br>- Collecte et traitement des données<br>- Construction ou adaptation du modèle<br>[ISO/IEC 42001] :<br>- A.9.2. Protection des données personnelles<br>- A.9.1. Conformité réglementaire<br>[Règlement IA] :<br>- Art. 10 sur la gouvernance des données<br>- Art. 13 sur la transparence<br>- Art. 14 sur la supervision humaine<br>- Art. 61-65 sur la conformité et la surveillance post-commercialisation | - Rapports de conformité<br>- Registres (des traitements, des violations, etc.)<br>- AIPD | - Personne en charge de la protection de la vie privée<br>- Personne en charge de la conformité |
-| **BP25.	Mettre le traitement en conformité avec la réglementation** | Formaliser les éléments nécessaires<sup><a href="#note14" id="ref14">[14]</a></sup> à la personne / au service en charge de la protection de la vie privée pour bâtir la conformité du traitement de données à caractère personnel à la [Loi I&L] / au [RGPD]. | [Recos OCDE] :<br>- Collecte et traitement des données<br>- Exploitation et maintenance<br>[ISO/IEC 42001] :<br>- A.9.1. Conformité réglementaire<br>- A.9.3. Gestion des risques liés à la vie privée<br>[Règlement IA] :<br>- Art. 10 sur la gouvernance des données<br>- Art. 13 sur la transparence<br>- Art. 14 sur la supervision humaine<br>- Art. 61-65 sur la conformité et la surveillance post-commercialisation | - Registres de traitement<br>- Rapports de conformité<br>- AIPD | - Personne en charge de la protection de la vie privée<br>- Personne en charge de la conformité |
+| **BP24.	Mettre le traitement en conformité avec la réglementation** | Formaliser les éléments nécessaires<sup><a href="#note14" id="ref14">[14]</a></sup> à la personne / au service en charge de la protection de la vie privée pour bâtir la conformité du traitement de données à caractère personnel à la [Loi I&L] / au [RGPD]. | [Recos OCDE] :<br>- Collecte et traitement des données<br>- Exploitation et maintenance<br>[ISO/IEC 42001] :<br>- A.9.1. Conformité réglementaire<br>- A.9.3. Gestion des risques liés à la vie privée<br>[Règlement IA] :<br>- Art. 10 sur la gouvernance des données<br>- Art. 13 sur la transparence<br>- Art. 14 sur la supervision humaine<br>- Art. 61-65 sur la conformité et la surveillance post-commercialisation | - Registres de traitement<br>- Rapports de conformité<br>- AIPD | - Personne en charge de la protection de la vie privée<br>- Personne en charge de la conformité |
+| **BP25.	Respecter les [Recos CNIL]** | Appliquer les [Recos CNIL] applicables dans le cas d’une phase de développement. | [Recos OCDE] :<br>- Collecte et traitement des données<br>- Construction ou adaptation du modèle<br>[ISO/IEC 42001] :<br>- A.9.2. Protection des données personnelles<br>- A.9.1. Conformité réglementaire<br>[Règlement IA] :<br>- Art. 10 sur la gouvernance des données<br>- Art. 13 sur la transparence<br>- Art. 14 sur la supervision humaine<br>- Art. 61-65 sur la conformité et la surveillance post-commercialisation | - Rapports de conformité<br>- Registres (des traitements, des violations, etc.)<br>- AIPD | - Personne en charge de la protection de la vie privée<br>- Personne en charge de la conformité |
 
 ## 7. Maintenabilité et évolutivité
 <ins>Portée</ins> : maintien en conditions opérationnelle et de sécurité, adaptation du système d’IA au fil du temps pour résoudre des problèmes et être utilisé pour de nouveaux besoins.
@@ -275,7 +278,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 |---|---|---|---|---|
 | **BP34.	Adopter des bonnes pratiques d’accessibilité** | Se conformer au [RGAA] en appliquant les bonnes pratiques applicables de l’[EN 301 549] ou des [WCAG]<sup><a href="#note18" id="ref18">[18]</a></sup>, en visant l'accessibilité et l'autonomisation des usagers, pour favoriser une expérience d'IA positive et inclusive pour tous les usagers. | [Recos OCDE] :<br>- Planification et conception<br>- Exploitation et maintenance<br>[ISO/IEC 42001] :<br>- A.6.5. Accessibilité numérique<br>- A.9.1. Conformité réglementaire<br>[Règlement IA] :<br>- Art. 13 sur la transparence et les informations à l'utilisateur | - Rapports d’audit d’accessibilité<br>- Tests usagers<br>- Guides de bonnes pratiques | - Personne en charge du projet<br>Personne en charge de l'accessibilité<br>- Personne en charge du développement |
 
-## Annexe : déclaration d'applicabilité (DdA)
+## Annexe - Déclaration d'applicabilité (DdA)
 <ins>Notes</ins> :
 -	l’objectif est d’une part de vérifier qu’on n’a rien oublié, et d’autre part d’apporter des éléments nécessaires à la prise de décision d’accepter ou non la mise en exploitation du système d’IA ;
 
@@ -321,14 +324,14 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 ### Sécurité de l'information
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> | <center>**Mesures additionnelles**</center> |
 | --- | --- | --- | --- |
-| Respecter les recommandations de l’ANSSI | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
 | Adopter des bonnes pratiques de sécurité de l’information | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
+| Respecter les [Recos ANSSI] | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
 
 ### Protection des droits et libertés
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> | <center>**Mesures additionnelles**</center> |
 | --- | --- | --- | --- |
-| Respecter les recommandations de la CNIL | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
 | Mettre le traitement en conformité avec la réglementation | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
+| Respecter les {Recos CNIL] | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
 
 ### Maintenabilité et évolutivité
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> | <center>**Mesures additionnelles**</center> |
@@ -354,6 +357,44 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> | <center>**Mesures additionnelles**</center> |
 | --- | --- | --- | --- |
 | Adopter des bonnes pratiques d’accessibilité | ☐ Oui<br>☐ Non<br>☐ Ne sais pas |  |
+
+## Annexe - Couverture des droits fondamentaux de la [Charte UE]
+
+Le tableau suivant présente la couverture des droits fondamentaux de la [Charte UE] par les bonnes pratiques :
+
+| Droit fondamental | 1. Gouvernance responsable | 2. Fiabilité & sûreté | 3. Équité | 4. Transparence | 5. Sécurité de l'information | 6. Protection des droits & libertés | 7. Maintenabilité & évolutivité | 8. Interopérabilité | 9. Respect de l’environnement | 10. Accessibilité |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Art. 1 — Dignité humaine | ✅ | ✅ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 3 — Droit à l’intégrité de la personne | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 7 — Respect de la vie privée et familiale | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 8 — Protection des données à caractère personnel | ✅ | ⚪ | ⚪ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 11 — Liberté d’expression et d’information | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ⚪ |
+| Art. 20–21 — Égalité devant la loi / Non-discrimination | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ |
+| Art. 23 — Égalité entre femmes et hommes | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 24 — Droits de l’enfant | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ |
+| Art. 25–26 — Droits des personnes âgées et handicapées | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ |
+| Art. 27–31 — Droits des travailleurs (conditions équitables, information, santé) | ✅ | ✅ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 35 — Protection de la santé | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 37 — Protection de l’environnement | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ |
+| Art. 38 — Protection des consommateurs | ✅ | ✅ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 41 — Droit à une bonne administration | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ✅ | ✅ | ✅ | ⚪ | ⚪ |
+| Art. 42–43 — Accès aux documents / Médiateur européen | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ |
+| Art. 47 — Droit à un recours effectif et à un procès équitable | ✅ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+
+## Annexe - Couverture des exigences du [Règlement IA]
+
+Le tableau suivant présente la couverture des exigences du [Règlement IA] par les bonnes pratiques :
+
+| Exigence | 1. Gouvernance responsable | 2. Fiabilité & sûreté | 3. Équité | 4. Transparence | 5. Sécurité de l'information | 6. Protection des droits & libertés | 7. Maintenabilité & évolutivité | 8. Interopérabilité | 9. Respect de l’environnement | 10. Accessibilité |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Système de gestion de la qualité (Art. 17) | ✅ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ |
+| Gouvernance des données (Art. 10) | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Documentation technique (Art. 11) | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ |
+| Tenue des enregistrements (Art. 12) | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Transparence et informations à l’utilisateur (Art. 13) | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ✅ |
+| Supervision humaine (Art. 14) | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Robustesse, précision et cybersécurité (Art. 15) | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Conformité et contrôle post-commercialisation (Art. 61–65) | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ |
 
 <br>
 <br>
