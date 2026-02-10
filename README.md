@@ -6,7 +6,7 @@ A presentation is provided in [.pdf](https://github.com/matthieu-grall/ai/blob/m
 
 It **comprises a set of documents**, developed collaboratively and under continuous improvement:
 1. risk management method ([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md));
-1. case study ([en](https://github.com/matthieu-grall/ai/blob/main/en/IA%20-%20Risk%20management%20-%20case%20study.md) and [fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20%C3%A9tude%20de%20cas.md));
+1. case study ([en](https://github.com/matthieu-grall/ai/blob/main/en/AI%20-%20Risk%20management%20-%20Case%20study.md) and [fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Etude%20de%20cas.md));
 1. usecases and functionalities ([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Cas%20d'usages.md));
 1. best practices ([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md));
 1. reference documents([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md)).
