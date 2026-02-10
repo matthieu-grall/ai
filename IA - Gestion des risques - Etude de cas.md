@@ -1,29 +1,19 @@
 # Intelligence artificielle (IA) - Méthode de gestion des risques
 
 ## Objet du document
-**Ce document propose une démarche pour gérer les risques spécifiques aux produits et services qui reposent sur des systèmes l'intelligence artificielle (IA)**.
-Il a pour vocation à s'inscrire dans les démarches existantes au sein des organismes, notamment les processus d'homologation de systèmes, mais peut également être directement utilisé.
+
+Ce document illustre une application de la **méthode de gestion des risques liés à l'intelligence artificielle (IA)**.
+
 
 **[Avant-propos](#avant-propos)**<br><br>
-**[Introduction](#introduction)**<br><br>
-**[Étape 1. Cadrer le contexte](#étape-1-cadrer-le-contexte)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 1.1. Cadrer l'étude](#action-11-cadrer-létude)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 1.2. Estimer le niveau de risque que l'objet de l'étude est susceptible d'engendrer](#action-12-estimer-le-niveau-de-risque-que-lobjet-de-létude-est-susceptible-dengendrer)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 1.3. Déterminer les suites à donner](#action-13-déterminer-les-suites-à-donner)<br><br>
-**[Étape 2. l'approche par conformité](#étape-2-lapproche-par-conformité)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 2.1. Choisir son référentiel](#action-21-choisir-son-référentiel)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 2.2. Évaluer la conformité aux bonnes pratiques](#action-22-évaluer-la-conformité-aux-bonnes-pratiques)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 2.3. Améliorer la conformité aux bonnes pratiques](#action-23-améliorer-la-conformité-aux-bonnes-pratiques)<br><br>
-**[Étape 3. l'approche par scénarios](#étape-3-lapproche-par-scénarios)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 3.1. Établir le contexte](#action-31-établir-le-contexte)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 3.2. Apprécier les risques](#action-32-apprécier-les-risques)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Action 3.3. Traiter les risques](#action-33-traiter-les-risques)<br><br>
-**[Annexe - Étude de cas : contrôle d'accès par reconnaissance faciale](#annexe---étude-de-cas--contrôle-daccès-par-reconnaissance-faciale)**<br>
+**[Introduction : contrôle d'accès par reconnaissance faciale](#introduction--contrôle-daccès-par-reconnaissance-faciale)**<br><br>
+**[Application de la méthode](#application-de-la-méthode)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Cadrage de l'étude](#cadrage-de-létude)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Approche par conformité](#approche-par-conformité)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Approche par scénarios](#approche-par-scénarios)<br>
 
 ## Avant-propos
+
 Ce document s'inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai), en amélioration continue, destinés à aider les organismes à gérer les risques liés à l'IA, et qui peuvent être utiles ensemble ou séparément.
 Les [documents de référence](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) sont utilisés entre crochets dans le corps du document.
 
@@ -53,188 +43,15 @@ Les **versions** du document sont les suivantes :
 | 05/11/2025 (v1.4) | Développement de la méthode et d'une étude de cas (en cours) | Matthieu GRALL |
 | 07/11/2025 (v1.5) | Développement de l'évaluation de la conformité de l'étude de cas et extraction de l'ensemble des éléments relatifs à cette étude de cas (en cours) pour en faire une annexe afin d'améliorer la lisibilité de la méthode | Matthieu GRALL |
 
-## Introduction
-On peut autant considérer l'IA comme :
-1. **une technologie comme les autres**, sur laquelle de nouveaux services numériques vont pouvoir reposer, et dont il conviendra d'apprécier et de traiter les risques spécifiques ;
-2. **une réelle opportunité d'améliorer nos capacités cyber** dans tous les domaines de lutte ;
-3. **un levier démultiplicateur des capacités offensives adverses**, contre lesquelles on va devoir lutter.
+## Introduction : contrôle d'accès par reconnaissance faciale
 
-Pour les deux premiers points, l'enjeu est le même : **améliorer la confiance envers l'IA** !
+La présente étude de cas concerne une petite entreprise qui souhaite sécuriser l'accès à une zone de ses bâtiments à l'aide d'un dispositif biométrique.
 
-Or, un système d'IA est susceptible d'engendrer des **risques qui ne se limitent pas à la sécurité de l'information, et qui sont amplifiés par la frénésie actuelle** qui réduit la prise de recul :
-- **sur les organismes**, du fait de défauts de qualité des données et légalité de leur obtention / traitement, et de technologies qui apportent leurs lots de vulnérabilités ;
-- **sur les personnes**, avec notamment des biais sur les données d'entrainement, d'entrée et de sortie, qui peuvent mener à des discriminations ;
-- **sur l'environnement**, car les technologies sur lesquelles reposent les outils d'IA sont parfois très gourmandes en ressources.
+Dans le cadre de son processus d'homologation de sécurité, elle a besoin de produire un dossier de sécurité.
 
-Ce document propose donc une **méthode de gestion des risques liés à l'IA**, qui :
-1. décrit le cas d'usage et estime _a priori_ un **niveau de risque** sur l'organisme, sur les personnes et sur l'environnement ;
-2. compare les pratiques envisagées aux bonnes pratiques via une **approche par conformité** ;
-3. pour les systèmes d'IA susceptibles d'engendrer les risques les plus élevés, explique comment les apprécier et les traiter via une **approche par scénarios**.
+En outre, elle souhaite respecter le [RGPD] et le [Règlement IA].
 
-Cette méthode :
-- s'inscrit dans les démarches d'homologation existantes (cf. [Guide d'homologation]) ;
-- repose sur la méthode [EBIOS _Risk Manager_] ;
-- respecte donc les principes de gestion des risques ([ISO 31000], [ISO/IEC 27005], etc.) ;
-- contribue à satisfaire les exigences afférentes des systèmes de management ([ISO/IEC 27001], [ISO/IEC 42001], [ISO 14001]).
-
-## Étape 1. Cadrer le contexte
-L'objectif est de **proportionner l'étude au niveau de risque que le cas d'usage est susceptible d'engendrer**.
-
-Note : le cas échéant, le résultat de cette étape peut utilement être intégré à la stratégie d'homologation.
-
-### Action 1.1. Cadrer l'étude
-
-Il convient tout d'abord d'identifier clairement :
-- l’**objet de l’étude** : le cas d'usage / traitement de données considéré (cas d'usage seul ou périmètre plus large, de manière intelligible pour que toutes les parties intéressées comprennent bien de quoi il s'agit) ;
-- l’**objectif de l’étude** (ex : homologuer un système) ;
-- les **destinataires de l’étude** (ex : commission d’homologation) ;
-
-### Action 1.2. Estimer le niveau de risque que l'objet de l'étude est susceptible d'engendrer
-
-La gravité des conséquences des risques que l'objet de l'étude est susceptible d'engendrer devrait être estimée _a priori_ afin de pouvoir proportionner la profondeur de l'étude.
-
-Pour ce faire, il convient de :
-- **choisir les sujets à considérer** : protection des droits fondamentaux (cf. [Règlement IA]), protection de la vie privée (cf. [RGPD]), sécurité de l'information (cf. [ISO/IEC 27001]), protection de l'environnement (cf. [ISO 14001]), etc. ;
-- **définir une/des échelle(s)** qui décri(ven)t les niveaux de risque pour chaque sujet considéré ;
-- **situer l'objet de l'étude dans la/les échelle(s) définie(s)**, au regard des conséquences imaginables :
-    - de son fonctionnement nominal : sa finalité, les données traitées, la nature et le volume de personnes concernées, les technologies utilisées ;
-	- de son dysfonctionnement ;
-	- et surtout, des risques liés à la sécurité des données : disparition, modification non désirée ou accès non autorisé ;
-- **retenir le niveau le plus élevé**.
-
-Notes :
-- selon le contexte, on peut choisir de considérer tous les sujets possibles (pour avoir une vision globale) ou uniquement certains, voire un seul (ex : périmètre de compétence limité) ;
-- cette démarche ne préjuge en rien des obligations et interdictions applicables (ex : « IA à risque inacceptable » interdite par le [Règlement IA]).
-
-### Action 1.3. Déterminer les suites à donner
-
-**Les suites à donner sont déterminées en fonction du niveau de risque** :
-
-| <center>Niveau de risque</center> | <center>Approche par conformité (étape 2)</center> | <center>Approche par scénario (étape 3)</center> |
-| --- | --- | --- |
-| 1. Minimal | Pas utile | Pas utile |
-| 2. Faible | Conseillée | Pas utile |
-| 3. Élevé | Oui | Oui |
-| 4. Maximal | Oui | Oui |
-
-## Étape 2. L'approche par conformité
-L'approche par conformité devrait être mise en œuvre à partir du niveau de risque 3. Élevé (également conseillée pour 2. Faible).
-
-Elle permet de **gérer les risques standards**, y compris ceux de cause accidentelle, **et les attaques cyber non ciblées**.
-
-L'objectif est de **comparer les pratiques mises en oeuvre ou prévues pour le cas d'usage aux bonnes pratiques**, afin d'éclairer la prise de décision.
-
-Notes :
-- cette approche correspond à la « déclaration d'applicabilité » de l'[ISO/IEC 27001] et à l'« évaluation du socle de règles » de l'atelier 1 d'[EBIOS _Risk Manager_] ;
-- le cas échéant, le résultat de cette étape peut être intégré au dossier d'homologation.
-
-### Action 2.1. Choisir son référentiel
-
-Parmi les nombreux référentiels de bonnes pratiques, il convient de **choisir le(s) plus pertinent(s) selon son contexte**, notamment :
-- pour avoir une vision synthétique et globale, ou à défaut d'un choix précis de référentiel(s), il est possible d'utiliser tout ou partie des [bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) ;
-- si une politique interne est censée couvrir les référentiels applicables à l'organisation, il peut être pertinent d'en choisir les règles applicables au cas d'usage ;
-- si le périmètre de compétence est limité (ex : si on ne peut traiter que de sécurité de l'information, il peut être pertinent de choisir le [Guide d'hygiène] ou le [Guide sécurité de la CNIL] (selon le niveau de maturité), et les [Recos ANSSI]) ;
-- si certains référentiels doivent être employés (ex : s'il y a des données à caractère personnel, il peut être pertinent de choisir les [Lignes directrices AIPD], le [Guide sécurité de la CNIL] et les [Recos CNIL]) ;
-- etc.
-
-### Action 2.2. Évaluer la conformité aux bonnes pratiques
-
-Pour ce faire, l'organisation devrait évaluer chacune des bonnes pratiques retenues :
-- **si elle est jugée comme applicable** :
-    - fournir des explications :
-	    - **si elle est appliquée, comment ?** L'explication fournie doit permettre d'évaluer le respect de la bonne pratique ;
-	    - **si elle n'est pas appliquée, quelles sont les mesures compensatoires ?** L'explication fournie doit permettre d'évaluer que les mesures prévues sont suffisantes pour atteindre un niveau de confiance aussi bon que si la bonne pratique était appliquée ;
-- **si elle est jugée comme non applicable, pourquoi ?** L'explication fournie doit permettre de juger de son inapplicabilité (un chapitre entier peut être exclu s'il est traité par ailleurs ou en dehors de sa responsabilité, une bonne pratique sur un LLM n'est applicable qu'aux LLM, etc.) ;
- 
-La déclaration d'applicabilité en annexe des [bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) peut être utilisée à cet effet.
- 
-Note : l'objectif n'est pas de respecter toutes les bonnes pratiques, mais de décrire ce qui est réellement prévu au regard de celles-ci.
-
-### Action 2.3. Améliorer la conformité aux bonnes pratiques
-
-Pour chaque bonne pratique applicable, l'organisation devrait :
-- **déterminer les mesures** qui permettraient d'améliorer la conformité ;
-- **les inscrire dans un plan de traitement des risques** ;
-- si besoin, **évaluer les risques résiduels** (qui subsisteraient après application du plan de traitement des risques), de manière synthétique (ex : en formulant un événement qui pourrait se réaliser malgré les mesures prévues et ses conséquences potentielles), dans l'objectif de convaincre l'autorité que les risques résiduels ont été analysés, et qu'ils sont acceptables.
-
-## Étape 3. L'approche par scénarios
-L'approche par scénarios devrait être mise en œuvre à partir du niveau de risque 3. Élevé.
-
-Elle permet de **gérer les attaques cyber avancées et ciblées**.
-
-L'objectif est d'**identifier** et d'**apprécier les risques** que le cas d'usage est susceptible d'engendrer sur le(s) sujet(s) retenu(s), de **déterminer les mesures pour les traiter**, et de **présenter les risques résiduels** pour éclairer une prise de décision.
-
-Pour ce faire, il convient de **mener une étude de risques par scénarios sur le cas d'usage avec les spécificités de l'IA**, par exemple en appliquant [EBIOS _Risk Manager_] au contexte spécifique des systèmes d'IA.
-
-### Action 3.1. Établir le contexte
-
-L'établissement du contexte (qui peut être réalisé avant ou pendant les processus suivants) devrait :
-- détailler la description de l'**objet de l'étude** :
-    - sa **mission** : la finalité du cas d’usage ;
-	- ses **valeurs métier** (processus et données à protéger), notamment :
-	    - ses **fonctionnalités d’IA** utilisées (voir les [cas d'usages](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Cas%20d'usages.md)) ;
-		- le cas échéant, les **données d'entrainement** ;
-		- les **données d'entrée** et leurs sources ;
-		- les **données de sortie** et leurs destinataires ;
-		- si possible, une **description fonctionnelle** (simple, ex : un schéma qui montre les sources de données, la chaine de traitements réalisés, les flux de données entre les traitements, jusqu'aux destinataires des données) ;
-    - ses **biens supports** (matériels, logiciels, réseaux, personnes, organisations, canaux interpersonnels et locaux, sur lesquels reposent les valeurs métier et les mesures), notamment :
-	    - les systèmes nécessaires à la mise en œuvre de l'objet de l'étude, notamment le **système d'IA** ;
-		- si possible, leurs composants, notamment les **techniques d’IA** employées (voir les [cas d'usages](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Cas%20d'usages.md)) ;
-		- si possible, une **description technique** (simple, ex : un schéma qui montre les systèmes utilisés, leurs interfaces et les fonctions qui peuvent y accéder) ;
-	- ses **parties prenantes** (acteurs en dehors de l’objet de l’étude, qui interagissent avec celui-ci), notamment :
-	    - le cas échéant, les **fournisseurs** ;
-		- le cas échéant, les **clients** ;
-		- autres ;
-    - le cas échéant, les **éléments spécifiques requis par certains référentiels** (ex : durées d'utilisation prévues pour se conformer au [Règlement IA]) ;
-
-- définir les **échelles de l’étude** (et qui devraient donc être adaptées au contexte, et comprises par les parties intéressées) :
-    - pour **estimer la gravité des conséquences** (selon le contexte) :
-		- sur les personnes ;
-	    - sur l'organisation ;
-		- sur les droits fondamentaux ;
-		- sur l'environnement ;
-		- autres ;
-    - pour **estimer la vraisemblance des scénarios** ;
-	- pour **évaluer les risques** et les risques résiduels.
-
-Notes :
-- cette approche emploie les outils utiles de la boîte à outils d’[EBIOS _Risk Manager_] ;
-- elle correspond aux processus d' « établissement du contexte », d' « appréciation des risques » et de « traitement des risques » des normes relatives à la gestion des risques (ex : [ISO 31000], [ISO/IEC 27005]) ;
-- le cas échéant, le résultat de cette étape peut constituer le cœur du dossier d'homologation.
-
-### Action 3.2. Apprécier les risques
-
-L'appréciation des risques devrait :
-- apprécier les **événements redoutés** :
-    - situer les conséquences potentielles d'une disparition de données, d'une modification non désirée de données et d'un accès non autorisé à des données correspondant à chaque valeur métier dans chaque échelle de gravité définie à cet effet ;
-	- retenir la gravité la plus élevée ;
-	- si possible, illustrer les événements redoutés ainsi analysés par un exemple parlant ;
-- analyser les **sources de risques** :
-    - identifier les attaquants qui sont les plus susceptibles d’engendrer chaque événement redouté ;
-    - déterminer leurs objectifs visés (ils peuvent être au-delà de l'objet de l'étude) ;
-- analyser les **scénarios stratégiques** :
-    - identifier les différents chemins que les sources de risques identifiées sont les plus susceptibles d'emprunter au sein des parties prenantes pour mener à chaque événement redouté et atteindre leurs objectifs visés (ex : attaque directe de l’objet de l’étude, compromission d’un produit d’un fournisseur) ;
-	- retenir le plus vraisemblable ;
-- apprécier les **scénarios opérationnels** :
-    - analyser les différentes chaînes d’attaque (séquences d'actions élémentaires qui exploitent les vulnérabilités des biens supports) que les sources de risques sont susceptibles de réaliser pour mettre en œuvre les scénarios stratégiques retenus (pour les attaques spécifiques aux systèmes d'IA, se référer aux fiches du [Guide France IA] ou à [ATLAS]) ;
-	- si possible, formuler un libellé court et parlant pour les scénarios opérationnels ainsi analysés ;
-    - estimer leur vraisemblance à l'aide de l'échelle définie à cet effet, compte tenu des mesures existantes ou prévues ;
-	- retenir le scénario opérationnel le plus vraisemblable ;
-- déterminer les **risques** :
-    - constituer les risques : ils sont composés d'un événement redouté et du scénario opérationnel retenu ;
-    - déterminer leurs niveaux : la gravité est celle de l’événement redouté considéré, la vraisemblance est celle du scénario opérationnel retenu ;
-    - évaluer les risques : les positionner dans l'échelle définie à cet effet.
-
-### Action 3.3. Traiter les risques
-
-Le traitement des risques devrait :
-- déterminer les **mesures** : si possible, tout au long de l’étude, ou sinon après l'appréciation des risques, déterminer les mesures qui contribuent à traiter les événements redoutés, les sources de risques, les scénarios stratégiques et les scénarios opérationnels (considérer les mesures spécifiques aux systèmes dIA de l’Annexe 1. III du [Guide France IA] et d'[ATLAS], ainsi que les recommandations ([Recos ANSSI], [Recos CNIL], etc.) qui n'auraient pas été retenues dans l'étape précédente) ;
-- compléter le **plan de traitement des risques** : planifier les mesures déterminées ;
-- réestimer la gravité et la vraisemblance des risques résiduels (qui subsistent après application des mesures) ;
-- si besoin, repositionner les risques sur la **cartographie des risques** ;
-- le cas échéant, **déterminer des mesures complémentaires** jusqu'à rendre les risques acceptables ou proposer d'accepter les risques tels quels.
-
-## Annexe - Étude de cas : contrôle d'accès par reconnaissance faciale
+## Application de la méthode
 
 ### Cadrage de l'étude
 
@@ -263,6 +80,7 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 - **évaluation de la conformité aux bonnes pratiques retenues et mesures additionnelles prévues** :
 
 #### Gouvernance responsable
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Formaliser les responsabilités des parties intéressées | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Le dirigeant est désigné comme responsable de traitement, et l’installateur comme sous-traitant. | Définir une fiche de responsabilités simplifiée et la conserver avec la documentation. |
@@ -270,6 +88,7 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | Déterminer des mécanismes de contrôle | ☐ Oui<br>☐ Non<br>☑ Ne sais pas | Aucun dispositif de contrôle n’est encore prévu, les modalités sont à définir selon la charge disponible. |  |
 
 #### Fiabilité et sûreté
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Vérifier les données d’entrée possibles | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Les images d’entrée sont vérifiées automatiquement pour éviter les formats non compatibles. |  |
@@ -279,6 +98,7 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | Mettre en place les mesures de sûreté nécessaires | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | En cas de panne, la porte reste verrouillée par défaut pour éviter tout accès non autorisé. |  |
 
 #### Équité
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Définir clairement le(s) cas d’usage(s) | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Le système sert uniquement à contrôler l’accès des employés autorisés. |  |
@@ -295,17 +115,20 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | Obtenir les retours des usagers | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Les employés peuvent signaler les erreurs à l’administrateur par courriel. |  |
 
 #### Transparence
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Formaliser les éléments utiles à la transparence | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Une fiche explicative est affichée près de l’entrée, avec les coordonnées du responsable du traitement. |  |
 
 #### Sécurité de l'information
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Adopter des bonnes pratiques de sécurité de l’information | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Une évaluation de la conformité au [Guide sécurité de la CNIL] est réalisée (voir ci-dessous) |  |
 | Respecter les [Recos ANSSI] | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | Les recommandations de 2024 portent sur l'IA générative (hors sujet) et celles de 2025 ne comportent pas de mesures spécifiques |  |
 
 #### Sécurité de l'information - Détail (cf. [Guide sécurité de la CNIL])
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Piloter la sécurité des données | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Le dirigeant suit un tableau de bord des incidents et organise les revues trimestrielles de sécurité. | Planifier une réunion trimestrielle sur la sécurité avec l’équipe. |
@@ -335,12 +158,14 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | API : interfaces de programmation applicative | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | L’accès aux API est limité et la documentation complète n’est pas nécessaire pour cette PME. | Créer un document simple de suivi des accès et des finalités. |
 
 #### Protection des droits et libertés
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Mettre le traitement en conformité avec la réglementation | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Une évaluation de la conformité aux principes fondamentaux de la [Loi I&L] est réalisée (voir ci-dessous) |  |
 | Respecter les [Recos CNIL] | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Une évaluation de la conformité aux [Recos CNIL] est réalisée (voir ci-dessous) |  |
 
 #### Protection des droits et libertés - Détail (cf. [Loi I&L])
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Finalité : déterminée, explicite et légitime (Art. 5.1 (b)) | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | La finalité du système est l’accès sécurisé aux locaux pour le personnel et les prestataires autorisés. | Afficher la finalité clairement sur les panneaux d’entrée et dans le règlement interne. |
@@ -357,6 +182,7 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | Transferts : respect des obligations en dehors de l’UE (Art. 44 à 49) | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | Le système est hébergé sur site ; aucun transfert hors UE n’est effectué, donc non applicable. |    |
 
 #### Protection des droits et libertés - Détail (cf. [Recos CNIL])
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Déterminer le régime juridique applicable | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | La PME n’a pas de responsabilité sur le développement d’autres systèmes : elle agit uniquement en tant qu’utilisateur du système de contrôle d’accès. |  |
@@ -376,6 +202,7 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | Fiche focus moissonnage (base légale de l’intérêt légitime : mesures pour collecte par moissonnage) | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | La PME ne collecte pas de données par moissonnage. |  |
 
 #### Maintenabilité et évolutivité
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Adopter un principe de modularité et de réutilisabilité | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Le logiciel est composé d’un module de capture et d’un module de reconnaissance séparés. |  |
@@ -392,11 +219,13 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | Adopter des bonnes pratiques d’interopérabilité | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | Le système ne suit pas le RGI et ne communique pas avec d’autres systèmes d’accès. |  |
 
 #### Respect de l'environnement
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Adopter des bonnes pratiques d’écoconception | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | L’entreprise ne mesure pas la consommation énergétique du système. | Éteindre automatiquement le serveur hors horaires ouvrés. |
 
 #### Accessibilité
+
 | <center>Bonnes pratiques</center> | <center>Applicabilité</center> | <center>Si oui, comment ? Si non, pourquoi ?</center> | <center>Mesures additionnelles</center> |
 | --- | --- | --- | --- |
 | Adopter des bonnes pratiques d’accessibilité | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Un lecteur de badge est disponible pour les personnes non reconnues par le système. |  |
