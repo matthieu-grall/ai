@@ -5,10 +5,11 @@ This project aims to **provide methodological tools for managing AI-related risk
 A presentation is provided in [.pdf](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Pr%C3%A9sentation.pdf) and [.pptx](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Pr%C3%A9sentation.pptx) formats.
 
 It **comprises a set of documents**, developed collaboratively and under continuous improvement:
-1. [risk management method](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md);
-2. [usecases and functionalities](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Cas%20d'usages.md);
-3. [best practices](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md);
-4. [reference documents](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md).
+1. risk management method ([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md));
+1. case study ([en](https://github.com/matthieu-grall/ai/blob/main/en/IA%20-%20Risk%20management%20-%20case%20study.md) and [fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20%C3%A9tude%20de%20cas.md));
+1. usecases and functionalities ([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Cas%20d'usages.md));
+1. best practices ([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md));
+1. reference documents([fr](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md)).
 
 It is **intended to fit in with existing approaches within organizations**, notably system certification processes. However, some or all of these documents may also be used directly, together or separately.
 
