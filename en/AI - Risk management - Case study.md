@@ -37,7 +37,7 @@ The document **versions** are as follows:
 | <center>Version</center> | <center>Action</center> | <center>Editor</center> |
 | --- | --- | --- |
 | 10/02/2026 (v0.1) | Document creation based on the French method annex | Matthieu GRALL |
-| 13/04/2026 (v0.2) | Try to use Mermaid to draw the functional description and the risk matrix | Matthieu GRALL |
+| 13/04/2026 (v0.2) | Try to use Mermaid to draw the functional description and the risk matrix, and to improve the shape of scales | Matthieu GRALL |
 
 ## Introduction
 
@@ -68,12 +68,69 @@ The study is presented as follows:
 The risk level that the study subject is likely to generate is estimated as:
 - **risk level estimation scale** (it is chosen to adopt a real wide vision, and therefore to define scales allowing the estimation of consequences on people and on the organization):
 
-| <center>**Risk Level**<br><br>(and correspondence with [Règlement IA])</center> | <center>**Potential Consequences on People**<br><br>(cf. [Guide PIA-3])</center> | <center>**Potential Consequences on the Organization**<br><br>(cf. [EBIOS _Risk Manager_] and [CRA] compliance impacts)</center> |
-| --- | --- | --- |
-| 1. Minimal<br><br>("Minimal or no risk", e.g.: spam filters, gadget AI) | 1. Negligible: data subjects will not be impacted or might experience some inconveniences that they will overcome without difficulty<br>E.g.: time lost to repeat procedures or to wait to carry them out, receipt of unsolicited mail (e.g.: _spam_), feeling of privacy violation without real or objective harm (e.g.: commercial intrusion) | G1. Minor: negligible consequences for the organization (no operational impact on activity performance or on people and property safety, the organization will overcome the situation without too much difficulty (margin consumption), minor [CRA] non-conformities easily remediated)<br>E.g.: very limited disruption, no sensitive data, rapid recovery, no legal or reputational impact, minor documentation gaps |
-| 2. Limited<br><br>("Limited risk", e.g.: chatbot, non-critical generative AI) | 2. Limited: data subjects might experience significant inconveniences that they can overcome despite some difficulties<br>E.g.: minor physical condition (e.g.: benign illness following non-compliance with contraindications), cost increase (e.g.: insurance price increase), relational difficulties with personal or professional entourage (e.g.: image, tarnished reputation, loss of recognition) | G2. Significant: significant but limited consequences for the organization (activity performance degradation without impact on people and property safety, the organization will overcome the situation despite some difficulties (degraded mode operation), [CRA] non-conformities requiring remediation plan)<br>E.g.: temporary degradation, low-sensitivity data, rapid intervention, potential market surveillance inquiry |
-| 3. High<br><br>("High risk", e.g.: AI for health, employment, justice) | 3. Significant: data subjects might experience significant consequences that they should be able to overcome, but with real and significant difficulties<br>E.g.: serious physical condition causing long-term harm (e.g.: health deterioration following poor care, or non-compliance with contraindications), banking ban, serious psychological condition (e.g.: depression, phobia development) | G3. Serious: significant consequences for the organization (strong activity performance degradation, with possible significant impacts on people and property safety, the organization will overcome the situation with serious difficulties (very degraded mode operation), serious [CRA] violations, potential CE marking suspension)<br>E.g.: sensitive data compromise, prolonged interruption, crisis management necessary, legal and reputational risks, market access restrictions |
-| 4. Maximum<br><br>("Unacceptable risk", e.g.: social scoring, manipulation, mass biometric surveillance) | 4. Maximum: data subjects might experience significant, even irreparable consequences that they might not overcome<br>E.g.: death (e.g.: murder, suicide, fatal accident), inability to work, long-term or permanent psychological condition | G4. Critical: disastrous consequences for the organization (inability for the organization to ensure all or part of its activity, with possible serious impacts on people and property safety, the organization will likely not overcome the situation (its survival is threatened), severe [CRA] violations, CE marking withdrawal, product recall, fines up to €15M or 2.5% of total turnover)<br>E.g.: massive critical data leak, widespread malfunction, major legal/reputational impact, sustainability risk, permanent market ban |
+<table>
+  <tr>
+    <th><center><b>Risk Level</b><br>(and correspondence with [Règlement IA])</center></th>
+    <th><center><b>Potential Consequences on People</b><br>(cf. [Guide PIA-3])</center></th>
+    <th><center><b>Potential Consequences on the Organization</b><br>(cf. [EBIOS <i>Risk Manager</i>] and [CRA] compliance impacts)</center></th>
+  </tr>
+
+  <tr>
+    <td style="background:#CCFFCC;">
+      <b>1. Minimal</b><br>("Minimal or no risk", e.g.: spam filters, gadget AI)
+    </td>
+    <td>
+      1. Negligible: data subjects will not be impacted or might experience some inconveniences that they will overcome without difficulty<br>
+      E.g.: time lost to repeat procedures or to wait to carry them out, receipt of unsolicited mail (e.g.: <i>spam</i>), feeling of privacy violation without real or objective harm (e.g.: commercial intrusion)
+    </td>
+    <td>
+      G1. Minor: negligible consequences for the organization (no operational impact on activity performance or on people and property safety, the organization will overcome the situation without too much difficulty (margin consumption), minor [CRA] non-conformities easily remediated)<br>
+      E.g.: very limited disruption, no sensitive data, rapid recovery, no legal or reputational impact, minor documentation gaps
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#FFFFCC;>
+      <b>2. Limited</b><br>("Limited risk", e.g.: chatbot, non-critical generative AI)
+    </td>
+    <td>
+      2. Limited: data subjects might experience significant inconveniences that they can overcome despite some difficulties<br>
+      E.g.: minor physical condition (e.g.: benign illness following non-compliance with contraindications), cost increase (e.g.: insurance price increase), relational difficulties with personal or professional entourage (e.g.: image, tarnished reputation, loss of recognition)
+    </td>
+    <td>
+      G2. Significant: significant but limited consequences for the organization (activity performance degradation without impact on people and property safety, the organization will overcome the situation despite some difficulties (degraded mode operation), [CRA] non-conformities requiring remediation plan)<br>
+      E.g.: temporary degradation, low-sensitivity data, rapid intervention, potential market surveillance inquiry
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#FFC000;">
+      <b>3. High</b><br>("High risk", e.g.: AI for health, employment, justice)
+    </td>
+    <td>
+      3. Significant: data subjects might experience significant consequences that they should be able to overcome, but with real and significant difficulties<br>
+      E.g.: serious physical condition causing long-term harm (e.g.: health deterioration following poor care, or non-compliance with contraindications), banking ban, serious psychological condition (e.g.: depression, phobia development)
+    </td>
+    <td>
+      G3. Serious: significant consequences for the organization (strong activity performance degradation, with possible significant impacts on people and property safety, the organization will overcome the situation with serious difficulties (very degraded mode operation), serious [CRA] violations, potential CE marking suspension)<br>
+      E.g.: sensitive data compromise, prolonged interruption, crisis management necessary, legal and reputational risks, market access restrictions
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#EE0000; color:white;">
+      <b>4. Maximum</b><br>("Unacceptable risk", e.g.: social scoring, manipulation, mass biometric surveillance)
+    </td>
+    <td>
+      4. Maximum: data subjects might experience significant, even irreparable consequences that they might not overcome<br>
+      E.g.: death (e.g.: murder, suicide, fatal accident), inability to work, long-term or permanent psychological condition
+    </td>
+    <td>
+      G4. Critical: disastrous consequences for the organization (inability for the organization to ensure all or part of its activity, with possible serious impacts on people and property safety, the organization will likely not overcome the situation (its survival is threatened), severe [CRA] violations, CE marking withdrawal, product recall, fines up to €15M or 2.5% of total turnover)<br>
+      E.g.: massive critical data leak, widespread malfunction, major legal/reputational impact, sustainability risk, permanent market ban
+    </td>
+  </tr>
+</table>
 
 - **risk level estimation**: the risk level is judged as high on people and the organization, but rather low on the environment; the retained risk level is therefore 3. High.
 - **follow-up actions**: with this level, both compliance and scenario-based approaches should be implemented.
@@ -171,6 +228,89 @@ The **scales** are constructed:
 - for privacy protection (cf. [RGPD]), the **severity of consequences on people** will be estimated using the [PIA-3] guide scale;
 
 - for information security (cf. [ISO/IEC 27005]) and [CRA] compliance, the **severity of consequences on the organization** will be estimated using the following scale (adapted for a small technology company):
+
+<table>
+  <tr>
+    <th><center>Severity of Consequences on Organization</center></th>
+    <th><center>Financial Consequences</center></th>
+    <th><center>Operational Consequences</center></th>
+    <th><center>Reputational Consequences</center></th>
+    <th><center>Legal and Regulatory Consequences</center></th>
+  </tr>
+
+  <tr>
+    <td style="background:#d4f4dd;">
+      1. Minimal
+    </td>
+    <td>
+      Up to €5,000
+    </td>
+    <td>
+      Minor service degradation affecting &lt;10% of users for &lt;1 day, no security compromise
+    </td>
+    <td>
+      Internal awareness only, no external visibility
+    </td>
+    <td>
+      No regulatory action, internal documentation gaps only
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#fff4c2;">
+      2. Limited
+    </td>
+    <td>
+      €5,000 - €50,000
+    </td>
+    <td>
+      Service degradation affecting &lt;50% of users for &lt;1 week, or limited security incident contained quickly
+    </td>
+    <td>
+      Local media mention or industry awareness, temporary customer concern
+    </td>
+    <td>
+      Regulatory inquiry, minor [CRA] non-conformity, potential market surveillance review, corrective action required
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#ffd4a8;">
+      3. Significant
+    </td>
+    <td>
+      €50,000 - €250,000
+    </td>
+    <td>
+      Major service disruption affecting &gt;50% of users for &gt;1 week, or significant security incident requiring customer notification
+    </td>
+    <td>
+      National media coverage, customer complaints, loss of new business opportunities
+    </td>
+    <td>
+      Formal regulatory investigation, [CRA] violation proceedings, [RGPD] sanctions, potential CE marking suspension, mandatory corrective actions
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#ffb3b3;">
+      4. Maximum
+    </td>
+    <td>
+      &gt;€250,000 or &gt;5% of annual revenue
+    </td>
+    <td>
+      Complete service failure &gt;1 month, or critical security breach compromising all customer data
+    </td>
+    <td>
+      Widespread negative media coverage, major customer defections, industry reputation damage
+    </td>
+    <td>
+      Severe [CRA] violations with fines up to €15M or 2.5% total turnover, [RGPD] fines up to €20M or 4% total turnover, CE marking withdrawal, product recall, potential company insolvency
+    </td>
+  </tr>
+</table>
+
 
 | <center>Severity of Consequences on Organization</center> | <center>Financial Consequences</center> | <center>Operational Consequences</center> | <center>Reputational Consequences</center> | <center>Legal and Regulatory Consequences</center> |
 | --- | --- | --- | --- | --- |
