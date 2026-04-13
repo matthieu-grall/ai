@@ -9,8 +9,9 @@ This document illustrates an application of the **artificial intelligence (AI) r
 **[Method Application](#method-application)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Study Scope](#study-scope)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Compliance Approach](#compliance-approach)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Scenario-based Approach](#scenario-based-approach)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Scenario-based Approach](#scenario-based-approach)<br><br>
 **[Deliverables](#deliverables)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Statement of Applicability (SoA)](#statement-of-applicability-soa)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Fundamental Rights Impact Assessment (FRIA)](#fundamental-rights-impact-assessment-fria)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Data Protection Impact Assessment (DPIA)](#data-protection-impact-assessment-dpia)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Security dossier for system accreditation](#security-dossier-for-system-accreditation)<br>
@@ -36,6 +37,7 @@ The document **versions** are as follows:
 | <center>Version</center> | <center>Action</center> | <center>Editor</center> |
 | --- | --- | --- |
 | 10/02/2026 (v0.1) | Document creation based on the French method annex | Matthieu GRALL |
+| 13/04/2026 (v0.2) | Try to use Mermaid to draw the functional description and the risk matrix | Matthieu GRALL |
 
 ## Introduction
 
@@ -44,8 +46,6 @@ This case study concerns a small company that wishes to secure access to a speci
 As part of its security accreditation process, it needs to produce a security dossier.
 
 In addition, it wishes to comply with the [RGPD] and the [Règlement IA].
-
-As a user of the biometrics solution, the company does not fall under the scope of the [CRA].
 
 As part of its regulatory compliance obligations, the company needs to:
 - Comply with the [Règlement IA] (EU AI Act) as the facial recognition system is classified as a high-risk AI system under Annex III (biometric identification);
@@ -66,14 +66,14 @@ The study is presented as follows:
 - **study recipients**: internal accreditation committee, data protection officer (DPO) and, where applicable, competent authorities.
 
 The risk level that the study subject is likely to generate is estimated as:
-- **risk level estimation scale** (it is chosen to adopt a global vision, and therefore to define scales allowing the estimation of consequences on people and on the organization):
+- **risk level estimation scale** (it is chosen to adopt a real wide vision, and therefore to define scales allowing the estimation of consequences on people and on the organization):
 
-| <center>Risk Level**<br><br>(and correspondence with [Règlement IA])</center> | <center>Potential Consequences on People**<br><br>(cf. [Guide PIA-3])</center> | <center>Potential Consequences on the Organization**<br><br>(cf. [EBIOS _Risk Manager_] and [CRA] compliance impacts)</center> |
+| <center>**Risk Level**<br><br>(and correspondence with [Règlement IA])</center> | <center>**Potential Consequences on People**<br><br>(cf. [Guide PIA-3])</center> | <center>**Potential Consequences on the Organization**<br><br>(cf. [EBIOS _Risk Manager_] and [CRA] compliance impacts)</center> |
 | --- | --- | --- |
 | 1. Minimal<br><br>("Minimal or no risk", e.g.: spam filters, gadget AI) | 1. Negligible: data subjects will not be impacted or might experience some inconveniences that they will overcome without difficulty<br>E.g.: time lost to repeat procedures or to wait to carry them out, receipt of unsolicited mail (e.g.: _spam_), feeling of privacy violation without real or objective harm (e.g.: commercial intrusion) | G1. Minor: negligible consequences for the organization (no operational impact on activity performance or on people and property safety, the organization will overcome the situation without too much difficulty (margin consumption), minor [CRA] non-conformities easily remediated)<br>E.g.: very limited disruption, no sensitive data, rapid recovery, no legal or reputational impact, minor documentation gaps |
 | 2. Limited<br><br>("Limited risk", e.g.: chatbot, non-critical generative AI) | 2. Limited: data subjects might experience significant inconveniences that they can overcome despite some difficulties<br>E.g.: minor physical condition (e.g.: benign illness following non-compliance with contraindications), cost increase (e.g.: insurance price increase), relational difficulties with personal or professional entourage (e.g.: image, tarnished reputation, loss of recognition) | G2. Significant: significant but limited consequences for the organization (activity performance degradation without impact on people and property safety, the organization will overcome the situation despite some difficulties (degraded mode operation), [CRA] non-conformities requiring remediation plan)<br>E.g.: temporary degradation, low-sensitivity data, rapid intervention, potential market surveillance inquiry |
 | 3. High<br><br>("High risk", e.g.: AI for health, employment, justice) | 3. Significant: data subjects might experience significant consequences that they should be able to overcome, but with real and significant difficulties<br>E.g.: serious physical condition causing long-term harm (e.g.: health deterioration following poor care, or non-compliance with contraindications), banking ban, serious psychological condition (e.g.: depression, phobia development) | G3. Serious: significant consequences for the organization (strong activity performance degradation, with possible significant impacts on people and property safety, the organization will overcome the situation with serious difficulties (very degraded mode operation), serious [CRA] violations, potential CE marking suspension)<br>E.g.: sensitive data compromise, prolonged interruption, crisis management necessary, legal and reputational risks, market access restrictions |
-| 4. Maximum<br><br>("Unacceptable risk", e.g.: social scoring, manipulation, mass biometric surveillance) | 4. Maximum: data subjects might experience significant, even irreparable consequences that they might not overcome<br>E.g.: death (e.g.: murder, suicide, fatal accident), inability to work, long-term or permanent psychological condition | G4. Critical: disastrous consequences for the organization (inability for the organization to ensure all or part of its activity, with possible serious impacts on people and property safety, the organization will likely not overcome the situation (its survival is threatened), severe [CRA] violations, CE marking withdrawal, product recall, fines up to €15M or 2.5% of global turnover)<br>E.g.: massive critical data leak, widespread malfunction, major legal/reputational impact, sustainability risk, permanent market ban |
+| 4. Maximum<br><br>("Unacceptable risk", e.g.: social scoring, manipulation, mass biometric surveillance) | 4. Maximum: data subjects might experience significant, even irreparable consequences that they might not overcome<br>E.g.: death (e.g.: murder, suicide, fatal accident), inability to work, long-term or permanent psychological condition | G4. Critical: disastrous consequences for the organization (inability for the organization to ensure all or part of its activity, with possible serious impacts on people and property safety, the organization will likely not overcome the situation (its survival is threatened), severe [CRA] violations, CE marking withdrawal, product recall, fines up to €15M or 2.5% of total turnover)<br>E.g.: massive critical data leak, widespread malfunction, major legal/reputational impact, sustainability risk, permanent market ban |
 
 - **risk level estimation**: the risk level is judged as high on people and the organization, but rather low on the environment; the retained risk level is therefore 3. High.
 - **follow-up actions**: with this level, both compliance and scenario-based approaches should be implemented.
@@ -81,8 +81,285 @@ The risk level that the study subject is likely to generate is estimated as:
 ### Compliance Approach
 
 Compliance with best practices is assessed and addressed as follows:
-- **choice of best practices framework**: since it involves implementing an AI system processing personal data, it is chosen to use [AI best practices](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md), with particular focus on information security (considering [Guide sécurité de la CNIL]) and privacy protection (considering fundamental principles of [Loi I&L]);
-- **compliance assessment with selected best practices and planned additional measures**:
+- **choice of best practices framework**: since it involves implementing an AI system processing personal data, it is chosen to use [AI best practices](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md), with particular focus on information security (considering [Guide sécurité de la CNIL] and [CRA]) and privacy protection (considering fundamental principles of [RGPD] and AI-specific best practices [Recos CNIL]);
+- **compliance assessment with selected best practices and planned additional measures**.
+
+A Statement of Applicability (SoA) has been provided, in order to explain and assess the implemented or planned practices (see [Statement of Applicability (SoA)](#statement-of-applicability-soa)).
+
+>[ /!\ to be developed (treatment plan) /!\ ]
+
+### Scenario-based Approach
+
+The study subject is described in detail:
+- **purpose**: control physical access to a secure zone;
+- main **business assets**: training data, biometric templates, captured data, facial recognition function, identification results;
+- detailed **functional description**:
+
+```mermaid
+flowchart TD
+
+%% --- Phase 1 ---
+subgraph P1[Phase 1 : User Enrollment]
+direction LR
+    A1[Identify person]
+    A2[Capture image]
+    A3[Verify quality]
+    A4[Extract features]
+    A5[Associate profile]
+    A6[Obtain consent]
+    A7[Verify data accuracy]
+end
+
+A1 --> A2 --> A3 --> A4 --> A5 --> A6 --> A7
+
+%% --- Phase 2 ---
+subgraph P2[Phase 2 : Daily Access Control]
+direction LR
+    B1[Capture image]
+    B2[Detect face]
+    B3[Extract features]
+    B4[Compare profiles]
+    B5[Decide access]
+    B6[Notify]
+    B7[Record event]
+    B8[Delete temp images]
+    B9[Analyze logs]
+end
+
+P1 --> P2
+B1 --> B2 --> B3 --> B4 --> B5 --> B6 --> B7 --> B8 --> B9
+
+%% --- Phase 3 ---
+subgraph P3[Phase 3 : Profile Maintenance]
+direction LR
+    C1[Update profiles]
+    C2[Delete profiles]
+    C3[Verify quality/security]
+end
+
+P2 --> P3
+C1 --> C2 --> C3
+```
+old:
+   - Phase 1: User Enrollment
+      1. Identify the person to enroll → Name, internal identifier → Ensure legitimacy of future access
+      1. Capture initial facial image → Raw facial image → Build initial biometric profile
+      1. Verify image quality → Quality status (brightness, angle, expression) → Ensure model reliability
+      1. Extract facial features → Biometric template (feature vector) → Create user's biometric profile
+      1. Associate profile with internal identifier → Profile database → Enable future recognition
+      1. Obtain and record consent, where applicable → Signed consent or electronic trace → Comply with legal obligations
+      1. Verify data accuracy and relevance → Validation report → Minimize errors and unnecessary data
+   - Phase 2: Daily Access Control
+      1. Capture facial image at entrance → Captured data (real-time facial image) → Detect user wishing to access
+      1. Detect face in image → Coordinates and region of interest → Prepare image for biometric model
+      1. Extract facial features in real time → Biometric template (feature vector) → Compare with profile database
+      1. Compare with recorded profiles → Identification results (similarity score) → Assess match and access decision
+      1. Decide on access → Binary decision: access granted or denied → Authorize or block entry
+      1. Notify user and/or manager → Light signal, sound, or alert → Inform of verification result
+      1. Record access event → Access control log (user, date, time, decision, reason) → Enable audit, monitoring and security
+      1. Delete temporary images → Raw image deleted → Minimize sensitive data retention
+      1. Analyze logs and anomalies → Reports and statistics → Detect incidents or abnormal uses
+   - Phase 3: Profile Maintenance and Update
+      1. Update biometric profiles if necessary → Updated facial vector → Ensure system remains accurate despite physical changes
+      1. Delete profiles of departing users → Deleted profiles → Respect retention periods and erasure rights
+      1. Regularly verify data quality and security → Internal audit and corrective actions → Maintain reliability, security and legal compliance
+- main **supporting assets**: hardware components (cameras, sensors, processing units) that connect to networks, software components (facial recognition algorithms using Hidden Markov Models, access control management software), training environment, production environment, developers, administrators, secure zone;
+- main **stakeholders**: algorithm publisher, software solution publishers (operating system, servers, etc.).
+
+The **scales** are constructed:
+
+- for privacy protection (cf. [RGPD]), the **severity of consequences on people** will be estimated using the [PIA-3] guide scale;
+
+- for information security (cf. [ISO/IEC 27005]) and [CRA] compliance, the **severity of consequences on the organization** will be estimated using the following scale (adapted for a small technology company):
+
+| <center>Severity of Consequences on Organization</center> | <center>Financial Consequences</center> | <center>Operational Consequences</center> | <center>Reputational Consequences</center> | <center>Legal and Regulatory Consequences</center> |
+| --- | --- | --- | --- | --- |
+| 1. Minimal | Up to €5,000 | Minor service degradation affecting <10% of users for <1 day, no security compromise | Internal awareness only, no external visibility | No regulatory action, internal documentation gaps only |
+| 2. Limited | €5,000 - €50,000 | Service degradation affecting <50% of users for <1 week, or limited security incident contained quickly | Local media mention or industry awareness, temporary customer concern | Regulatory inquiry, minor [CRA] non-conformity, potential market surveillance review, corrective action required |
+| 3. Significant | €50,000 - €250,000 | Major service disruption affecting >50% of users for >1 week, or significant security incident requiring customer notification | National media coverage, customer complaints, loss of new business opportunities | Formal regulatory investigation, [CRA] violation proceedings, [RGPD] sanctions, potential CE marking suspension, mandatory corrective actions |
+| 4. Maximum | >€250,000 or >5% of annual revenue | Complete service failure >1 month, or critical security breach compromising all customer data | Widespread negative media coverage, major customer defections, industry reputation damage | Severe [CRA] violations with fines up to €15M or 2.5% total turnover, [RGPD] fines up to €20M or 4% total turnover, CE marking withdrawal, product recall, potential company insolvency |
+
+- for compliance with [Règlement AI] requirements, the **severity of consequences on fundamental rights** (cf. [Charte UE]) will be estimated using the following scale:
+
+| <center>Severity of Consequences on Fundamental Rights</center> | <center>Consequences on Dignity (cf. Art. 1–5)</center> | <center>Consequences on Freedoms (cf. Art. 6–19)</center> | <center>Consequences on Equality (cf. Art. 20–26)</center> | <center>Consequences on Solidarity (cf. Art. 27–38)</center> | <center>Consequences on Citizenship (cf. Art. 39–46)</center> | <center>Consequences on Justice (cf. Art. 47–54)</center> |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1. Minimal | Unpleasant experience without physical or moral harm (e.g. inappropriate online comments) | Light or temporary restrictions (e.g. blocking non-critical content) | Prejudice or light disadvantageous treatment (e.g. stereotypical comments) | Limited access to social resources or protections (e.g. delay in aid delivery) | Minor difficulties exercising civic rights (e.g. one-time administrative problem to vote) | Slow procedures or complex formalities without major consequence (e.g. delay in complaint processing) |
+| 2. Limited | Limited physical or psychological harm (e.g. targeted harassment) | Restricted access to information or communication (e.g. targeted censorship) | One-time or limited discrimination (e.g. service denial based on unauthorized criterion) | Partial access to essential services (e.g. delayed or incomplete medical treatment) | Partial restrictions on participation or information rights (e.g. delay in access to public documents) | Biased procedures or minor errors (e.g. partially incorrect or questionable judgment) |
+| 3. Significant | Serious harm to integrity (e.g. physical violence, coercive constraint) | Significant limitation of fundamental freedoms (e.g. demonstration ban, intrusive surveillance) | Systemic or repeated discrimination (e.g. biased recruitment algorithm) | Significant deprivation of social rights or protections (e.g. prolonged exclusion from healthcare system) | Serious limitation of civic or political participation (e.g. inability to vote or seek legal remedy) | Unfair procedures resulting in serious harm (e.g. unjustified conviction, disproportionate sanction) |
+| 4. Maximum | Major harm to life or integrity (e.g. torture, slavery, endangering life) | Total deprivation of freedoms (e.g. arbitrary detention, prohibition of speech or belief) | Major discrimination affecting access to social or professional life (e.g. total exclusion from employment, housing or service) | Critical deprivation resulting in vital risk or serious social harm (e.g. prohibition of access to vital care or minimum protection) | Total deprivation of civic and democratic rights (e.g. complete exclusion from electoral system, impossibility of access to justice) | Total absence of remedy or serious violation of procedural rights (e.g. arbitrary conviction, major inequitable treatment) |
+ 
+- the **likelihood** will be estimated using the following scale:
+
+| <center>Likelihood</center> | <center>Description</center> |
+| --- | --- |
+| 1. Minimal | The risk source is unlikely to achieve its intended objective according to one of the envisaged attack chains. Scenario likelihood is low |
+| 2. Limited | The risk source is likely to achieve its intended objective according to one of the envisaged attack chains. Scenario likelihood is significant |
+| 3. Significant | The risk source will probably achieve its intended objective according to one of the envisaged attack chains. Scenario likelihood is high |
+| 4. Maximum | The risk source will certainly achieve its intended objective according to one of the envisaged attack chains OR such a scenario has already occurred within the organization (incident history) |
+
+- **risk assessment** and residual risks will be performed using the following mapping:
+
+| <center>Risk<br>Assessment</center> |  | <center>Likelihood</center> |  | |  |
+| --- | --- | --- | --- | --- | --- |
+|  | | **1. Minimal** | **2. Limited** | **3. Significant** | **4. Maximum** |
+| **Severity** | **4. Maximum** | Tolerable under control | Tolerable under control | Unacceptable | Unacceptable |
+|  | **3. Significant** | Acceptable as is | Tolerable under control | Tolerable under control | Unacceptable |
+|  | **2. Limited** | Acceptable as is | Acceptable as is | Tolerable under control | Tolerable under control |
+|  | **1. Minimal** | Acceptable as is | Acceptable as is | Acceptable as is | Tolerable under control |
+
+The following table presents the **risk appreciation**:
+
+| <center>Risk</center> | <center>Business Value</center> | <center>Feared Event</center> | <center>Severity** (and main consequences)</center> | <center>Main Risk Source** (and intended objectives)</center> | <center>Main Strategic Scenario</center> | <center>Main Operational Scenario** (detail below)</center> | <center>Likelihood</center> |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| R01 | Facial recognition function | Disappearance | 2. Limited (operational: blocked access) | Organized crime (extortion) | Direct attack | Physical or logical destruction | 2. Limited |
+| R02 | Facial recognition function | Undesired modification | **3. Significant (fundamental rights / privacy: discrimination)** | State actor / competitor (sabotage or manipulation) | Attack via model publisher | Bias injection into model | **3. Significant** |
+| R03 | Facial recognition function | Unauthorized access | 1. Minimal (image) | Malicious employee (resale) | Direct attack | Algorithm or parameter exfiltration | 1. Minimal |
+| R04 | Training data | Disappearance | 2. Limited (human and financial cost) | Organized crime (targeted sabotage) | Direct attack | Dataset deletion or corruption | 2. Limited |
+| R05 | Training data | Undesired modification | 2. Limited (fundamental rights / privacy: bias, discrimination) | Competitor (sabotage) | Direct attack | Training data poisoning | 2. Limited |
+| R06 | Training data | Unauthorized access | 2. Limited (privacy) | Organized crime (resale) | Direct attack | Sensitive data exfiltration | 1. Minimal |
+| R07 | Biometric templates | Disappearance | 2. Limited (operational: blocked access) | Organized crime (sabotage) | Direct attack | Data deletion | **3. Significant** |
+| R08 | Biometric templates | Undesired modification | **3. Significant (security: unauthorized person access)** | State actor (infiltration) | Attack via software publisher | Data alteration | **4. Maximum** |
+| R09 | Biometric templates | Unauthorized access | **4. Maximum (fundamental rights / privacy: impersonation, template unusable for life)** | Organized crime (impersonation) | Direct attack | Exfiltration via API | **3. Significant** |
+| R10 | Captured data | Disappearance | 2. Limited (operational: blocked access) | Vandal (ideology) | Direct attack | Camera sabotage | 2. Limited |
+| R11 | Captured data | Undesired modification | **3. Significant (security: unauthorized person access, operational: blocked access)** | State actor (infiltration) | Direct attack | False data injection | 2. Limited |
+| R12 | Captured data | Unauthorized access | 2. Limited (privacy) | State actor (espionage) | Direct attack | Video stream exfiltration | **3. Significant** |
+| R13 | Identification results | Disappearance | 2. Limited (operational: blocked access) | Organized crime (extortion) | Direct attack | Data deletion | 3. Significant |
+| R14 | Identification results | Undesired modification | **3. Significant (security: unauthorized person access)** | State actor (infiltration) | Direct attack | Result modification | 2. Limited |
+| R15 | Identification results | Unauthorized access | **3. Significant (security: replay for unauthorized person access)** | State actor (infiltration) | Direct attack | False result usage | 2. Limited |
+
+The following table presents the detail of **operational scenarios**:
+
+| **Operational Scenarios** | **Attack Chains (_kill chain_)** |
+| --- | --- |
+| Physical or logical destruction | 1. Identification of servers/applications or premises hosting the algorithm <br> 2. Physical or admin access (vulnerable account) <br> 3. Deletion of algorithm files / container <br> 4. Verification of algorithm unavailability |
+| Bias injection into model | 1. Identification of training _pipeline_ <br> 2. Compromise of provider _package_ (vulnerable pipeline) <br> 3. Poisoned data injection <br> 4. Deployment of biased model to production |
+| Algorithm or parameter exfiltration | 1. Identification of administrator accounts <br> 2. _Phishing_ <br> 3. Algorithm or parameter download <br> 4. Exfiltration to external server |
+| Dataset deletion or corruption | 1. Location of dataset storage <br> 2. Exploitation of server vulnerability <br> 3. Access compromise <br> 4. Dataset deletion or alteration |
+| Training data poisoning | 1. Identification of dataset ingestion points <br> 2. Malicious data injection <br> 3. Launch of automatic retraining <br> 4. Model bias propagation |
+| Sensitive data exfiltration | 1. Identification of accounts with dataset access <br> 2. Targeted _phishing_ or access compromise <br> 3. Dataset download <br> 4. Exfiltration to external server |
+| Data deletion | 1. Identification of template processing servers <br> 2. Exploitation of application vulnerability <br> 3. Deletion |
+| Data alteration | 1. Identification of concerned software publishers <br> 2. Patch corruption <br> 3. Deployment of validated patches <br> 4. Physical access to secure zone |
+| Exfiltration via API | 1. API / _endpoint_ mapping <br> 2. Exploitation of unprotected API <br> 3. Template download <br> 4. _Offline_ usage for impersonation |
+| Camera sabotage | 1. Camera location <br> 2. Physical access <br> 3. Physical destruction |
+| False data injection | 1. Identification of useful flows and protocols <br> 2. MITM / _replay frames_ <br> 3. _Deepfake_ injection <br> Physical access to secure zone |
+| Video stream exfiltration | 1. Identification of vulnerable equipment <br> 2. Router / _switch_ compromise <br> 3. _Sniffing_ and stream recording <br> 4. Exfiltration |
+| Data deletion | 1. Identification of dependent services <br> 2. Compromise of production database and backups <br> 3. Deletion of identification results |
+| Result modification | 1. Identification of administrators <br> 2. Blackmail <br> 3. Fraudulent validation <br> 4. Physical access to secure zone |
+| False result usage | 1. Collection of schedules & routines <br> 2. Compromise of results API <br> 3. Generation of false access <br> 4. Physical access to secure zone |
+
+The **risk mapping** thus appreciated is as follows:
+
+```mermaid
+flowchart TB
+
+%% === Styles ===
+classDef axisMinimal fill:#d4f4dd,stroke:#2d7a36,color:#000,stroke-width:1px
+classDef axisLimited fill:#fff4c2,stroke:#b59b00,color:#000,stroke-width:1px
+classDef axisSignificant fill:#ffd4a8,stroke:#b55a00,color:#000,stroke-width:1px
+classDef axisMaximum fill:#ffb3b3,stroke:#b30000,color:#000,stroke-width:1px
+
+classDef cell fill:#ffffff,stroke:#000,color:#000,stroke-width:1px
+
+%% === Ligne des titres Likelihood (inversée : 4 → 1) ===
+AX0([" "]):::cell
+L4(["Likelihood<br>4. Maximum"]):::axisMaximum
+L3(["Likelihood<br>3. Significant"]):::axisSignificant
+L2(["Likelihood<br>2. Limited"]):::axisLimited
+L1(["Likelihood<br>1. Minimal"]):::axisMinimal
+
+%% === Severity 1 (en bas) ===
+S1(["Severity<br>1. Minimal"]):::axisMinimal
+S1C4([" "]):::cell
+S1C3([" "]):::cell
+S1C2([" "]):::cell
+S1C1(["R03"]):::cell
+
+%% === Severity 2 ===
+S2(["Severity<br>2. Limited"]):::axisLimited
+S2C4([" "]):::cell
+S2C3(["R07 R12 R13"]):::cell
+S2C2(["R01 R04 R05 R10"]):::cell
+S2C1(["R06"]):::cell
+
+%% === Severity 3 ===
+S3(["Severity<br>3. Significant"]):::axisSignificant
+S3C4(["R08"]):::cell
+S3C3(["R02 R11 R14 R15"]):::cell
+S3C2([" "]):::cell
+S3C1([" "]):::cell
+
+%% === Severity 4 (en haut) ===
+S4(["Severity<br>4. Maximum"]):::axisMaximum
+S4C4([" "]):::cell
+S4C3(["R09"]):::cell
+S4C2([" "]):::cell
+S4C1([" "]):::cell
+
+%% === Alignement horizontal (sans flèches) ===
+AX0 --- L4 --- L3 --- L2 --- L1
+S1 --- S1C4 --- S1C3 --- S1C2 --- S1C1
+S2 --- S2C4 --- S2C3 --- S2C2 --- S2C1
+S3 --- S3C4 --- S3C3 --- S3C2 --- S3C1
+S4 --- S4C4 --- S4C3 --- S4C2 --- S4C1
+
+```
+
+| <center>Risk<br>Assessment</center> |  | <center>Likelihood</center> |  | |  |
+| --- | --- | --- | --- | --- | --- |
+|  | | **1. Minimal** | **2. Limited** | **3. Significant** | **4. Maximum** |
+| **Severity** | **4. Maximum** |  | | R09 |  |
+|  | **3. Significant** |  | | R02 R11 R14 R15 | R08 |
+|  | **2. Limited** | R06 | R01 R04 R05 R10 | R07 R12 R13 |  |
+|  | **1. Minimal** | R03 |  | |  |
+
+The following table presents the **additional measures** planned to contribute to treating risks, as well as **residual risks**:
+
+> [ /!\ to be reviewed from here /!\ ]
+
+| **Risk** | **Additional Measures** | **Residual Severity** | **Residual Likelihood** |
+| --- | --- | --- | --- |
+| R01 | Implement automatic encrypted daily backup (tested every 6 months) <br> Implement multi-factor authentication (MFA) <br> Implement service unavailability monitoring and alert tool | = 2. Limited | = 2. Limited |
+| R02 | Verify _hash_ / signature of used _packages_ <br> Manually validate models <br> Create whitelist of supplier sources | = 3. Significant | ↘ 2. Limited |
+| R03 | Strengthen access and action logging <br> Review access rights every 3 months | 3 | 2 |
+| R04 | At-rest encryption + local keys <br> Immutable backups <br> Restricted access via dedicated accounts | 2 | 2 |
+| R05 | Incoming dataset filtering/validation <br> Training sandbox <br> Human checklist before retraining | 3 | 2 |
+| R06 | MFA + storage segmentation <br> Unusual access alerts <br> Logging and regular audits | 3 | 2 |
+| R07 | Template encryption <br> Restricted physical access <br> Access logs + alerts | 3 | 2 |
+| R08 | Modification review <br> Multi-actor validation <br> Logs + alerts | 3 | 2 |
+| R09 | Secure API + rate limit <br> MFA for API <br> Monitoring and alerts | 3 | 2 |
+| R10 | Physical camera locking <br> Surveillance <br> Local/central backups | 2 | 2 |
+| R11 | Video stream signature <br> Anomaly monitoring <br> Random human verification | 2 | 2 |
+| R12 | Video stream encryption <br> Restricted access <br> Logs + alerts | 3 | 2 |
+| R13 | Immutable backups <br> DBA rights review <br> DB deletion alerts | 2 | 2 |
+| R14 | Multi-actor validation <br> Modification logging <br> Automated alerts | 3 | 2 |
+| R15 | MFA API + short tokens <br> Logs + alerts <br> Physical entrance surveillance | 3 | 2 |
+
+The following table presents the **risk treatment plan**:
+
+| <center>Priority</center> | <center>Measure</center> | <center>Treated Risks</center> | <center>Department</center> | <center>Added Value</center> | <center>Difficulty</center> | <center>Timeframe</center> |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Implement automatic encrypted daily backup (tested every 6 months) | R01, R04, R13 | IT | 4 | 2 | 1 month |
+|  | Immutable backups | R04, R13 | IT | 4 | 3 | 1 month |
+|  | At-rest encryption + local keys | R04, R07, R12 | IT | 4 | 3 | 1 month |
+| ... | ... | ... | ... | ... | ... | ... |
+
+The **residual risk mapping** is as follows:
+
+>[ /!\ to be updated upon completion /!\ ]
+
+| <center>Risk<br>Assessment</center> |  | <center>Likelihood</center> |  | |  |
+| --- | --- | --- | --- | --- | --- |
+|  | | **1. Minimal** | **2. Limited** | **3. Significant** | **4. Maximum** |
+| **Severity** | **4. Maximum** |  | | R09 |  |
+|  | **3. Significant** |  | | R02 R11 R14 R15 | R08 |
+|  | **2. Limited** | R06 | R01 R04 R05 R10 | R07 R12 R13 |  |
+|  | **1. Minimal** | R03 |  | |  |
+
+It will be proposed to the accreditation committee to **validate the risk treatment plan and accept residual risks**.
+
+## Deliverables
+
+### Statement of Applicability (SoA)
 
 #### Responsible Governance
 
@@ -201,16 +478,14 @@ Compliance with best practices is assessed and addressed as follows:
 | Define and publish support period (Art. 13.3) | ☑ Yes<br>☐ No<br>☐ Don't know | 5-year security support period published, end-of-life policy defined. | Communicate support commitments to customers. |
 | Provide security updates throughout support period | ☑ Yes<br>☐ No<br>☐ Don't know | Committed to addressing vulnerabilities during declared support period. |  |
 
->[ /!\ Additional CRA measures to be integrated into treatment plan /!\ ]
-
 #### Protection of Rights and Freedoms
 
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Additional Measures</center> |
 | --- | --- | --- | --- |
-| Bring processing into compliance with regulations | ☑ Yes<br>☐ No<br>☐ Don't know | A compliance assessment with fundamental principles of [Loi I&L] is performed (see below) |  |
+| Bring processing into compliance with regulations | ☑ Yes<br>☐ No<br>☐ Don't know | A compliance assessment with fundamental principles of [RGPD] is performed (see below) |  |
 | Comply with [Recos CNIL] | ☑ Yes<br>☐ No<br>☐ Don't know | A compliance assessment with [Recos CNIL] is performed (see below) |  |
 
-#### Protection of Rights and Freedoms - Detail (cf. [Loi I&L])
+#### Protection of Rights and Freedoms - Detail (cf. [RGPD])
 
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Additional Measures</center> |
 | --- | --- | --- | --- |
@@ -275,177 +550,6 @@ Compliance with best practices is assessed and addressed as follows:
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Additional Measures</center> |
 | --- | --- | --- | --- |
 | Adopt accessibility best practices | ☑ Yes<br>☐ No<br>☐ Don't know | A badge reader is available for people not recognized by the system. |  |
-
->[ /!\ to be developed (treatment plan) /!\ ]
-
-### Scenario-based Approach
-
-The study subject is described in detail:
-- **purpose**: control physical access to a secure zone;
-- main **business values**: training data, biometric templates, captured data, facial recognition function, identification results;
-- detailed **functional description**:
-   - Phase 1: User Enrollment
-      1. Identify the person to enroll → Name, internal identifier → Ensure legitimacy of future access
-      1. Capture initial facial image → Raw facial image → Build initial biometric profile
-      1. Verify image quality → Quality status (brightness, angle, expression) → Ensure model reliability
-      1. Extract facial features → Biometric template (feature vector) → Create user's biometric profile
-      1. Associate profile with internal identifier → Profile database → Enable future recognition
-      1. Obtain and record consent, where applicable → Signed consent or electronic trace → Comply with legal obligations
-      1. Verify data accuracy and relevance → Validation report → Minimize errors and unnecessary data
-   - Phase 2: Daily Access Control
-      1. Capture facial image at entrance → Captured data (real-time facial image) → Detect user wishing to access
-      1. Detect face in image → Coordinates and region of interest → Prepare image for biometric model
-      1. Extract facial features in real time → Biometric template (feature vector) → Compare with profile database
-      1. Compare with recorded profiles → Identification results (similarity score) → Assess match and access decision
-      1. Decide on access → Binary decision: access granted or denied → Authorize or block entry
-      1. Notify user and/or manager → Light signal, sound, or alert → Inform of verification result
-      1. Record access event → Access control log (user, date, time, decision, reason) → Enable audit, monitoring and security
-      1. Delete temporary images → Raw image deleted → Minimize sensitive data retention
-      1. Analyze logs and anomalies → Reports and statistics → Detect incidents or abnormal uses
-   - Phase 3: Profile Maintenance and Update
-      1. Update biometric profiles if necessary → Updated facial vector → Ensure system remains accurate despite physical changes
-      1. Delete profiles of departing users → Deleted profiles → Respect retention periods and erasure rights
-      1. Regularly verify data quality and security → Internal audit and corrective actions → Maintain reliability, security and legal compliance
-- main **supporting assets**: hardware components (cameras, sensors, processing units) that connect to networks, software components (facial recognition algorithms using Hidden Markov Models, access control management software), training environment, production environment, developers, administrators, secure zone;
-- main **stakeholders**: algorithm publisher, software solution publishers (operating system, servers, etc.).
-
-The **scales** are constructed:
-
-- for privacy protection (cf. [RGPD]), the **severity of consequences on people** will be estimated using the [PIA-3] guide scale;
-
-- for information security (cf. [ISO/IEC 27005]) and [CRA] compliance, the **severity of consequences on the organization** will be estimated using the following scale (adapted for a small technology company):
-
-| <center>Severity of Consequences on Organization</center> | <center>Financial Consequences</center> | <center>Operational Consequences</center> | <center>Reputational Consequences</center> | <center>Legal and Regulatory Consequences</center> |
-| --- | --- | --- | --- | --- |
-| 1. Minimal | Up to €5,000 | Minor service degradation affecting <10% of users for <1 day, no security compromise | Internal awareness only, no external visibility | No regulatory action, internal documentation gaps only |
-| 2. Limited | €5,000 - €50,000 | Service degradation affecting <50% of users for <1 week, or limited security incident contained quickly | Local media mention or industry awareness, temporary customer concern | Regulatory inquiry, minor [CRA] non-conformity, potential market surveillance review, corrective action required |
-| 3. Significant | €50,000 - €250,000 | Major service disruption affecting >50% of users for >1 week, or significant security incident requiring customer notification | National media coverage, customer complaints, loss of new business opportunities | Formal regulatory investigation, [CRA] violation proceedings, [RGPD] sanctions, potential CE marking suspension, mandatory corrective actions |
-| 4. Maximum | >€250,000 or >5% of annual revenue | Complete service failure >1 month, or critical security breach compromising all customer data | Widespread negative media coverage, major customer defections, industry reputation damage | Severe [CRA] violations with fines up to €15M or 2.5% global turnover, [RGPD] fines up to €20M or 4% global turnover, CE marking withdrawal, product recall, potential company insolvency |
-
-- for compliance with [Règlement AI] requirements, the **severity of consequences on fundamental rights** (cf. [Charte UE]) will be estimated using the following scale:
-
-| <center>Severity of Consequences on Fundamental Rights</center> | <center>Consequences on Dignity (cf. Art. 1–5)</center> | <center>Consequences on Freedoms (cf. Art. 6–19)</center> | <center>Consequences on Equality (cf. Art. 20–26)</center> | <center>Consequences on Solidarity (cf. Art. 27–38)</center> | <center>Consequences on Citizenship (cf. Art. 39–46)</center> | <center>Consequences on Justice (cf. Art. 47–54)</center> |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1. Minimal | Unpleasant experience without physical or moral harm (e.g. inappropriate online comments) | Light or temporary restrictions (e.g. blocking non-critical content) | Prejudice or light disadvantageous treatment (e.g. stereotypical comments) | Limited access to social resources or protections (e.g. delay in aid delivery) | Minor difficulties exercising civic rights (e.g. one-time administrative problem to vote) | Slow procedures or complex formalities without major consequence (e.g. delay in complaint processing) |
-| 2. Limited | Limited physical or psychological harm (e.g. targeted harassment) | Restricted access to information or communication (e.g. targeted censorship) | One-time or limited discrimination (e.g. service denial based on unauthorized criterion) | Partial access to essential services (e.g. delayed or incomplete medical treatment) | Partial restrictions on participation or information rights (e.g. delay in access to public documents) | Biased procedures or minor errors (e.g. partially incorrect or questionable judgment) |
-| 3. Significant | Serious harm to integrity (e.g. physical violence, coercive constraint) | Significant limitation of fundamental freedoms (e.g. demonstration ban, intrusive surveillance) | Systemic or repeated discrimination (e.g. biased recruitment algorithm) | Significant deprivation of social rights or protections (e.g. prolonged exclusion from healthcare system) | Serious limitation of civic or political participation (e.g. inability to vote or seek legal remedy) | Unfair procedures resulting in serious harm (e.g. unjustified conviction, disproportionate sanction) |
-| 4. Maximum | Major harm to life or integrity (e.g. torture, slavery, endangering life) | Total deprivation of freedoms (e.g. arbitrary detention, prohibition of speech or belief) | Major discrimination affecting access to social or professional life (e.g. total exclusion from employment, housing or service) | Critical deprivation resulting in vital risk or serious social harm (e.g. prohibition of access to vital care or minimum protection) | Total deprivation of civic and democratic rights (e.g. complete exclusion from electoral system, impossibility of access to justice) | Total absence of remedy or serious violation of procedural rights (e.g. arbitrary conviction, major inequitable treatment) |
- 
-- the **likelihood** will be estimated using the following scale:
-
-| <center>Likelihood</center> | <center>Description</center> |
-| --- | --- |
-| 1. Minimal | The risk source is unlikely to achieve its intended objective according to one of the envisaged attack chains. Scenario likelihood is low |
-| 2. Limited | The risk source is likely to achieve its intended objective according to one of the envisaged attack chains. Scenario likelihood is significant |
-| 3. Significant | The risk source will probably achieve its intended objective according to one of the envisaged attack chains. Scenario likelihood is high |
-| 4. Maximum | The risk source will certainly achieve its intended objective according to one of the envisaged attack chains OR such a scenario has already occurred within the organization (incident history) |
-
-- **risk assessment** and residual risks will be performed using the following mapping:
-
-| <center>Risk<br>Assessment</center> |  | <center>Likelihood</center> |  | |  |
-| --- | --- | --- | --- | --- | --- |
-|  | | **1. Minimal** | **2. Limited** | **3. Significant** | **4. Maximum** |
-| **Severity** | **4. Maximum** | Tolerable under control | Tolerable under control | Unacceptable | Unacceptable |
-|  | **3. Significant** | Acceptable as is | Tolerable under control | Tolerable under control | Unacceptable |
-|  | **2. Limited** | Acceptable as is | Acceptable as is | Tolerable under control | Tolerable under control |
-|  | **1. Minimal** | Acceptable as is | Acceptable as is | Acceptable as is | Tolerable under control |
-
-The following table presents the **risk appreciation**:
-
-| <center>Risk</center> | <center>Business Value</center> | <center>Feared Event</center> | <center>Severity** (and main consequences)</center> | <center>Main Risk Source** (and intended objectives)</center> | <center>Main Strategic Scenario</center> | <center>Main Operational Scenario** (detail below)</center> | <center>Likelihood</center> |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| R01 | Facial recognition function | Disappearance | 2. Limited (operational: blocked access) | Organized crime (extortion) | Direct attack | Physical or logical destruction | 2. Limited |
-| R02 | Facial recognition function | Undesired modification | **3. Significant (fundamental rights / privacy: discrimination)** | State actor / competitor (sabotage or manipulation) | Attack via model publisher | Bias injection into model | **3. Significant** |
-| R03 | Facial recognition function | Unauthorized access | 1. Minimal (image) | Malicious employee (resale) | Direct attack | Algorithm or parameter exfiltration | 1. Minimal |
-| R04 | Training data | Disappearance | 2. Limited (human and financial cost) | Organized crime (targeted sabotage) | Direct attack | Dataset deletion or corruption | 2. Limited |
-| R05 | Training data | Undesired modification | 2. Limited (fundamental rights / privacy: bias, discrimination) | Competitor (sabotage) | Direct attack | Training data poisoning | 2. Limited |
-| R06 | Training data | Unauthorized access | 2. Limited (privacy) | Organized crime (resale) | Direct attack | Sensitive data exfiltration | 1. Minimal |
-| R07 | Biometric templates | Disappearance | 2. Limited (operational: blocked access) | Organized crime (sabotage) | Direct attack | Data deletion | **3. Significant** |
-| R08 | Biometric templates | Undesired modification | **3. Significant (security: unauthorized person access)** | State actor (infiltration) | Attack via software publisher | Data alteration | **4. Maximum** |
-| R09 | Biometric templates | Unauthorized access | **4. Maximum (fundamental rights / privacy: impersonation, template unusable for life)** | Organized crime (impersonation) | Direct attack | Exfiltration via API | **3. Significant** |
-| R10 | Captured data | Disappearance | 2. Limited (operational: blocked access) | Vandal (ideology) | Direct attack | Camera sabotage | 2. Limited |
-| R11 | Captured data | Undesired modification | **3. Significant (security: unauthorized person access, operational: blocked access)** | State actor (infiltration) | Direct attack | False data injection | 2. Limited |
-| R12 | Captured data | Unauthorized access | 2. Limited (privacy) | State actor (espionage) | Direct attack | Video stream exfiltration | **3. Significant** |
-| R13 | Identification results | Disappearance | 2. Limited (operational: blocked access) | Organized crime (extortion) | Direct attack | Data deletion | 3. Significant |
-| R14 | Identification results | Undesired modification | **3. Significant (security: unauthorized person access)** | State actor (infiltration) | Direct attack | Result modification | 2. Limited |
-| R15 | Identification results | Unauthorized access | **3. Significant (security: replay for unauthorized person access)** | State actor (infiltration) | Direct attack | False result usage | 2. Limited |
-
-The following table presents the detail of **operational scenarios**:
-
-| **Operational Scenarios** | **Attack Chains (_kill chain_)** |
-| --- | --- |
-| Physical or logical destruction | 1. Identification of servers/applications or premises hosting the algorithm <br> 2. Physical or admin access (vulnerable account) <br> 3. Deletion of algorithm files / container <br> 4. Verification of algorithm unavailability |
-| Bias injection into model | 1. Identification of training _pipeline_ <br> 2. Compromise of provider _package_ (vulnerable pipeline) <br> 3. Poisoned data injection <br> 4. Deployment of biased model to production |
-| Algorithm or parameter exfiltration | 1. Identification of administrator accounts <br> 2. _Phishing_ <br> 3. Algorithm or parameter download <br> 4. Exfiltration to external server |
-| Dataset deletion or corruption | 1. Location of dataset storage <br> 2. Exploitation of server vulnerability <br> 3. Access compromise <br> 4. Dataset deletion or alteration |
-| Training data poisoning | 1. Identification of dataset ingestion points <br> 2. Malicious data injection <br> 3. Launch of automatic retraining <br> 4. Model bias propagation |
-| Sensitive data exfiltration | 1. Identification of accounts with dataset access <br> 2. Targeted _phishing_ or access compromise <br> 3. Dataset download <br> 4. Exfiltration to external server |
-| Data deletion | 1. Identification of template processing servers <br> 2. Exploitation of application vulnerability <br> 3. Deletion |
-| Data alteration | 1. Identification of concerned software publishers <br> 2. Patch corruption <br> 3. Deployment of validated patches <br> 4. Physical access to secure zone |
-| Exfiltration via API | 1. API / _endpoint_ mapping <br> 2. Exploitation of unprotected API <br> 3. Template download <br> 4. _Offline_ usage for impersonation |
-| Camera sabotage | 1. Camera location <br> 2. Physical access <br> 3. Physical destruction |
-| False data injection | 1. Identification of useful flows and protocols <br> 2. MITM / _replay frames_ <br> 3. _Deepfake_ injection <br> Physical access to secure zone |
-| Video stream exfiltration | 1. Identification of vulnerable equipment <br> 2. Router / _switch_ compromise <br> 3. _Sniffing_ and stream recording <br> 4. Exfiltration |
-| Data deletion | 1. Identification of dependent services <br> 2. Compromise of production database and backups <br> 3. Deletion of identification results |
-| Result modification | 1. Identification of administrators <br> 2. Blackmail <br> 3. Fraudulent validation <br> 4. Physical access to secure zone |
-| False result usage | 1. Collection of schedules & routines <br> 2. Compromise of results API <br> 3. Generation of false access <br> 4. Physical access to secure zone |
-
-The **risk mapping** thus appreciated is as follows:
-
-| <center>Risk<br>Assessment</center> |  | <center>Likelihood</center> |  | |  |
-| --- | --- | --- | --- | --- | --- |
-|  | | **1. Minimal** | **2. Limited** | **3. Significant** | **4. Maximum** |
-| **Severity** | **4. Maximum** |  | | R09 |  |
-|  | **3. Significant** |  | | R02 R11 R14 R15 | R08 |
-|  | **2. Limited** | R06 | R01 R04 R05 R10 | R07 R12 R13 |  |
-|  | **1. Minimal** | R03 |  | |  |
-
-The following table presents the **additional measures** planned to contribute to treating risks, as well as **residual risks**:
-
-> [ /!\ to be reviewed from here /!\ ]
-
-| **Risk** | **Additional Measures** | **Residual Severity** | **Residual Likelihood** |
-| --- | --- | --- | --- |
-| R01 | Implement automatic encrypted daily backup (tested every 6 months) <br> Implement multi-factor authentication (MFA) <br> Implement service unavailability monitoring and alert tool | = 2. Limited | = 2. Limited |
-| R02 | Verify _hash_ / signature of used _packages_ <br> Manually validate models <br> Create whitelist of supplier sources | = 3. Significant | ↘ 2. Limited |
-| R03 | Strengthen access and action logging <br> Review access rights every 3 months | 3 | 2 |
-| R04 | At-rest encryption + local keys <br> Immutable backups <br> Restricted access via dedicated accounts | 2 | 2 |
-| R05 | Incoming dataset filtering/validation <br> Training sandbox <br> Human checklist before retraining | 3 | 2 |
-| R06 | MFA + storage segmentation <br> Unusual access alerts <br> Logging and regular audits | 3 | 2 |
-| R07 | Template encryption <br> Restricted physical access <br> Access logs + alerts | 3 | 2 |
-| R08 | Modification review <br> Multi-actor validation <br> Logs + alerts | 3 | 2 |
-| R09 | Secure API + rate limit <br> MFA for API <br> Monitoring and alerts | 3 | 2 |
-| R10 | Physical camera locking <br> Surveillance <br> Local/central backups | 2 | 2 |
-| R11 | Video stream signature <br> Anomaly monitoring <br> Random human verification | 2 | 2 |
-| R12 | Video stream encryption <br> Restricted access <br> Logs + alerts | 3 | 2 |
-| R13 | Immutable backups <br> DBA rights review <br> DB deletion alerts | 2 | 2 |
-| R14 | Multi-actor validation <br> Modification logging <br> Automated alerts | 3 | 2 |
-| R15 | MFA API + short tokens <br> Logs + alerts <br> Physical entrance surveillance | 3 | 2 |
-
-The following table presents the **risk treatment plan**:
-
-| <center>Priority</center> | <center>Measure</center> | <center>Treated Risks</center> | <center>Department</center> | <center>Added Value</center> | <center>Difficulty</center> | <center>Timeframe</center> |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | Implement automatic encrypted daily backup (tested every 6 months) | R01, R04, R13 | IT | 4 | 2 | 1 month |
-|  | Immutable backups | R04, R13 | IT | 4 | 3 | 1 month |
-|  | At-rest encryption + local keys | R04, R07, R12 | IT | 4 | 3 | 1 month |
-| ... | ... | ... | ... | ... | ... | ... |
-
-The **residual risk mapping** is as follows:
-
->[ /!\ to be updated upon completion /!\ ]
-
-| <center>Risk<br>Assessment</center> |  | <center>Likelihood</center> |  | |  |
-| --- | --- | --- | --- | --- | --- |
-|  | | **1. Minimal** | **2. Limited** | **3. Significant** | **4. Maximum** |
-| **Severity** | **4. Maximum** |  | | R09 |  |
-|  | **3. Significant** |  | | R02 R11 R14 R15 | R08 |
-|  | **2. Limited** | R06 | R01 R04 R05 R10 | R07 R12 R13 |  |
-|  | **1. Minimal** | R03 |  | |  |
-
-It will be proposed to the accreditation committee to **validate the risk treatment plan and accept residual risks**.
-
-## Deliverables
 
 ### Fundamental Rights Impact Assessment (FRIA)
 
