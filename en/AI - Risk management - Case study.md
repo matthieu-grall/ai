@@ -2,10 +2,10 @@
 
 ## Purpose of the Document
 
-This document illustrates an application of the **artificial intelligence (AI) risk management method**.
+This document illustrates an **application of the artificial intelligence (AI) risk management method**.
 
-**[Foreword](#foreword)<br>
-**[Introduction](#introduction)<br>
+**[Foreword](#foreword)**<br><br>
+**[Introduction](#introduction)**<br><br>
 **[Method Application](#method-application)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Step 1. Frame the context](#step-1-frame-the-context)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Step 2. Compliance-based approach](#step-2-compliance-based-approach)<br>
