@@ -10,14 +10,16 @@ Il a pour vocation à s'inscrire dans les démarches existantes au sein des orga
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 1.1. Cadrer l'étude](#action-11-cadrer-létude)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 1.2. Estimer le niveau de risque que l'objet de l'étude est susceptible d'engendrer](#action-12-estimer-le-niveau-de-risque-que-lobjet-de-létude-est-susceptible-dengendrer)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 1.3. Déterminer les suites à donner](#action-13-déterminer-les-suites-à-donner)<br><br>
-**[Étape 2. l'approche par conformité](#étape-2-lapproche-par-conformité)**<br>
+**[Étape 2. L'approche par conformité](#étape-2-lapproche-par-conformité)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 2.1. Choisir son référentiel](#action-21-choisir-son-référentiel)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 2.2. Évaluer la conformité aux bonnes pratiques](#action-22-évaluer-la-conformité-aux-bonnes-pratiques)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 2.3. Améliorer la conformité aux bonnes pratiques](#action-23-améliorer-la-conformité-aux-bonnes-pratiques)<br><br>
-**[Étape 3. l'approche par scénarios](#étape-3-lapproche-par-scénarios)**<br>
+**[Étape 3. L'approche par scénarios](#étape-3-lapproche-par-scénarios)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 3.1. Établir le contexte](#action-31-établir-le-contexte)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 3.2. Apprécier les risques](#action-32-apprécier-les-risques)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Action 3.3. Traiter les risques](#action-33-traiter-les-risques)<br><br>
+**[Étape 4. Produire les livrables](#étape-4-produire-les-livrables)**<br>
+
 **[Annexe - Étude de cas : contrôle d'accès par reconnaissance faciale](#annexe---étude-de-cas--contrôle-daccès-par-reconnaissance-faciale)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Cadrage de l'étude](#cadrage-de-létude)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Approche par conformité](#approche-par-conformité)<br>
@@ -52,6 +54,7 @@ Les **versions** du document sont les suivantes :
 | 23/10/2025 (v1.3) | Corrections mineures (mise en cohérence des libellés courts des documents de référence qui ont été changés, harmonisation des balises "br", correction d'une phrase) | Matthieu GRALL |
 | 05/11/2025 (v1.4) | Développement de la méthode et d'une étude de cas (en cours) | Matthieu GRALL |
 | 07/11/2025 (v1.5) | Développement de l'évaluation de la conformité de l'étude de cas et extraction de l'ensemble des éléments relatifs à cette étude de cas (en cours) pour en faire une annexe afin d'améliorer la lisibilité de la méthode | Matthieu GRALL |
+| 14/04/2026 (v1.6) | Ajout d'un schéma de flux avec Mermaid, ajout d'une étape 4 sur la production des livrables, améliorations mineures (déplacements, harmonisations, corrections) | Matthieu GRALL |
 
 ## Introduction
 On peut autant considérer l'IA comme :
@@ -71,6 +74,55 @@ Ce document propose donc une **méthode de gestion des risques liés à l'IA**, 
 2. compare les pratiques envisagées aux bonnes pratiques via une **approche par conformité** ;
 3. pour les systèmes d'IA susceptibles d'engendrer les risques les plus élevés, explique comment les apprécier et les traiter via une **approche par scénarios**.
 
+En synthèse, la méthode peut être présentée de la manière suivante :
+
+```mermaid
+
+flowchart TB
+
+    %% Processus A
+    subgraph A [1. Cadrer le contexte]
+        A1[Action 1.1. Cadrer l'étude]
+        A2[Action 1.2. Estimer le niveau de risque que l'objet de l'étude est susceptible d'engendrer]
+        A3[Action 1.3. Déterminer les suites à donner]
+        A1 --> A2
+        A2 --> A3
+    end
+
+    %% Processus B
+    subgraph B [2. Approche par conformité]
+        B1[Action 2.1. Choisir son référentiel]
+        B2[Action 2.2. Évaluer la conformité aux bonnes pratiques]
+        B3[Action 2.3. Améliorer la conformité aux bonnes pratiques]
+        B1 --> B2
+        B2 --> B3
+    end
+
+    %% Processus C
+    subgraph C [3. Approche par scénarios]
+        C1[Action 3.1. Établir le contexte]
+        C2[Action 3.2. Apprécier les risques]
+        C3[Action 3.3. Traiter les risques]
+        C1 --> C2
+        C2 --> C3
+    end
+
+    %% Processus final D
+    subgraph D [4. Produire les livrables]
+        D1[ex : dossier de sécurité]
+        D2[ex : FRIA]
+        D3[ex : DPIA]
+        D4[etc.]
+    end
+
+    %% Flux principal : split → branches → join
+    A3 --> B1
+    A3 --> C1
+    B3 --> D
+    C3 --> D
+
+```
+
 Cette méthode :
 - s'inscrit dans les démarches d'homologation existantes (cf. [Guide d'homologation]) ;
 - repose sur la méthode [EBIOS _Risk Manager_] ;
@@ -88,13 +140,13 @@ Il convient tout d'abord d'identifier clairement :
 - l’**objet de l’étude** : le cas d'usage / traitement de données considéré (cas d'usage seul ou périmètre plus large, de manière intelligible pour que toutes les parties intéressées comprennent bien de quoi il s'agit) ;
 - l’**objectif de l’étude** (ex : homologuer un système) ;
 - les **destinataires de l’étude** (ex : commission d’homologation) ;
+- les **sujets à considérer** : protection des droits fondamentaux (cf. [Règlement IA]), protection de la vie privée (cf. [RGPD]), sécurité de l'information (cf. [ISO/IEC 27001]), protection de l'environnement (cf. [ISO 14001]), etc.
 
 ### Action 1.2. Estimer le niveau de risque que l'objet de l'étude est susceptible d'engendrer
 
 La gravité des conséquences des risques que l'objet de l'étude est susceptible d'engendrer devrait être estimée _a priori_ afin de pouvoir proportionner la profondeur de l'étude.
 
 Pour ce faire, il convient de :
-- **choisir les sujets à considérer** : protection des droits fondamentaux (cf. [Règlement IA]), protection de la vie privée (cf. [RGPD]), sécurité de l'information (cf. [ISO/IEC 27001]), protection de l'environnement (cf. [ISO 14001]), etc. ;
 - **définir une/des échelle(s)** qui décri(ven)t les niveaux de risque pour chaque sujet considéré ;
 - **situer l'objet de l'étude dans la/les échelle(s) définie(s)**, au regard des conséquences imaginables :
     - de son fonctionnement nominal : sa finalité, les données traitées, la nature et le volume de personnes concernées, les technologies utilisées ;
@@ -103,7 +155,7 @@ Pour ce faire, il convient de :
 - **retenir le niveau le plus élevé**.
 
 Notes :
-- selon le contexte, on peut choisir de considérer tous les sujets possibles (pour avoir une vision globale) ou uniquement certains, voire un seul (ex : périmètre de compétence limité) ;
+- selon le contexte, on peut choisir de considérer tous les sujets possibles (pour avoir une vision large) ou uniquement certains, voire un seul (ex : périmètre de compétence limité) ;
 - cette démarche ne préjuge en rien des obligations et interdictions applicables (ex : « IA à risque inacceptable » interdite par le [Règlement IA]).
 
 ### Action 1.3. Déterminer les suites à donner
@@ -131,7 +183,7 @@ Notes :
 ### Action 2.1. Choisir son référentiel
 
 Parmi les nombreux référentiels de bonnes pratiques, il convient de **choisir le(s) plus pertinent(s) selon son contexte**, notamment :
-- pour avoir une vision synthétique et globale, ou à défaut d'un choix précis de référentiel(s), il est possible d'utiliser tout ou partie des [bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) ;
+- pour avoir une vision synthétique et large, ou à défaut d'un choix précis de référentiel(s), il est possible d'utiliser tout ou partie des [bonnes pratiques pour l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) ;
 - si une politique interne est censée couvrir les référentiels applicables à l'organisation, il peut être pertinent d'en choisir les règles applicables au cas d'usage ;
 - si le périmètre de compétence est limité (ex : si on ne peut traiter que de sécurité de l'information, il peut être pertinent de choisir le [Guide d'hygiène] ou le [Guide sécurité de la CNIL] (selon le niveau de maturité), et les [Recos ANSSI]) ;
 - si certains référentiels doivent être employés (ex : s'il y a des données à caractère personnel, il peut être pertinent de choisir les [Lignes directrices AIPD], le [Guide sécurité de la CNIL] et les [Recos CNIL]) ;
@@ -146,7 +198,7 @@ Pour ce faire, l'organisation devrait évaluer chacune des bonnes pratiques rete
 	    - **si elle n'est pas appliquée, quelles sont les mesures compensatoires ?** L'explication fournie doit permettre d'évaluer que les mesures prévues sont suffisantes pour atteindre un niveau de confiance aussi bon que si la bonne pratique était appliquée ;
 - **si elle est jugée comme non applicable, pourquoi ?** L'explication fournie doit permettre de juger de son inapplicabilité (un chapitre entier peut être exclu s'il est traité par ailleurs ou en dehors de sa responsabilité, une bonne pratique sur un LLM n'est applicable qu'aux LLM, etc.) ;
  
-La déclaration d'applicabilité en annexe des [bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) peut être utilisée à cet effet.
+Le modèle de déclaration d'applicabilité en annexe des [bonnes pratiques pour l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) peut être utilisé à cet effet.
  
 Note : l'objectif n'est pas de respecter toutes les bonnes pratiques, mais de décrire ce qui est réellement prévu au regard de celles-ci.
 
@@ -156,6 +208,8 @@ Pour chaque bonne pratique applicable, l'organisation devrait :
 - **déterminer les mesures** qui permettraient d'améliorer la conformité ;
 - **les inscrire dans un plan de traitement des risques** ;
 - si besoin, **évaluer les risques résiduels** (qui subsisteraient après application du plan de traitement des risques), de manière synthétique (ex : en formulant un événement qui pourrait se réaliser malgré les mesures prévues et ses conséquences potentielles), dans l'objectif de convaincre l'autorité que les risques résiduels ont été analysés, et qu'ils sont acceptables.
+
+La dernière colonne du modèle de déclaration d'applicabilité en annexe des [bonnes pratiques pour l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md) peut être utilisé à cet effet.
 
 ## Étape 3. L'approche par scénarios
 L'approche par scénarios devrait être mise en œuvre à partir du niveau de risque 3. Élevé.
@@ -169,7 +223,7 @@ Pour ce faire, il convient de **mener une étude de risques par scénarios sur l
 ### Action 3.1. Établir le contexte
 
 L'établissement du contexte (qui peut être réalisé avant ou pendant les processus suivants) devrait :
-- détailler la description de l'**objet de l'étude** :
+- détailler la **description de l'objet de l'étude** :
     - sa **mission** : la finalité du cas d’usage ;
 	- ses **valeurs métier** (processus et données à protéger), notamment :
 	    - ses **fonctionnalités d’IA** utilisées (voir les [cas d'usages](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Cas%20d'usages.md)) ;
@@ -234,7 +288,16 @@ Le traitement des risques devrait :
 - si besoin, repositionner les risques sur la **cartographie des risques** ;
 - le cas échéant, **déterminer des mesures complémentaires** jusqu'à rendre les risques acceptables ou proposer d'accepter les risques tels quels.
 
+## Étape 4. Produire les livrables
+Si besoin, notamment lorsque la réglementation l'impose, il s'agit ici de produire les livrables souhaités à partir des éléments de l'étude.
+
+L'objectif est de maximiser l'utilisation des éléments de l'étude dans la création de chaque livrable et la rééutilisation des mêmes éléments pour produire plusieurs livrables.
+
+Pour ce faire, il convient de :
+<à rédiger>
+
 ## Annexe - Étude de cas : contrôle d'accès par reconnaissance faciale
+<obsolète, doit être sortie de ce document et refaite depuis la verion EN>
 
 ### Cadrage de l'étude
 
@@ -244,7 +307,7 @@ L'étude peut être présentée de la manière suivante :
 - **destinataires de l'étude** : commission d'homologation interne, délégué à la protection des données (DPO) et, le cas échéant, les autorités compétentes.
 
 Le niveau de risque que l'objet de l'étude est susceptible d'engendrer est estimé :
-- **échelle d'estimation du niveau de risque** (il est choisi d'adopter une vision globale, et donc de définir des échelles permettant d'estimer les conséquences sur les personnes, sur l'organisme, et sur l'environnement) :
+- **échelle d'estimation du niveau de risque** (il est choisi d'adopter une vision large, et donc de définir des échelles permettant d'estimer les conséquences sur les personnes, sur l'organisme, et sur l'environnement) :
 
 | <center>Niveau de risque**<br><br>(et correspondance avec le [Règlement IA])</center> | <center>Conséquences potentielles sur les personnes**<br><br>(cf. [Guide PIA-3])</center> | <center>Conséquences potentielles sur l'organisme**<br><br>(cf. [EBIOS _Risk Manager_])</center> | <center>Conséquences potentielles sur l'environnement**<br><br>(inspirées de [ISO 14004] et [NF X30-205])</center> |
 | --- | --- | --- | --- |
@@ -259,7 +322,7 @@ Le niveau de risque que l'objet de l'étude est susceptible d'engendrer est esti
 ### Approche par conformité
 
 La conformité aux bonnes pratiques est évaluée et traitée de la manière suivante :
-- **choix du référentiel de bonnes pratiques** : s'agissant de mettre en place un système d'IA traitant des données à caractère personnel, il est choisi d'utiliser les [bonnes pratiques de l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md), avec un focus particulier sur la sécurité de l'information (en considérant le [Guide sécurité de la CNIL]) et la protection de la vie privée (en considérant les principes fondamentaux de la la [Loi I&L]) ;
+- **choix du référentiel de bonnes pratiques** : s'agissant de mettre en place un système d'IA traitant des données à caractère personnel, il est choisi d'utiliser les [bonnes pratiques pour l'IA](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md), avec un focus particulier sur la sécurité de l'information (en considérant le [Guide sécurité de la CNIL]) et la protection de la vie privée (en considérant les principes fondamentaux de la la [Loi I&L]) ;
 - **évaluation de la conformité aux bonnes pratiques retenues et mesures additionnelles prévues** :
 
 #### Gouvernance responsable
@@ -274,7 +337,7 @@ La conformité aux bonnes pratiques est évaluée et traitée de la manière sui
 | --- | --- | --- | --- |
 | Vérifier les données d’entrée possibles | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Les images d’entrée sont vérifiées automatiquement pour éviter les formats non compatibles. |  |
 | Vérifier la robustesse du modèle | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Le modèle HMM est testé sur plusieurs conditions d’éclairage et d’angles de caméra. |  |
-| Éprouver les limites du système dans sa globalité | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | Aucun test de résistance complet n’a encore été réalisé faute de moyens. | Planifier un test manuel de non-reconnaissance sur échantillon. |
+| Éprouver les limites du système dans son ensemble | ☐ Oui<br>☑ Non<br>☐ Ne sais pas | Aucun test de résistance complet n’a encore été réalisé faute de moyens. | Planifier un test manuel de non-reconnaissance sur échantillon. |
 | Évaluer les performances du système | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Un suivi du taux de faux refus est fait par le service informatique. |  |
 | Mettre en place les mesures de sûreté nécessaires | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | En cas de panne, la porte reste verrouillée par défaut pour éviter tout accès non autorisé. |  |
 
