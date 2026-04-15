@@ -4,15 +4,14 @@
 
 This document illustrates an **application of the artificial intelligence (AI) risk management method**.
 
-**[Foreword](#foreword)**<br><br>
-**[Introduction](#introduction)**<br><br>
-**[Method Application](#method-application)**<br>
+[Foreword](#foreword)<br>
+[Introduction](#introduction)<br>
+[Method implementation](#method-implementation)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Step 1. Frame the context](#step-1-frame-the-context)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Step 2. Compliance-based approach](#step-2-compliance-based-approach)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Step 3. Scenario-based approach](#step-3-scenario-based-approach)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Step 4. Provide the deliverables](#step-4-provide-the-deliverables)<br><br>
-**[Annexes](#annexes)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Statement of Applicability (SoA)](#statement-of-applicability-soa)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Step 4. Provide the deliverables](#step-4-provide-the-deliverables)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[Annex - Statement of Applicability (SoA)](#annex---statement-of-applicability-soa)<br>
 
 ## Foreword
 
@@ -56,7 +55,7 @@ The company must produce comprehensive documentation including:
 - Fundamental Rights Impact Assessment (FRIA) as required by the [Règlement IA]
 - Data Protection Impact Assessment (DPIA) as required by the [RGPD]
 
-## Method Application
+## Method implementation
 
 ### Step 1. Frame the context
 
@@ -303,9 +302,7 @@ The following table shows the actions to be taken in order to **provide a Fundam
 
 **The study will be the essential component of the security dossier**. And the other components (e.g., FEROS/SSRS, policy, procedures) should, as much as possible, refer to the elements of the study rather than repeating them redundantly.
 
-## Annexes
-
-### Statement of Applicability (SoA)
+### Annex - Statement of Applicability (SoA)
 
 #### Responsible Governance
 
