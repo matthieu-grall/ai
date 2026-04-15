@@ -13,8 +13,6 @@ This document illustrates an **application of the artificial intelligence (AI) r
 &nbsp;&nbsp;&nbsp;&nbsp;[Step 4. Provide the deliverables](#step-4-provide-the-deliverables)<br><br>
 **[Annexes](#annexes)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[Statement of Applicability (SoA)](#statement-of-applicability-soa)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Fundamental Rights Impact Assessment (FRIA)](#fundamental-rights-impact-assessment-fria)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[Data Protection Impact Assessment (DPIA)](#data-protection-impact-assessment-dpia)<br><br>
 
 ## Foreword
 
@@ -39,6 +37,7 @@ The document **versions** are as follows:
 | 10/02/2026 (v0.1) | Document creation based on the French method annex | Matthieu GRALL |
 | 13/04/2026 (v0.2) | Include a Mermaid drawing for the functional description, move and enrich SoA | Matthieu GRALL |
 | 14/04/2026 (v0.3) | Add a new section for step 4, finish to write sections 1 to 3 consistently, minor improvements | Matthieu GRALL |
+| 15/04/2026 (v0.4) | Simplify and finalize the document, many improvements | Matthieu GRALL |
 
 ## Introduction
 
@@ -92,18 +91,19 @@ A **risk treatment plan** has been established in order to implement the request
 
 | <center>Additional measure</center> | <center>Treated risks</center> | <center>Responsible department</center> | <center>Estimated added value</center> | <center>Estimated difficulty</center> | <center>Estimated timeframe</center> |
 | --- | --- | --- | --- | --- | --- |
-| Implement automated update mechanisms, enable scheduled patching, and integrate vulnerability monitoring tools | All risks on freedoms and justice | IT / Security | Maximal (significantly improves security posture) | Limited | 3 months |
-| Provide layered notices, explain system logic and error rates, and offer clear rights procedures | All risks on freedoms and justice | Management / Legal / Communications | High (improves transparency and user trust) | Minimal | 2 months |
-| Establish a documented oversight process, define periodic reviews, and implement internal controls | All risks on freedoms, justice and equality | Management / Data Protection Officer | High (strengthens accountability and governance) | Limited | 3 months |
-| Conduct minimal but structured stress tests, evaluate edge cases, and document performance thresholds | All risks on freedoms (false rejections) | IT / System Integrator | Limited (improves robustness and reduces operational errors) | High | 4 months |
-| Expand dataset diversity, test performance across demographic variations, and document bias mitigation steps | All risks on equality and dignity (potential bias) | IT / HR (for data collection coordination) | Limited (reduces fairness and equality risks) | Limited | 6 months |
+| Implement automated update mechanisms, enable scheduled patching, and integrate vulnerability monitoring tools | All risks on freedoms and justice | IT / Security | 4. Maximal (significantly improves security posture) | 2. Limited | 3 months |
+| Provide layered notices, explain system logic and error rates, and offer clear rights procedures | All risks on freedoms and justice | Management / Legal / Communications | 3. High (improves transparency and user trust) | 1. Minimal | 2 months |
+| Establish a documented oversight process, define periodic reviews, and implement internal controls | All risks on freedoms, justice and equality | Management / Data Protection Officer | 3. High (strengthens accountability and governance) | 2. Limited | 3 months |
+| Conduct minimal but structured stress tests, evaluate edge cases, and document performance thresholds | All risks on freedoms (false rejections) | IT / System Integrator | 2. Limited (improves robustness and reduces operational errors) | 4. High | 4 months |
+| Expand dataset diversity, test performance across demographic variations, and document bias mitigation steps | All risks on equality and dignity (potential bias) | IT / HR (for data collection coordination) | 2. Limited (reduces fairness and equality risks) | 2. Limited | 6 months |
 
 ### Step 3. Scenario-based approach
 
 The study subject is described in detail:
 - **purpose**: control physical access to a secure zone;
-- main **business assets**: training data, biometric templates, captured data, facial recognition function, identification results;
-- detailed **functional description**:
+- **data subjects**: employees;
+- **business assets**: training data, biometric templates, captured data, facial recognition function, identification results;
+- **functional description**:
 
 ```mermaid
 flowchart TD
@@ -269,9 +269,9 @@ The additional measures have been added to the **risk treatment plan**:
 
 | <center>Additional measure</center> | <center>Treated risks</center> | <center>Responsible department</center> | <center>Estimated added value</center> | <center>Estimated difficulty</center> | <center>Estimated timeframe</center> |
 | --- | --- | --- | --- | --- | --- |
-| Implement automatic encrypted daily backup (tested every 6 months) | R01, R04, R13 | IT | Maximal | Moderate | 1 month |
-| Immutable backups | R04, R13 | IT | Maximal | High | 1 month |
-| At-rest encryption + local keys | R04, R07, R12 | IT | Maximal | High | 1 month |
+| Implement automatic encrypted daily backup (tested every 6 months) | R01, R04, R13 | IT | 4. Maximal | 2. Limited | 1 month |
+| Immutable backups | R04, R13 | IT | 4. Maximal | 3. High | 1 month |
+| At-rest encryption + local keys | R04, R07, R12 | IT | 4. Maximal | 3. High | 1 month |
 | ... | ... | ... | ... | ... | ... |
 
 The **residual risk matrix** is as follows:
@@ -288,7 +288,20 @@ It will be proposed to the accreditation committee to **validate the risk treatm
 
 ### Step 4. Provide the deliverables
 
->[ /!\ to be written /!\ ]
+The following table shows the actions to be taken in order to **provide a Fundamental Rights Impact Assessment (FRIA) and a Data Protection Impact Assessment (DPIA) from the study**:
+
+| <center>FRIA</center> | <center>← Action</center> | <center>← Element from the study →</center> | <center>Action →</center> | <center>DPIA</center> |
+| --- | --- | --- | --- | --- |
+|  |  | <center>Purpose →</center> | Use directly → | [RGPD] Art. 35(7)(a) Processing operations |
+| [AI Act] Art. 27(1)(a) Processes | ← Use directly | <center>← Functional description →</center> | Use directly → | [RGPD] Art. 35(7)(a) Processing operations |
+| [AI Act] Art. 27(1)(c) Persons affected | ← Use directly | <center>← Data subjects →</center> | Use directly → | [RGPD] Art. 35(7)(a) Processing operations |
+| [AI Act] Art. 27(1)(e) Human oversight measures | ← Filter human oversight practices only | <center>← SoA →</center> | Filter privacy practices only → | [RGPD] Art. 35(7)(b) Necessity and proportionality |
+| [AI Act] Art. 27(1)(f) Response measures | ← Filter response practices only | <center>← SoA →</center> | Evaluation by DPO already in the SoA → | [RGPD] Art. 35(2) Advice of DPO |
+| [AI Act] Art. 27(1)(d) Risks on fundamental rights | ← Filter risks with impact on fundamental rights only | <center>← Risks →</center><br><center>← Residual risks →</center> | Filter risks with impact on rights and freedoms only → | [RGPD] Art. 35(7)(c) Risks to rights and freedoms |
+|  |  | <center>Risk treatment plan →</center> | Use directly → | [RGPD] Art. 35(7)(d) Measures |
+| [AI Act] Art. 27(1)(b) Period and frequency of use | ← Describe period and frequency of use | <center>_(not from the study)_</center> | Define the way to seek the views of data subjects → | [RGPD] Art. 35(9) Views of data subjects |
+
+**The study will be the essential component of the security dossier**. And the other components (e.g., FEROS/SSRS, policy, procedures) should, as much as possible, refer to the elements of the study rather than repeating them redundantly.
 
 ## Annexes
 
@@ -474,95 +487,3 @@ It will be proposed to the accreditation committee to **validate the risk treatm
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Effects on risks</center> | <center>Evaluation</center> |
 | --- | --- | --- | --- | --- |
 | Adopt accessibility best practices | ☑ Yes<br>☐ No<br>☐ Don't know | A badge reader is available for people not recognized by the system. | This reduces risks on equality and dignity by ensuring an alternative access method. | Evaluated as sufficient. |
-
-### Fundamental Rights Impact Assessment (FRIA)
-
-The Fundamental Rights Impact Assessment is required under Article 27 of the [Règlement IA] for deployers of high-risk AI systems. The following table maps FRIA requirements to data generated in this case study:
-
-| <center>FRIA Component</center> | <center>Reference to Case Study Data</center> |
-| --- | --- |
-| 1. System Description and Context | |
-| Intended purpose and deployment context (Art. 27.1.a) | See [Study Scope](#study-scope) - purpose and [Scenario-based Approach](#scenario-based-approach) - detailed functional description |
-| Deployment duration and geographic/situational scope (Art. 27.1.a) | See [Introduction](#introduction) - company context and facility deployment<br>**To be completed**: specific deployment timeline and geographic scope |
-| Process and decision-making using the AI system (Art. 27.1.a) | See [Scenario-based Approach](#scenario-based-approach) - Phase 2: Daily Access Control |
-| 2. Affected Persons and Groups | |
-| Categories of persons affected (Art. 27.1.b) | See [Scenario-based Approach](#scenario-based-approach) - main stakeholders: employees, contractors, visitors<br>**To be completed**: detailed demographic analysis of affected populations |
-| Number of affected persons (Art. 27.1.b) | To be completed**: estimated number of employees, contractors, and visitors |
-| 3. Risk Identification | |
-| Specific risks to fundamental rights (Art. 27.1.c) | See [Scenario-based Approach](#scenario-based-approach) - risk appreciation table (R02, R09 for discrimination and privacy risks)<br>See [Compliance Approach](#compliance-approach) - Fairness and Protection of Rights and Freedoms sections |
-| Probability of materialization (Art. 27.1.c) | See [Scenario-based Approach](#scenario-based-approach) - likelihood column in risk appreciation table |
-| Severity of impact (Art. 27.1.c) | See [Scenario-based Approach](#scenario-based-approach) - gravity column with fundamental rights consequences scale |
-| Rights potentially affected per EU Charter (dignity, freedoms, equality, solidarity, citizenship, justice) | To be completed**: systematic mapping to EU Charter chapters:<br>- Dignity (Art. 1-5): risk of degrading treatment<br>- Freedoms (Art. 6-19): privacy, data protection<br>- Equality (Art. 20-26): non-discrimination, bias risks<br>- Solidarity (Art. 27-38): **to be assessed**<br>- Citizenship (Art. 39-46): **to be assessed**<br>- Justice (Art. 47-50): right to remedy |
-| 4. Human Oversight Measures | |
-| Arrangements for human oversight (Art. 27.1.d) | See [Compliance Approach](#compliance-approach) - Reliability and Safety section (BP08), Fairness section (BP19 validation)<br>**To be completed**: detailed human oversight procedures and governance |
-| Authority, competence and training of oversight personnel (Art. 27.1.d) | To be completed**: roles, qualifications, training programs for oversight staff |
-| 5. Mitigation Measures | |
-| Measures to address identified risks if materialized (Art. 27.1.e) | See [Scenario-based Approach](#scenario-based-approach) - additional measures column in risk treatment plan<br>See [Compliance Approach](#compliance-approach) - additional measures across all trust objectives |
-| Technical safeguards | See [Compliance Approach](#compliance-approach) - Information Security, CRA Compliance sections<br>See [Scenario-based Approach](#scenario-based-approach) - operational measures (encryption, MFA, monitoring) |
-| Organizational safeguards | See [Compliance Approach](#compliance-approach) - Responsible Governance section<br>**To be completed**: grievance mechanisms, complaint procedures |
-| 6. Consultation and Involvement | |
-| Consultation with affected persons or representatives | See [Compliance Approach](#compliance-approach) - Fairness section (BP20 - user feedback)<br>**To be completed**: formal consultation process with employee representatives |
-| Involvement of independent experts | See [Compliance Approach](#compliance-approach) - Fairness section (BP18, BP19 - expert consultation)<br>**To be completed**: independent fundamental rights expert review |
-| 7. Monitoring and Review | |
-| Ongoing monitoring mechanisms (Art. 27.2 - update obligation) | See [Compliance Approach](#compliance-approach) - various monitoring practices<br>**To be completed**: FRIA review and update procedures |
-| Triggers for FRIA update | To be completed**: define conditions requiring FRIA update (system changes, new risks, incidents) |
-| 8. Relationship with DPIA | |
-| Integration with Data Protection Impact Assessment (Art. 27.4) | This FRIA conducted in conjunction with DPIA (see [DPIA section](#data-protection-impact-assessment-dpia) below) |
-| Elements covered by DPIA | Data protection aspects covered in [Protection of Rights and Freedoms - RGPD](#protection-of-rights-and-freedoms---detail-cf-loi-il) section |
-| 9. Documentation and Transparency | |
-| Documentation of assessment process | See [Scenario-based Approach](#scenario-based-approach) - risk management documentation |
-| Communication to stakeholders | See [Compliance Approach](#compliance-approach) - Transparency section (BP21)<br>**To be completed**: FRIA summary for affected persons |
-| 10. Market Surveillance Authority Notification | |
-| Completed template submission (Art. 27.3) | To be completed**: fill AI Office template questionnaire when available |
-| Market surveillance authority contact | To be completed**: identify and register with competent national authority |
-
-### Data Protection Impact Assessment (DPIA)
-
-The Data Protection Impact Assessment is required under Article 35 of the [RGPD] for high-risk processing operations, including biometric data processing. The following table maps DPIA requirements to data generated in this case study:
-
-| <center>DPIA Component</center> | <center>Reference to Case Study Data</center> |
-| --- | --- |
-| 1. Systematic Description of Processing | |
-| Nature, scope, context and purposes of processing (Art. 35.7.a) | See [Study Scope](#study-scope) - study subject and objectives<br>See [Scenario-based Approach](#scenario-based-approach) - detailed functional description |
-| Data subjects categories | See [Scenario-based Approach](#scenario-based-approach) - employees, contractors accessing secure zone |
-| Personal data categories | See [Scenario-based Approach](#scenario-based-approach) - biometric templates, facial images, identification results, access logs |
-| Data sources | See [Scenario-based Approach](#scenario-based-approach) - Phase 1: User Enrollment, Phase 2: Daily Access Control |
-| Recipients of personal data | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms (subcontractors, system publisher) |
-| Data flows | See [Scenario-based Approach](#scenario-based-approach) - functional description phases 1-3 |
-| Retention periods | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms / [Loi I&L] (30 days after departure) |
-| Functional description of processing | See [Scenario-based Approach](#scenario-based-approach) - complete functional description |
-| 2. Assessment of Necessity and Proportionality | |
-| Lawfulness of processing (Art. 6 GDPR) | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms / [Loi I&L] (legitimate interest) |
-| Purpose limitation and data minimization | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms / [Loi I&L] (finality and minimization sections) |
-| Proportionality assessment | To be completed**: systematic analysis of alternatives and proportionality justification |
-| Rights of data subjects | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms / [Loi I&L] (rights exercise sections) |
-| 3. Risk Assessment | |
-| Risks to rights and freedoms of data subjects (Art. 35.7.c) | See [Scenario-based Approach](#scenario-based-approach) - risk appreciation table, particularly R06, R09 (privacy risks) |
-| Sources of risk | See [Scenario-based Approach](#scenario-based-approach) - risk sources column (organized crime, state actors, malicious employees) |
-| Likelihood assessment | See [Scenario-based Approach](#scenario-based-approach) - likelihood scale and assessment |
-| Severity assessment | See [Scenario-based Approach](#scenario-based-approach) - severity scale for consequences on people (per [Guide PIA-3]) |
-| Overall risk level | See [Study Scope](#study-scope) - risk level estimation: Level 3. High |
-| 4. Measures to Address Risks | |
-| Technical measures (Art. 35.7.d) | See [Compliance Approach](#compliance-approach) - Information Security, CRA Compliance<br>See [Scenario-based Approach](#scenario-based-approach) - additional measures (encryption, MFA, access controls) |
-| Organizational measures (Art. 35.7.d) | See [Compliance Approach](#compliance-approach) - Responsible Governance, Protection of Rights and Freedoms |
-| Safeguards, security measures | See [Scenario-based Approach](#scenario-based-approach) - risk treatment plan |
-| Mechanisms to ensure data protection (Art. 35.7.d) | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms sections |
-| Demonstration of GDPR compliance | See [Compliance Approach](#compliance-approach) - complete Protection of Rights and Freedoms evaluation |
-| 5. Stakeholder Consultation | |
-| Data Protection Officer consultation (Art. 35.2) | To be completed**: DPO formal advice on DPIA |
-| Data subjects or representatives consultation (Art. 35.9) | See [Compliance Approach](#compliance-approach) - Fairness (BP20 - user feedback)<br>**To be completed**: formal consultation with employee representatives |
-| 6. Residual Risk and Approval | |
-| Residual risks after mitigation | See [Scenario-based Approach](#scenario-based-approach) - residual risk mapping |
-| Acceptance of residual risks | See [Scenario-based Approach](#scenario-based-approach) - proposal for risk acceptance |
-| Prior consultation with supervisory authority (Art. 36) | To be completed**: assess if high residual risk requires CNIL prior consultation |
-| 7. Integration with Other Assessments | |
-| Relationship with Legitimate Interest Assessment (LIA) | See [Compliance Approach](#compliance-approach) - Protection of Rights and Freedoms / [Recos CNIL] (legitimate interest base) |
-| Integration with FRIA | Combined assessment as per Art. 27.4 of [Règlement IA] (see [FRIA section](#fundamental-rights-impact-assessment-fria) above) |
-| 8. Documentation and Accountability | |
-| Record of processing activities (Art. 30) | To be completed**: update processing register with this treatment |
-| DPIA documentation retention | To be completed**: establish DPIA retention and review procedures |
-| DPIA review and update procedures | To be completed**: define triggers for DPIA review (system changes, new risks, regulatory changes) |
-
-### Security dossier for system accreditation
-
-<TBD>
