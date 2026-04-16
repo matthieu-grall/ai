@@ -22,7 +22,7 @@ The **backlog** is currently the following (using MoSCoW priorization: (M) Must 
 | Case Study | 1. Huge | - Quite long | None identified | None identified |
 | Usecases and functionalities | 3. Low: illustrating | - Controversial</br>- Difficult to use and maintain | - (S) Clarify the use of this document in its scope | - (W) Try to make [ISO-24030] available for free -> too complicated |
 | Best practices | 2. High: global, merging, extensible, synthetic, redirecting to detailed references | - Very wide</br>- No worldwide consensus on trust criteria neither on the label (objectives, principles, criteria, sections, etc.) nor on the list</br>- Could be redundant with other references | None identified | - (S) Contribute to [ISO-42001] (objectives and structure) when revised</br>- (C) Determine the most effective way to converge (e.g. thru ISO/JTC1/SC27 or MITRE) |
-| Reference documents | 2. High: centralized, focused on standards | None identified | - **(M, ongoing) Add a Mermaid diagram showing the relations between references**</br>- (C) Add a section to explain the rules for positionning new references in the cartography</br>- (W) Shortly show the main added values and limits of each reference -> not enough added value for the required effort | None identified | 
+| Reference documents | 2. High: centralized, focused on standards | None identified | - (C) Add a section to explain the rules for positionning new references in the cartography</br>- (W) Shortly show the main added values and limits of each reference -> not enough added value for the required effort | None identified | 
 
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
