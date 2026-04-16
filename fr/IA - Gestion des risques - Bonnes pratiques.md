@@ -19,13 +19,13 @@ Il peut être directement utilisé dans le cadre des projets de nouveaux service
 [9. Respect de l'environnement](#9-respect-de-lenvironnement)<br>
 [10. Accessibilité](#10-accessibilité)<br>
 [Annexe - Modèle pour une déclaration d'applicabilité (DdA)](#annexe---modèle-pour-une-déclaration-dapplicabilité-dda)<br>
-[Annexe - Couverture des droits fondamentaux de la [Charte UE]](#annexe---couverture-des-droits-fondamentaux-de-la-charte-ue)<br>
-[Annexe - Couverture des exigences du [Règlement IA]](#annexe---couverture-des-exigences-du-règlement-ia)<br>
+[Annexe - Couverture des droits fondamentaux de la [EU-Charter]](#annexe---couverture-des-droits-fondamentaux-de-la-charte-ue)<br>
+[Annexe - Couverture des exigences du [EU-AIAct]](#annexe---couverture-des-exigences-du-eu-aiact)<br>
 
 ## Avant-propos
 
 Ce document s’inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai) en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément.
-Les [documents de référence](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) sont utilisés entre crochets dans le corps du document.
+Les [documents de référence](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) sont utilisés entre crochets dans le corps du document.
 
 Il est placé sous la **licence** suivante :
 _[Creative Commons Attribution 4.0 International License][cc-by]_.
@@ -53,13 +53,14 @@ Les **versions** du document sont les suivantes :
 | 02/10/2025 (v1.3) | Intégration du contenu du document qui définissait indépendamment les critères de confiance, ajout de références à [ISO/IEC 27090] et [IEC 61508], correction des liens de retour des références | Matthieu GRALL |
 | 23/10/2025 (v1.4) | Corrections mineures (mise en cohérence des libellés courts des documents de référence qui ont été changés, harmonisation des balises "br", correction des notes de bas de page) | Matthieu GRALL |
 | 06/11/2025 (v1.5) | Ajout de risques liés à la protection des droits fondamentaux dans chaque section, ajout de références au [Règlement IA] dans les bonnes pratiques concernées, ajout de mesures additionnelles dans la DdA, amélioration de la lisibilité des tableaux | Matthieu GRALL |
-| 07/11/2025 (v1.6) | Ajout d'annexes relatives à la couverture des droits fondamentaux de la [Charte UE] et des exigences du [Règlement IA] par les bonnes pratiques, corrections mineures (cohérence avec l'étude de cas) | Matthieu GRALL |
+| 07/11/2025 (v1.6) | Ajout d'annexes relatives à la couverture des droits fondamentaux de la [EU-Charter] et des exigences du [Règlement IA] par les bonnes pratiques, corrections mineures (cohérence avec l'étude de cas) | Matthieu GRALL |
 | 08/04/2026 (v1.7) | Suppression des phases du cycle de vie des [Recos OCDE] qui s'avèrent pas suffisamment utiles pour des bonnes pratiques, développement des bonnes pratiques relatives à la sécurité de l'information, la protection des droits et libertés, l'interopérabilité, le respect de l'environnement et l'accessibilité | Matthieu GRALL |
 | 13/04/2026 (v1.8) | Renumérotation de l'ensemble des bonnes pratiques, transformation de l'annexe relative à la déclaration d'applicabilité en simple modèle pour éviter les redondances, améliorations mineures (harmonisations, corrections) | Matthieu GRALL |
+| 16/04/2026 (v1.9) | Normalisation des références, harmonisation des boîtes cochées ou non, correction de liens rompus | Matthieu GRALL |
 
 ## Introduction
 
-**Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA (objectifs de l'[ISO/IEC 42001], principes des [Recos OCDE], etc.). Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision large.
+**Pour obtenir une liste de critères de confiance des systèmes basés sur l’IA, on se heurte à la pluralité des principaux documents de référence**<sup><a href="#note1" id="ref1">[1]</a></sup> qui comprennent des exigences, règles et recommandations liées à l’IA ou applicables à l’IA (objectifs de l'[ISO-42001], principes des [OECD-AIRecos], etc.). Ils ne sont pas vraiment cohérents, que ce soit en termes de champs d’application, de formulations, de classements, et de langue. On a donc de nombreuses redondances dans l’ensemble et de nombreux manques dans chaque, si on souhaite une vision large.
 
 **Toutefois, les idées convergent toutes, ou se complètent plutôt bien**. On peut donc faire émerger une liste de ces critères de confiance, exhaustive et « non recouvrante », qui traite de l’ensemble des aspects qui peuvent devoir être considérés quand on crée un système basé sur l’IA.
 
@@ -89,7 +90,7 @@ Ainsi, ce document **propose des bonnes pratiques harmonisées**, organisées se
 La portée de chaque critère de confiance et les principaux risques qu'il contribuent à traiter sont précisés.
 
 Des colonnes sont ajoutées, à titre indicatif, pour orienter vers :
-- les principales mesures de l'annexe A de l'[ISO/IEC 42001] correspondantes ;
+- les principales mesures de l'annexe A de l'[ISO-42001] correspondantes ;
 - des exemples de preuve de mise en œuvre observables ;
 - les principales fonctions types d'entreprise concernées.
 
@@ -99,17 +100,17 @@ Note : un renvoi vers les documents de référence est privilégié quand cela e
 
 <ins>Portée</ins> : pilotage éthique, transparent et responsable, incluant la mise en place de mécanismes de contrôle, de _reporting_ et de gestion des conflits d’intérêts.
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (dignité humaine, droit à une bonne administration, et droit à un recours collectif, cf. Art. 1, 41 et 47 de la [Charte UE]), décisions unilatérales, conflits d’intérêts, manque de supervision, opacité décisionnelle.
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (dignité humaine, droit à une bonne administration, et droit à un recours collectif, cf. Art. 1, 41 et 47 de la [EU-Charter]), décisions unilatérales, conflits d’intérêts, manque de supervision, opacité décisionnelle.
 
 <ins>Objectif</ins> : instaurer un cadre de gouvernance qui permet de partager et contrôler l’éthique des processus mis en œuvre dans les projets qui reposent sur l’IA.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recos UE], [ISO/IEC 42001].
+<ins>Principale(s) référence(s)</ins> : [EU-AIAct], [EU-AIRecos], [ISO-42001].
 
 **BP001.	Formaliser les responsabilités des parties intéressées**
 
 Identifier les parties intéressées (usagers, organisations, développeurs d'IA, fournisseurs d'IA, fournisseurs de données, formateurs, institutions, etc.) et formaliser leurs responsabilités dans le cadre de l’ensemble du cycle de vie des systèmes d’IA.
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | BP-GOV-01. Formaliser les responsabilités des parties intéressées | Identifier les parties intéressées (usagers, organisations, développeurs d'IA, fournisseurs d'IA, fournisseurs de données, formateurs, institutions, etc.) et formaliser leurs responsabilités dans le cadre de l’ensemble du cycle de vie des systèmes d’IA. | - A.3.2. Rôles et responsabilités IA<br>- A.3.4. Implication des parties intéressées | - Lettres de missions<br>- Organigrammes ou matrices RACI<br>- Compte-rendus de réunions | - Direction<br>- Personne en charge de la conformité<br>- Personne en charge du projet IA |
 | BP-GOV-02. Partager les valeurs éthiques | Impliquer, voire former, les parties intéressées pour assurer que les technologies liées à l'IA sont produites et utilisées conformément à des valeurs éthiques, en surveillant les préjugés, la confidentialité et les abus, tout en promouvant l'innovation et la confiance. | - A.7.2. Formation et sensibilisation<br>- A.6.2. Communication sur les valeurs | - Matériel de formation<br>-Enregistrements liés aux sensibilisations<br>- Chartes éthiques signées | - Direction<br>- Personne en charge de l'éthique<br>- Ressources humaines |
@@ -119,13 +120,13 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Portée</ins> : exactitude, robustesse, performance, stabilité, résilience, précision, absence d'erreurs, capacité à fonctionner correctement, sans mettre en danger la vie humaine, les biens ou l'environnement, dans des conditions variées, incertaines ou inattendues, même en conditions de stress ou d’attaque.
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (dignité humaine, protection de la santé, et protection des consommateurs, cf. Art. 1, 35 et 38 de la [Charte UE]), défaillances techniques / dysfonctionnements, accidents, attaques malveillantes.
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (dignité humaine, protection de la santé, et protection des consommateurs, cf. Art. 1, 35 et 38 de la [EU-Charter]), défaillances techniques / dysfonctionnements, accidents, attaques malveillantes.
 
 <ins>Objectif</ins> : assurer la robustesse des systèmes qui reposent sur l’IA afin d’améliorer leur fiabilité et la sécurité des biens et des personnes.
 
-<ins>Principale(s) référence(s)</ins> : [IEC 61508], [Règlement IA], [Recos UE].
+<ins>Principale(s) référence(s)</ins> : [IEC-61508], [EU-AIAct], [EU-AIRecos].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | BP-SAF-01. Vérifier les données d’entrée possibles | Vérifier les particularités des données futures, par exemple à l’aide de modules spécifiques dans la chaîne de traitements de données. | - A.8.3. Qualité des données<br>- A.8.2. Gestion des données d'entrée | - Journaux d'événements<br>- Scripts de validation des données<br>- Résultats de tests de qualité | - _Data engineer_<br>-  _Data scientist_<br>- Personne en charge de la qualité des données |
 | BP-SAF-02. Vérifier la robustesse du modèle | Vérifier que le modèle ne peut pas être attaqué pour produire un résultat indésirable, par exemple dans le cadre d’une chaîne de modèles. | - A.10.3. Sécurité du modèle IA<br>- A.11.3. Robustesse du modèle | - Rapports de tests d’attaque<br>- Indicateurs de robustesse | - _Data scientist_<br>- Expert sécurité IA |
@@ -137,7 +138,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Portée</ins> : fonctionnement de l’IA sans biais, traitement impartial et équitable des usagers, non-discrimination.
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (égalité devant la loi, non-discrimination, égalité entre hommes et femmes, cf. Art. 20, 21 et 23 de la [Charte UE]), discrimination, traitement inéquitable, exclusion, du fait de biais :
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (égalité devant la loi, non-discrimination, égalité entre hommes et femmes, cf. Art. 20, 21 et 23 de la [EU-Charter]), discrimination, traitement inéquitable, exclusion, du fait de biais :
 - dans la formulation des cas d’usages<sup><a href="#note6" id="ref6">[6]</a></sup> ;
 - liés à l’algorithme d’entrainement / à l’architecture du modèle<sup><a href="#note9" id="ref9">[9]</a></sup> ;
 - liés aux données d’entrainement et de validation<sup><a href="#note8" id="ref8">[8]</a></sup> ;
@@ -146,24 +147,24 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : détecter et corriger les biais par des mécanismes de vérification et d’audit des algorithmes.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recos CNIL], [Guide France IA].
+<ins>Principale(s) référence(s)</ins> : [EU-AIAct], [CNIL-AIRecos], [HubFranceIA-Guide].
 
 ### 3.1. Réduction des biais liés à la formulation du cas d'usage
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-BIA-01. Définir clairement le(s) cas d’usage(s)** | Décrire précisément le cas d’usage, les limitations et les exceptions, et s’assurer que les personnes en charge de la conception et du développement des outils en ont connaissance et les comprennent. | - A.5.1. Définition du périmètre et des usages<br>- A.6.2. Communication des exigences | - Cahiers des charges<br>- Spécifications fonctionnelles<br>- Documents de conception | - Personne en charge du projet<br>- Analyste métier<br>- Architecte IA | 
 
 ### 3.2. Réduction des biais liés aux données d'entrée
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-BIA-02. Diversifier les données d’entrée** | Utiliser des sources de données diverses et représentatives. | - A.8.3. Qualité des données<br>- A.8.2. Gestion des données d’entrée | - Catalogue des sources de données<br>- Rapports de couverture de données<br>- Audits de représentativité | - _Data engineer_<br>- _Data scientist_<br>- Personne en charge de la qualité des données | 
 | **BP-BIA-03. Rendre les données exploitables** | Limiter les données qu’à celles qui seront traitées, les transformer / intégrer de façon cohérente (ex : via une ontologie qui sert de pivot), et les nettoyer de manière approfondie, afin de faciliter leur traitement, de ne pas traiter de données inutilisables, inutiles, sujettes à des règles internes ou externes, ou qu’on ne souhaite pas traiter. | - A.8.3. Gestion de la qualité des données<br>- A.8.5. Traitement cohérent des données | - Processus de nettoyage documentés<br>- Ontologie utilisée<br>- Rapports de qualité des données | - _Data engineer_<br>- _Data steward_<br>- Personne en charge de la qualité des données | 
 
 ### 3.3. Réduction des biais liés aux données d'entrainement
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-BIA-04. S’assurer de la qualité des données d’entrainement** | Vérifier la pertinence des données par rapport au problème à résoudre, leur fiabilité (crédibles et/ou de sources objectives), et la légalité de leur collecte et de leur traitement. | - A.8.3. Contrôle qualité des données d’entrainement<br>- A.9.1. Conformité légale | - Audits de qualité<br>- Certificats de conformité<br>- Procédures de validation | - _Data scientist_<br>- Juriste<br>- Personne en charge de la conformité | 
 | **BP-BIA-05. Faire des échantillonnages équilibrés des données d’entrainement** | Respecter les bonnes pratiques d’échantillonnage pour que les échantillons soient équilibrés. | - A.8.3. Equilibrage des données<br>- A.11.1. Gestion des biais | - Rapports d’échantillonnage<br>- Analyses statistiques<br>- Tests d’équilibre | - _Data scientist_<br>- Analyste statistique<br>- Personne en charge de la qualité | 
@@ -172,7 +173,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 ### 3.4. Réduction des biais liés à l'agorithme d'entrainement / Architecture du modèle
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-BIA-08. Évaluer la qualité du modèle** | Mesurer l'équité à l’aide de modèles mathématiques, comme l'indépendance statistique, les intervalles de confiance, l'étude de séparation et l'étude de suffisance. | - A.10.2. Évaluation de la performance des modèles<br>- A.11.1. Gestion des biais | - Rapports d’évaluation d’équité<br>- Analyses statistiques<br>- Documentations d’audits | - _Data scientist_<br>- Analyste qualité<br>- Personne en charge de l'éthique | 
 | **BP-BIA-09. Évaluer les performances du modèle** | Évaluer les performances de l'algorithme de manière régulière. | - A.10.2. Surveillance continue des performances<br>- A.10.4. Revue des modèles IA | - Tableaux de bord de suivi<br>- Rapports périodiques<br>- Plans d’amélioration | - _Data scientist_<br>- Personne en charge de la qualité<br>- Analyste | 
@@ -180,7 +181,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 ### 3.5. Réduction des biais liés aux données de sortie
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-BIA-11. Valider les données de sorties** | Valider les résultats produits, si possible de manière continue, voire consulter des experts en éthique et inclusion. | - A.10.3. Validation des résultats<br>- A.3.4. Implication des experts | - Rapports de validation<br>- Comptes rendus de consultations<br>- Tableaux de suivi | - _Data scientist_<br>- Expert éthique<br>- Personne en charge de la qualité | 
 | **BP-BIA-12. Obtenir les retours des usagers** | Collecter régulièrement les commentaires et retours d'expérience des usagers, pour détecter et corriger les biais dans les résultats. | - A.7.3. Gestion des retours utilisateurs<br>- A.10.5. Surveillance des impacts | - Rapports d’enquête<br>- Comptes rendus d’atelier utilisateurs<br>- Tickets de support | - Personne en charge du support aux usagers<br>- Personne en charge du projet<br>- Personne en charge de la qualité | 
@@ -189,13 +190,13 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Portée</ins> : compréhension des processus et décisions, explicabilité, traçabilité des données, possibilité de contester et vérifier le fonctionnement.
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (droit à la protection des données à caractère personnel, liberté d'expression et d'information, et droit d'accès aux documents, cf. Art. 8, 11 et 42 de la [Charte UE]), opacité, incompréhension des mécanismes, perte de confiance.
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (droit à la protection des données à caractère personnel, liberté d'expression et d'information, et droit d'accès aux documents, cf. Art. 8, 11 et 42 de la [EU-Charter]), opacité, incompréhension des mécanismes, perte de confiance.
 
 <ins>Objectif</ins> : rendre explicites les algorithmes et les processus de décision via une documentation accessible, des interfaces interactives et des explications techniques adaptées aux différents publics.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [Recos UE].
+<ins>Principale(s) référence(s)</ins> : [EU-AIAct], [EU-AIRecos-IA].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-TRA-01.	Documenter les éléments utiles à la transparence** | Élaborer les explications<sup><a href="#note11" id="ref11">[11]</a></sup>, nécessaires à la transparence<sup><a href="#note12" id="ref12">[12]</a></sup>, notamment pour expliquer d’où les données proviennent les données, la forme qu’elles prennent et leur utilisation par l’organisme, et les faire connaître<sup><a href="#note13" id="ref13">[13]</a></sup> aux personnes chargées de créer et de maintenir les modèles et les flux de données, aux usagers, et aux autorités compétentes. | - A.6.2. Documentation et communication<br>- A.8.7. Transparence des données | - Documents de transparence<br>- Rapports d’audit<br>- Supports de formation | - Personne en charge de la conformité<br>- Personne en charge du projet<br>- _Data scientist_ |
 
@@ -203,13 +204,13 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Portée</ins> : protection de la disponibilité, de l’intégrité et de la confidentialité des données, gestion des risques liés à la sécurité de l’information engendrés par les systèmes d’IA (au-delà du critère de confiance de fiabilité).
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (respect de la vie privée et familiale, et droit à la protection des données à caractère personnel, cf. Art. 7 et 8 de la [Charte UE]), cyberattaques, fuites de données, corruption de systèmes.
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (respect de la vie privée et familiale, et droit à la protection des données à caractère personnel, cf. Art. 7 et 8 de la [EU-Charter]), cyberattaques, fuites de données, corruption de systèmes.
 
 <ins>Objectif</ins> : appliquer les bonnes pratiques de sécurité de l’information au système d’IA, pour réduire les risques sur l’organisme en cas de disparition de données, de modification non désirée de données ou d’accès non autorisé à des données, tout le long du cycle de vie du système.
 
-<ins>Principale(s) référence(s)</ins> : [Guide sécurité de la CNIL], [Recos ANSSI], [ISO/IEC 27090], [Guide France IA].
+<ins>Principale(s) référence(s)</ins> : [CNIL-Securite], [ANSSI-AIRecos], [ISO-27090], [HubFranceIA-Guide].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-SEC-01. Piloter la sécurité des données** | Faire de la sécurité des données un enjeu porté par la direction et inscrit dans une démarche d’amélioration continue. | - A.2.2 Politique relative à l’IA<br>- A.5.2 Processus d’évaluation des impacts du système d’IA | - Politique de sécurité<br>- Revues périodiques<br>- Indicateurs de suivi | - Direction<br>- Personne en charge de la sécurité de l'information |
 | **BP-SEC-02. Définir un cadre d’utilisation des systèmes** | Formaliser les règles d’utilisation des systèmes et les obligations associées pour les utilisateurs. | - A.2.2 Politique relative à l’IA<br>- A.9.2 Processus relatifs à l’utilisation responsable des systèmes d’IA | - Charte informatique<br>- Procédures internes | - RH<br>- Personne en charge des systèmes informatiques |
@@ -236,19 +237,19 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 | **BP-SEC-23. Sécuriser la conception et le développement des applications mobiles** | Intégrer les contraintes de sécurité propres aux environnements mobiles. | - A.6.1.3 Processus de conception et de développement responsable des systèmes d’IA | - Spécifications mobiles<br>- Tests de sécurité | - Développeurs |
 | **BP-SEC-24. Sécuriser les systèmes d’intelligence artificielle** | Appliquer des mesures de sécurité adaptées aux spécificités des systèmes d’IA. | - A.6.2.4 Vérification et validation du système d’IA | - Documentation sécurité IA | - Personne en charge de l'IA |
 | **BP-SEC-25. Sécuriser les interfaces de programmation applicative (API)** | Organiser et documenter la sécurité des accès aux API et aux données exposées. | - A.9.2 Processus relatifs à l’utilisation responsable des systèmes d’IA | - Documentation API<br>- Contrôles d’accès | - Équipe technique |
-| **BP-SEC-26.	Respecter les [Recos ANSSI]** | Appliquer les [Recos ANSSI] (chapitre 5 de celles de 2024) applicables dans le cas d’un système d’IA générative et les [Recos ANSSI] (annexe I de celles de 2025). | - A.10.1. Sécurité des systèmes<br>- A.11.4. Gestion des vulnérabilités | - Rapports de conformité<br>- Plans d’action<br>- Tests de sécurité | - Personne en charge de la sécurité de l'information<br>- Personne en charge des systèmes informatiques |
+| **BP-SEC-26.	Respecter les [ANSSI-AIRecos]** | Appliquer les [ANSSI-AIRecos] (chapitre 5 de celles de 2024) applicables dans le cas d’un système d’IA générative et les [ANSSI-AIRecos] (annexe I de celles de 2025). | - A.10.1. Sécurité des systèmes<br>- A.11.4. Gestion des vulnérabilités | - Rapports de conformité<br>- Plans d’action<br>- Tests de sécurité | - Personne en charge de la sécurité de l'information<br>- Personne en charge des systèmes informatiques |
 
 ## 6. Protection des droits et libertés
 
 <ins>Portée</ins> : respect de la vie privée, protection des données à caractère personnel et des droits fondamentaux, gestion des risques sur les droits et libertés des personnes concernées engendrés par les systèmes d’IA (au-delà du critère de confiance d’équité).
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (respect de la vie privée et familiale, droit à la protection des données à caractère personnel, et non-discrimination, cf. Art. 7, 8 et 21 de la [Charte UE]), atteintes à la vie privée, usage abusif des données personnelles.
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (respect de la vie privée et familiale, droit à la protection des données à caractère personnel, et non-discrimination, cf. Art. 7, 8 et 21 de la [EU-Charter]), atteintes à la vie privée, usage abusif des données personnelles.
 
 <ins>Objectif</ins> : appliquer les grands principes de la protection de la vie privée au traitement de données par IA, pour réduire les risques sur les personnes concernées en cas de disparition de données, de modification non désirée de données ou d’accès non autorisé à des données.
 
-<ins>Principale(s) référence(s)</ins> : [Loi I&L], [RGPD], [Recos CNIL].
+<ins>Principale(s) référence(s)</ins> : [FR-LoiIL], [EU-GDPR], [CNIL-AIRecos].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-PRI-01. Mettre en œuvre une gouvernance responsable des données et des systèmes d’IA** | Mettre en place un cadre de gouvernance permettant d’assurer une prise en compte continue de la protection des données personnelles dans la conception, le déploiement et l’utilisation des systèmes d’IA. | - A.2.2 Politique relative à l’IA<br>- A.3.2 Rôles et responsabilités en matière d’IA | - Politique IA formalisée<br>- RACI IA / données<br>- Instances de pilotage | - Direction<br>- Responsable de traitement |
 | **BP-PRI-02. Déterminer les finalités du traitement** | Définir et documenter des finalités déterminées, explicites et légitimes avant toute mise en œuvre du système d’IA. | - A.6.1.2 Objectifs pour le développement responsable des systèmes d’IA | - Objectifs documentés<br>- Spécifications fonctionnelles | - Responsable métier<br>- Responsable projet |
@@ -263,7 +264,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 | **BP-PRI-11. Gérer les droits de limitation du traitement et d’opposition** | Intégrer les droits de limitation et d’opposition dans les processus d’utilisation du système d’IA. | - A.9.4 Utilisation conforme à l’usage prévu du système d’IA | - Gestion des restrictions d’usage | - Responsable métier |
 | **BP-PRI-12. Encadrer la sous-traitance des traitements** | Identifier, formaliser et encadrer les responsabilités des sous‑traitants participant au traitement. | - A.10.2 Répartition des responsabilités<br>- A.10.3 Fournisseurs | - Contrats<br>- Clauses RGPD | - Achats<br>- Juridique |
 | **BP-PRI-13. Encadrer les transferts de données hors de l’Union européenne** | Identifier et encadrer les transferts de données personnelles hors UE. | - A.10.3 Fournisseurs | - Cartographie des flux<br>- Clauses contractuelles | - Juridique<br>- Personne en charge de la protection de la vie privée |
-| **BP-PRI-14.	Respecter les [Recos CNIL]** | Appliquer les [Recos CNIL] applicables dans le cas d’une phase de développement. | - A.9.2. Protection des données personnelles<br>- A.9.1. Conformité réglementaire | - Rapports de conformité<br>- Registres (des traitements, des violations, etc.)<br>- AIPD | - Personne en charge de la protection de la vie privée<br>- Personne en charge de la conformité |
+| **BP-PRI-14.	Respecter les [Recos CNIL]** | Appliquer les [CNIL-AIRecos] applicables dans le cas d’une phase de développement. | - A.9.2. Protection des données personnelles<br>- A.9.1. Conformité réglementaire | - Rapports de conformité<br>- Registres (des traitements, des violations, etc.)<br>- AIPD | - Personne en charge de la protection de la vie privée<br>- Personne en charge de la conformité |
 
 ## 7. Maintenabilité et évolutivité
 
@@ -273,9 +274,9 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Objectif</ins> : assurer performances, maintien en conditions opérationnelle et de sécurité, intégration de nouvelles fonctionnalités, et comptabilité ascendante, tout le long du cycle de vie du système d’IA.
 
-<ins>Principale(s) référence(s)</ins> : [Règlement IA], [ISO/IEC 42001].
+<ins>Principale(s) référence(s)</ins> : [EU-AIAct], [ISO-42001].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-EVO-01.	Adopter un principe de modularité et de réutilisabilité** | Mettre en œuvre une conception modulaire du système d'IA, pour réutiliser/remplacer les composants de la chaîne sans affecter l'ensemble du système. | - A.6.4. Architecture modulaire<br>- A.10.4. Gestion des changements | - Schémas d’architecture<br>- Documentation des modules<br>- Gestion de versions | - Personne en charge de l'architecture des logiciels<br>- Personne en charge du développement<br>- Personne en charge du projet |
 | **BP-EVO-02.	Documenter le système** | Élaborer une documentation complète, qui comprend des commentaires sur le code, des manuels d'utilisation et une documentation sur le prétraitement des données, la formation des modèles et les processus de déploiement. | - A.6.2. Documentation complète<br>- A.7.3. Gestion des connaissances | - Documentation technique<br>- Manuels usagers<br>- Historiques des modifications | - Personne en charge du développement<br>- Personne en charge du projet |
@@ -289,11 +290,11 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Principaux risques traités</ins> : verrouillage technologique, incompatibilités de formats<sup><a href="#note16" id="ref16">[16]</a></sup>.
 
-<ins>Objectif</ins> : risques sur les droits fondamentaux (liberté d'information, cf. Art. 11 de la [Charte UE]) assurer l’interopérabilité fluide des données et des technologies sur lesquelles elles reposent.
+<ins>Objectif</ins> : risques sur les droits fondamentaux (liberté d'information, cf. Art. 11 de la [EU-Charter]) assurer l’interopérabilité fluide des données et des technologies sur lesquelles elles reposent.
 
-<ins>Principale(s) référence(s)</ins> : [RGI].
+<ins>Principale(s) référence(s)</ins> : [FR-RGI].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-INT-01. Utiliser des standards ouverts pour les échanges de données** | Utiliser des formats et protocoles ouverts afin de garantir l’interopérabilité et la pérennité des échanges. | Aucune | - Formats ouverts (JSON, XML, CSV)<br>- Protocoles standards | - Personne en charge des systèmes informatiques |
 | **BP-INT-02. Éviter les formats et protocoles propriétaires** | Limiter la dépendance à des solutions propriétaires pour faciliter la réversibilité. | Aucune | - Analyse de dépendance éditeur | - Personne en charge des systèmes informatiques<br>- Achats |
@@ -305,7 +306,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 | **BP-INT-08. Favoriser la réutilisation des services et des données** | Concevoir des services et jeux de données réutilisables. | Aucune | - Catalogue de services | - Personne en charge des systèmes informatiques |
 | **BP-INT-09. Assurer la compatibilité avec des systèmes hétérogènes** | Concevoir des systèmes capables d’interagir avec des environnements variés. | Aucune | - Tests d’intégration inter‑SI | - Architecte SI |
 | **BP-INT-10. Intégrer l’interopérabilité dès la conception des systèmes d’IA** | Prendre en compte l’interopérabilité dès le cadrage et la conception des systèmes d’IA. | A.6.1.2 Objectifs pour le développement responsable des systèmes d’IA | - Exigences d’architecture | - Personne en charge de l'IA |
-| **BP-INT-11.	Adopter des bonnes pratiques d’interopérabilité** | Appliquer les bonnes pratiques applicables du [RGI] et, le cas échéant, vérifier la conformité aux outils autorisés en interne pour favoriser l’interopérabilité des technologies<sup><a href="#note17" id="ref17">[17]</a></sup>. | - A.8.7. Standards d’interopérabilité<br>- A.6.4. Gestion des interfaces | - Documentation des API<br>Rapports de conformité<br>- Tests d’intégration | - Personne en charge de l'architecture des logiciels<br>- Personne en charge des systèmes informatiques<br>- Personne en charge du développement |
+| **BP-INT-11.	Adopter des bonnes pratiques d’interopérabilité** | Appliquer les bonnes pratiques applicables du [FR-RGI] et, le cas échéant, vérifier la conformité aux outils autorisés en interne pour favoriser l’interopérabilité des technologies<sup><a href="#note17" id="ref17">[17]</a></sup>. | - A.8.7. Standards d’interopérabilité<br>- A.6.4. Gestion des interfaces | - Documentation des API<br>Rapports de conformité<br>- Tests d’intégration | - Personne en charge de l'architecture des logiciels<br>- Personne en charge des systèmes informatiques<br>- Personne en charge du développement |
 
 ## 9. Respect de l’environnement
 
@@ -313,11 +314,11 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Principaux risques traités</ins> : consommation excessive d’énergie, émissions de CO₂.
 
-<ins>Objectif</ins> : risques sur les droits fondamentaux (protection de l'environnement, cf. Art. 37 de la [Charte UE]),  réduire globalement les besoins en ressources matérielles et énergétiques et les impacts environnementaux associés.
+<ins>Objectif</ins> : risques sur les droits fondamentaux (protection de l'environnement, cf. Art. 37 de la [EU-Charter]),  réduire globalement les besoins en ressources matérielles et énergétiques et les impacts environnementaux associés.
 
-<ins>Principale(s) référence(s)</ins> : [RGESN], [RGIAF].
+<ins>Principale(s) référence(s)</ins> : [FR-RGESN], [FR-RGIAF].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-ENV-01. Qualifier la pertinence du recours à l’IA** | Évaluer si le recours à l’IA est justifié au regard des besoins et des impacts environnementaux. | Aucune a priori | - Étude d’opportunité<br>- Comparaison avec solutions non‑IA | - Responsable métier |
 | **BP-ENV-02. Redéfinir les besoins fonctionnels de manière frugale** | Ajuster les besoins pour limiter les exigences inutiles en données et calcul. | Aucune a priori | - Expression de besoins revisitée | - Responsable produit |
@@ -355,13 +356,13 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 
 <ins>Portée</ins> : accès aux systèmes d'IA, notamment pour les personnes handicapées, gestion des risques d’inégalités engendrés par les systèmes d’IA.
 
-<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (non-discrimination, et intégration des personnes handicapées, cf. Art. 21 et 26 de la [Charte UE]), exclusion numérique, inégalités d’accès, manque de compatibilité avec les technologies d’assistance.
+<ins>Principaux risques traités</ins> : risques sur les droits fondamentaux (non-discrimination, et intégration des personnes handicapées, cf. Art. 21 et 26 de la [EU-Charter]), exclusion numérique, inégalités d’accès, manque de compatibilité avec les technologies d’assistance.
 
 <ins>Objectif</ins> : intégrer les principes d’accessibilité numérique dès la conception et tester régulièrement l’interface pour garantir une utilisation inclusive.
 
-<ins>Principale(s) référence(s)</ins> : [RGAA], [EN 301 549], [WCAG].
+<ins>Principale(s) référence(s)</ins> : [FR-RGAA], [CEN-301549], [W3C-WCAG].
 
-| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO/IEC 42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
+| <center>**Bonne pratique**</center> | <center>**Description**</center> | <center>**Correspondance(s) [ISO-42001]**<br>(principales)</center> | <center>**Observables**<br>(exemples)</center> | <center>**Responsables**<br>(exemples)</center> |
 |---|---|---|---|---|
 | **BP-ACS-01. Intégrer l’accessibilité numérique dès la conception** | Intégrer les besoins d’accessibilité dès le cadrage et la conception des services numériques. | A.6.1.2 Objectifs pour le développement responsable des systèmes d’IA | - Exigences d’accessibilité intégrées | - Chef de projet |
 | **BP-ACS-02. Garantir une gouvernance dédiée à l’accessibilité numérique** | Mettre en place une gouvernance claire pour piloter l’accessibilité. | A.3.2 Rôles et responsabilités en matière d’IA | - Référent accessibilité identifié | - Direction |
@@ -373,7 +374,7 @@ Identifier les parties intéressées (usagers, organisations, développeurs d'IA
 | **BP-ACS-08. Concevoir des formulaires et assistants accessibles** | Garantir l’accessibilité des formulaires et agents conversationnels. | A.9.2 Processus relatifs à l’utilisation responsable des systèmes d’IA | - Étiquettes correctement associées | - Équipe technique |
 | **BP-ACS-09. Évaluer régulièrement la conformité à l’accessibilité** | Auditer périodiquement l’accessibilité des services numériques. | A.5.2 Processus d’évaluation des impacts du système d’IA | - Audits réalisés | - Référent accessibilité |
 | **BP-ACS-10. Informer les utilisateurs et publier les informations obligatoires** | Publier les informations obligatoires et recueillir les retours utilisateurs. | A.8.5 Informations destinées aux parties intéressées | - Déclaration publiée | - Communication |
-| **BP-ACS-11.	Adopter des bonnes pratiques d’accessibilité** | Se conformer au [RGAA] en appliquant les bonnes pratiques applicables de l’[EN 301 549] ou des [WCAG]<sup><a href="#note18" id="ref18">[18]</a></sup>, en visant l'accessibilité et l'autonomisation des usagers, pour favoriser une expérience d'IA positive et inclusive pour tous les usagers. | - A.6.5. Accessibilité numérique<br>- A.9.1. Conformité réglementaire | - Rapports d’audit d’accessibilité<br>- Tests usagers<br>- Guides de bonnes pratiques | - Personne en charge du projet<br>Personne en charge de l'accessibilité<br>- Personne en charge du développement |
+| **BP-ACS-11.	Adopter des bonnes pratiques d’accessibilité** | Se conformer au [FR-RGAA] en appliquant les bonnes pratiques applicables de l’[EN 301 549] ou des [W3C-WCAG]<sup><a href="#note18" id="ref18">[18]</a></sup>, en visant l'accessibilité et l'autonomisation des usagers, pour favoriser une expérience d'IA positive et inclusive pour tous les usagers. | - A.6.5. Accessibilité numérique<br>- A.9.1. Conformité réglementaire | - Rapports d’audit d’accessibilité<br>- Tests usagers<br>- Guides de bonnes pratiques | - Personne en charge du projet<br>Personne en charge de l'accessibilité<br>- Personne en charge du développement |
 
 ## Annexe - Modèle pour une déclaration d'applicabilité (DdA)
 
@@ -386,62 +387,62 @@ Le tableau suivant peut servir de modèle pour construire sa déclaration d'appl
 | <center>**Bonnes pratiques**</center> | <center>**Applicabilité**</center> | <center>**Si oui, comment ? Si non, pourquoi ?**</center> | <center>**Mesures additionnelles**</center> | <center>**Contribution au traitement des risques**</center> |
 | --- | --- | --- | --- | --- |
 | [...] | [...] | [...] | [...] | [...] |
-| BP-BIA-03. Rendre les données exploitables | ✅ Oui<br>☐ Non<br>☐ Ne sais pas | Les données sont limitées à celles qui seront traitées, et transformées en cohérence avec une ontologie de données. | Aucune | Risques sur les droits fondamentaux (égalité devant la loi, non-discrimination, égalité entre hommes et femmes, cf. Art. 20, 21 et 23 de la [Charte UE]), discrimination, traitement inéquitable, exclusion, du fait de biais sur les données d'entrée. |
+| BP-BIA-03. Rendre les données exploitables | ☑ Oui<br>☐ Non<br>☐ Ne sais pas | Les données sont limitées à celles qui seront traitées, et transformées en cohérence avec une ontologie de données. | Aucune | Risques sur les droits fondamentaux (égalité devant la loi, non-discrimination, égalité entre hommes et femmes, cf. Art. 20, 21 et 23 de la [EU-Charter]), discrimination, traitement inéquitable, exclusion, du fait de biais sur les données d'entrée. |
 | [...] | [...] | [...] | [...] | [...] |
 
-## Annexe - Couverture des droits fondamentaux de la [Charte UE]
+## Annexe - Couverture des droits fondamentaux de la [EU-Charter]
 
-Le tableau suivant présente la couverture des droits fondamentaux de la [Charte UE] par les bonnes pratiques :
+Le tableau suivant présente la couverture des droits fondamentaux de la [EU-Charter] par les bonnes pratiques :
 
 | Droit fondamental | 1. Gouvernance responsable | 2. Fiabilité & sûreté | 3. Équité | 4. Transparence | 5. Sécurité de l'information | 6. Protection des droits & libertés | 7. Maintenabilité & évolutivité | 8. Interopérabilité | 9. Respect de l’environnement | 10. Accessibilité |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Art. 1 — Dignité humaine | ✅ | ✅ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 3 — Droit à l’intégrité de la personne | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 7 — Respect de la vie privée et familiale | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 8 — Protection des données à caractère personnel | ✅ | ⚪ | ⚪ | ✅ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 11 — Liberté d’expression et d’information | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ⚪ |
-| Art. 20–21 — Égalité devant la loi / Non-discrimination | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ |
-| Art. 23 — Égalité entre femmes et hommes | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 24 — Droits de l’enfant | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ |
-| Art. 25–26 — Droits des personnes âgées et handicapées | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ |
-| Art. 27–31 — Droits des travailleurs (conditions équitables, information, santé) | ✅ | ✅ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 35 — Protection de la santé | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 37 — Protection de l’environnement | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ |
-| Art. 38 — Protection des consommateurs | ✅ | ✅ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Art. 41 — Droit à une bonne administration | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ✅ | ✅ | ✅ | ⚪ | ⚪ |
-| Art. 42–43 — Accès aux documents / Médiateur européen | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ |
-| Art. 47 — Droit à un recours effectif et à un procès équitable | ✅ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
+| Art. 1 — Dignité humaine | ☑ | ☑ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 3 — Droit à l’intégrité de la personne | ☐ | ☑ | ☐ | ☐ | ☑ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 7 — Respect de la vie privée et familiale | ☑ | ☐ | ☐ | ☐ | ☑ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 8 — Protection des données à caractère personnel | ☑ | ☐ | ☐ | ☑ | ☑ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 11 — Liberté d’expression et d’information | ☐ | ☐ | ☐ | ☑ | ☐ | ☑ | ☐ | ☑ | ☐ | ☐ |
+| Art. 20–21 — Égalité devant la loi / Non-discrimination | ☐ | ☐ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☑ |
+| Art. 23 — Égalité entre femmes et hommes | ☐ | ☐ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 24 — Droits de l’enfant | ☐ | ☐ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☑ |
+| Art. 25–26 — Droits des personnes âgées et handicapées | ☐ | ☐ | ☐ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☑ |
+| Art. 27–31 — Droits des travailleurs (conditions équitables, information, santé) | ☑ | ☑ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 35 — Protection de la santé | ☐ | ☑ | ☐ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 37 — Protection de l’environnement | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☑ | ☐ |
+| Art. 38 — Protection des consommateurs | ☑ | ☑ | ☐ | ☑ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Art. 41 — Droit à une bonne administration | ☑ | ☐ | ☐ | ☑ | ☐ | ☑ | ☑ | ☑ | ☐ | ☐ |
+| Art. 42–43 — Accès aux documents / Médiateur européen | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☑ | ☐ | ☐ |
+| Art. 47 — Droit à un recours effectif et à un procès équitable | ☑ | ☐ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
 
-## Annexe - Couverture des exigences du [Règlement IA]
+## Annexe - Couverture des exigences du [EU-AIAct]
 
-Le tableau suivant présente la couverture des exigences du [Règlement IA] par les bonnes pratiques :
+Le tableau suivant présente la couverture des exigences du [EU-AIAct] par les bonnes pratiques :
 
 | Exigence | 1. Gouvernance responsable | 2. Fiabilité & sûreté | 3. Équité | 4. Transparence | 5. Sécurité de l'information | 6. Protection des droits & libertés | 7. Maintenabilité & évolutivité | 8. Interopérabilité | 9. Respect de l’environnement | 10. Accessibilité |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Système de gestion de la qualité (Art. 17) | ✅ | ⚪ | ⚪ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ |
-| Gouvernance des données (Art. 10) | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Documentation technique (Art. 11) | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ |
-| Tenue des enregistrements (Art. 12) | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Transparence et informations à l’utilisateur (Art. 13) | ⚪ | ⚪ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ✅ | ⚪ | ✅ |
-| Supervision humaine (Art. 14) | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Robustesse, précision et cybersécurité (Art. 15) | ⚪ | ✅ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ⚪ |
-| Conformité et contrôle post-commercialisation (Art. 61–65) | ✅ | ✅ | ⚪ | ⚪ | ⚪ | ✅ | ✅ | ⚪ | ⚪ | ⚪ |
+| Système de gestion de la qualité (Art. 17) | ☑ | ☐ | ☐ | ☐ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ |
+| Gouvernance des données (Art. 10) | ☐ | ☐ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Documentation technique (Art. 11) | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☑ | ☐ | ☐ |
+| Tenue des enregistrements (Art. 12) | ☑ | ☐ | ☐ | ☐ | ☑ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Transparence et informations à l’utilisateur (Art. 13) | ☐ | ☐ | ☐ | ☑ | ☐ | ☑ | ☐ | ☑ | ☐ | ☑ |
+| Supervision humaine (Art. 14) | ☐ | ☑ | ☑ | ☐ | ☐ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Robustesse, précision et cybersécurité (Art. 15) | ☐ | ☑ | ☐ | ☐ | ☑ | ☑ | ☐ | ☐ | ☐ | ☐ |
+| Conformité et contrôle post-commercialisation (Art. 61–65) | ☑ | ☑ | ☐ | ☐ | ☐ | ☑ | ☑ | ☐ | ☐ | ☐ |
 
 <br>
 <br>
-<a id="note1">[1]</a> Notamment [Règlement IA], [ISO/IEC 42001], [Recos UE], [Loi I&L], [NIST AI RMF], [Recos OCDE], [Recos  ANSSI, [Recos CNIL], [RGAA], [RGESN], [RGI], et [RGIAF]. <a href="#ref1">↩</a>
+<a id="note1">[1]</a> Notamment [EU-AIAct], [ISO-42001], [EU-AIRecos], [FR-LoiIL], [NIST-AIRMF], [OECD-AIRecos], [ANSSI-AIRecos, [CNIL-AIRecos], [FR-RGAA], [FR-RGESN], [FR-RGI], et [FR-RGIAF]. <a href="#ref1">↩</a>
 <br>
 <br>
-<a id="note2">[2]</a> Notamment [ISO/IEC 42001], [Guide France IA], [Recos OCDE], [Recos ANSSI], [Recos CNIL], [Règlement IA] et [RGIAF]. <a href="#ref2">↩</a>
+<a id="note2">[2]</a> Notamment [ISO-42001], [HubFranceIA-Guide], [OECD-AIRecos], [ANSSI-AIRecos], [CNIL-AIRecos], [EU-AIAct] et [FR-RGIAF]. <a href="#ref2">↩</a>
 <br>
 <br>
-<a id="note3">[3]</a> Notamment [Loi I&L] (dont [RGPD]), [RGAA], [RGESN], et [RGI]. <a href="#ref3">↩</a>
+<a id="note3">[3]</a> Notamment [FR-LoiIL] (dont [EU-GDPR]), [FR-RGAA], [FR-RGESN], et [FR-RGI]. <a href="#ref3">↩</a>
 <br>
 <br>
 <a id="note4">[4]</a> LLM : <i>large language models</i> (grands modèles linguistiques). <a href="#ref4">↩</a>
 <br>
 <br>
-<a id="note5">[5]</a> Ex : [ISO/IEC 42001]. <a href="#ref5">↩</a>
+<a id="note5">[5]</a> Ex : [ISO-42001]. <a href="#ref5">↩</a>
 <br>
 <br>
 <a id="note6">[6]</a> Manque d’équité par défaut de cadrage du cas d’usage. <a href="#ref6">↩</a>

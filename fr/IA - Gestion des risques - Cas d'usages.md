@@ -12,7 +12,7 @@ Il n’a pas pour vocation à servir de référence, mais à souligner la varié
 
 ## Avant-propos
 Ce document s’inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai), en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément.
-Les [documents de référence](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) sont utilisés entre crochets dans le corps du document.
+Les [documents de référence](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) sont utilisés entre crochets dans le corps du document.
 
 Il est placé sous la **licence** suivante :
 _[Creative Commons Attribution 4.0 International License][cc-by]_.
@@ -38,6 +38,7 @@ Les **versions** du document sont les suivantes :
 | 11/07/2025 (v1.1) | Changement du titre du document, ajout d'exemples de produits et services et du pays de provenance dans la liste des cas d'usages, simplification et harmonisation des chapitres introductifs, corrections mineures | Matthieu GRALL |
 | 20/07/2025 (v1.2) | Ajout des cas d'usages de l'[ISO/IEC 24030] et d'une estimation indicative de niveau de risque pour ceux-ci et les exemples de fonctionnalités, corrections mineures | Matthieu GRALL |
 | 23/10/2025 (v1.3) | Corrections des notes de bas de page | Matthieu GRALL |
+| 16/04/2026 (v1.4) | Normalisation des références, ajout d'une référence à [ISO-42102], correction de liens rompus | Matthieu GRALL |
 
 Les **ressources** suivantes ont été utilisées :
 - Tableau périodique de cas d’usages : par XPRIZE.
@@ -47,7 +48,7 @@ Les **ressources** suivantes ont été utilisées :
 
 **C’est un domaine de l'informatique né en 1956<sup><a href="#note1" id="ref1">[1]</a></sup> qui vise à créer des machines capables de réaliser des tâches qui nécessitent normalement l'intelligence humaine**. Il s'agit de simuler des processus cognitifs tels que l'apprentissage, la résolution de problèmes, la prise de décision et la compréhension du langage naturel. Contrairement à une simple programmation de règles précises, l'IA cherche à donner aux machines la capacité d'apprendre et de s'adapter à de nouvelles situations sans être explicitement programmées pour chaque éventualité.
 
-En synthèse, le [Rapport _Task Force_ IA] fournit l’explication suivante : 
+En synthèse, le [TaskForceIA-Rapport] fournit l'explication suivante : 
 
 _« L’IA est utilisée dans les applications où il s’agit de :_
 - _**détecter/reconnaître des données** (texte, sons, images, vidéos), ou prédire des données futures ;_
@@ -65,9 +66,9 @@ _Du point de vue technique<sup><a href="#note2" id="ref2">[2]</a></sup>, l’int
 
 ## 1. Cas d'usages : exemples
 
-L'[ISO/IEC 24030] présente des cas d'usage de l'IA secteurs. Elle peut utilement servir de référence pour positionner ses propres cas d'usages.
+L'[ISO-24030] présente des cas d'usage de l'IA secteurs. Elle peut utilement servir de référence pour positionner ses propres cas d'usages.
 
-Le tableau suivant présente la liste de ces cas d'usages, non exhaustive, en estimant, à titre purement indicatif, leur niveau de risque à l'aide de l'échelle proposée dans la [méthode de gestion des risques](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md) :
+Le tableau suivant présente la liste de ces cas d'usages, non exhaustive, en estimant, à titre purement indicatif, leur niveau de risque à l'aide de l'échelle proposée dans la [méthode de gestion des risques](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md) :
 | <center>**Secteur**</center> | <center>**Cas d'usage**</center>                                                | <center>**Conséquences potentielles sur les personnes**</center> | <center>**Conséquences potentielles sur l’organisme**</center> | <center>**Conséquences potentielles sur l’environnement**</center> | <center>**Niveau de risque**</center> | <center>**Explications**</center>                                                                                |
 | ---------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Agriculture                  | Segmentation et prédiction de la croissance des plantes (systèmes embarqués IA) | 1                                                                | 2                                                              | 3                                                                  | 3                                     | Impact environnemental lié à la végétation, faible impact direct sur les personnes, améliore la gestion agricole |
@@ -156,7 +157,9 @@ Le tableau suivant présente la liste de ces cas d'usages, non exhaustive, en es
 
 Pour mettre en oeuvre un cas d'usage, on va choisir une ou plusieurs fonctionnalités (généralement considérées comme valeurs métier dans une étude de risques), qui s'appuient sur une ou plusieurs techniques (généralement considérées comme biens supports dans une étude de risques).
 
-Le tableau suivant présente une liste non exhaustive de fonctionnalités qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples de systèmes d'IA existants qui les mettent effectivement en œuvre, et en estimant, à titre purement indicatif, leur niveau de risque à l'aide de l'échelle proposée dans la [méthode de gestion des risques](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md) :
+Note : l'[ISO-42102] peut être utile à la caractérisation des systèmes d'IA.
+
+Le tableau suivant présente une liste non exhaustive de fonctionnalités qui reposent sur de l’IA, en indiquant les principales techniques d’IA mises en œuvre et des exemples de systèmes d'IA existants qui les mettent effectivement en œuvre, et en estimant, à titre purement indicatif, leur niveau de risque à l'aide de l'échelle proposée dans la [méthode de gestion des risques](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20M%C3%A9thode.md) :
 | <center>**Fonctionnalités (valeurs métier)**</center>                                             | <center>**Principales techniques d’IA (biens supports)**</center>                                  | <center>**Exemples de systèmes d'IA existants**</center>                                                                                                          | <center>**Conséquences potentielles sur les personnes**</center> | <center>**Conséquences potentielles sur l’organisme**</center> | <center>**Conséquences potentielles sur l’environnement**</center> | <center>**Niveau de risque**</center> | <center>**Explications**</center>                                            |
 | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------- | ---------------------------------------------------------------------------- |
 | Détecter certains types de sons dans un signal audio (alarmes, moteurs, dispositifs spécifiques)  | Apprentissage supervisé, Réseaux de neurones convolutifs (CNN), Modèles de reconnaissance sonore   | IA DUST — Dust Audio Classifier (FR), SONARWORKS — Sound Calibration (EE), GOOGLE — AudioSet (US), RESEMBLE.AI — Voice Cloning (CA)                               | 1                                                                | 2                                                              | 1                                                                  | 2                                     | Impact limité aux alertes auditives, faible impact direct                    |

@@ -16,7 +16,7 @@ This document illustrates an **application of the artificial intelligence (AI) r
 ## Foreword
 
 This document is part of a [set of methodological documents](https://github.com/matthieu-grall/ai), under continuous improvement, designed to help organizations manage AI-related risks, and which can be useful together or separately.
-The [reference documents](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) are used in brackets within the document body.
+The [reference documents](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence.md) are used in brackets within the document body.
 
 It is placed under the following **license**:
 _[Creative Commons Attribution 4.0 International License][cc-by]_.
@@ -37,6 +37,7 @@ The document **versions** are as follows:
 | 13/04/2026 (v0.2) | Include a Mermaid drawing for the functional description, move and enrich SoA | Matthieu GRALL |
 | 14/04/2026 (v0.3) | Add a new section for step 4, finish to write sections 1 to 3 consistently, minor improvements | Matthieu GRALL |
 | 15/04/2026 (v0.4) | Simplify and finalize the document, many improvements | Matthieu GRALL |
+| 16/04/2026 (v0.5) | Normalize references, correct broken links | Matthieu GRALL |
 
 ## Introduction
 
@@ -44,16 +45,16 @@ This case study concerns **a small company that wishes to secure access to a spe
 
 As part of its security accreditation process, it needs to produce a security dossier.
 
-In addition, it wishes to comply with the [RGPD] and the [Règlement IA].
+In addition, it wishes to comply with the [EU-GDPR] and the [EU-AIAct].
 
 As part of its regulatory compliance obligations, the company needs to:
-- Comply with the [Règlement IA] (EU AI Act) as the facial recognition system is classified as a high-risk AI system under Annex III (biometric identification);
-- Ensure [RGPD] compliance for the processing of biometric personal data.
+- Comply with the [EU-AIAct] (EU AI Act) as the facial recognition system is classified as a high-risk AI system under Annex III (biometric identification);
+- Ensure [EU-GDPR] compliance for the processing of biometric personal data.
 
 The company must produce comprehensive documentation including:
 - Security dossier for system accreditation
-- Fundamental Rights Impact Assessment (FRIA) as required by the [Règlement IA]
-- Data Protection Impact Assessment (DPIA) as required by the [RGPD]
+- Fundamental Rights Impact Assessment (FRIA) as required by the [EU-AIAct]
+- Data Protection Impact Assessment (DPIA) as required by the [EU-GDPR]
 
 ## Method implementation
 
@@ -61,26 +62,26 @@ The company must produce comprehensive documentation including:
 
 The study is presented as follows:
 - **study subject**: controlling access to a secure zone using a facial recognition device;
-- **study objectives**: assessing device security, building compliance with [RGPD] and [Règlement IA];
+- **study objectives**: assessing device security, building compliance with [EU-GDPR] and [EU-AIAct];
 - **study recipients**: internal accreditation committee, data protection officer (DPO) and, where applicable, competent authorities;
 - **topics to consider**: all, with specific focuses on information security and privacy.
 
 The risk level that the study subject is likely to generate is estimated as:
 - **risk level estimation scale** (it is chosen to adopt a real wide vision, and therefore to define scales allowing the estimation of consequences on people and on the organization):
 
-| <center>Risk Level<br>(and correspondence with [Règlement IA])</center> | <center>Potential consequences on people<br>(cf. [Guide PIA-3])</center> | <center>Potential consequences on the organization<br>(cf. [EBIOS Risk Manager] and [CRA] compliance impacts)</center> |
+| <center>Risk Level<br>(and correspondence with [EU-AIAct])</center> | <center>Potential consequences on people<br>(cf. [CNIL-PIA3])</center> | <center>Potential consequences on the organization<br>(cf. [ANSSI-EBIOSRM] and [EU-CRA] compliance impacts)</center> |
 | --- | --- | --- |
-| 1. Minimal<br><br>("Minimal or no risk", e.g.: spam filters, gadget AI) | 1. Negligible: data subjects will not be impacted or might experience some inconveniences that they will overcome without difficulty<br>E.g.: time lost to repeat procedures or to wait to carry them out, receipt of unsolicited mail (e.g.: _spam_), feeling of privacy violation without real or objective harm (e.g.: commercial intrusion) | G1. Minor: negligible consequences for the organization (no operational impact on activity performance or on people and property safety, the organization will overcome the situation without too much difficulty (margin consumption), minor [CRA] non-conformities easily remediated)<br>E.g.: very limited disruption, no sensitive data, rapid recovery, no legal or reputational impact, minor documentation gaps |
-| 2. Limited<br><br>("Limited risk", e.g.: chatbot, non-critical generative AI) | 2. Limited: data subjects might experience significant inconveniences that they can overcome despite some difficulties<br>E.g.: minor physical condition (e.g.: benign illness following non-compliance with contraindications), cost increase (e.g.: insurance price increase), relational difficulties with personal or professional entourage (e.g.: image, tarnished reputation, loss of recognition) | G2. Significant: significant but limited consequences for the organization (activity performance degradation without impact on people and property safety, the organization will overcome the situation despite some difficulties (degraded mode operation), [CRA] non-conformities requiring remediation plan)<br>E.g.: temporary degradation, low-sensitivity data, rapid intervention, potential market surveillance inquiry |
-| 3. High<br><br>("High risk", e.g.: AI for health, employment, justice) | 3. High: data subjects might experience significant consequences that they should be able to overcome, but with real and significant difficulties<br>E.g.: serious physical condition causing long-term harm (e.g.: health deterioration following poor care, or non-compliance with contraindications), banking ban, serious psychological condition (e.g.: depression, phobia development) | G3. Serious: significant consequences for the organization (strong activity performance degradation, with possible significant impacts on people and property safety, the organization will overcome the situation with serious difficulties (very degraded mode operation), serious [CRA] violations, potential CE marking suspension)<br>E.g.: sensitive data compromise, prolonged interruption, crisis management necessary, legal and reputational risks, market access restrictions |
-| 4. Maximum<br><br>("Unacceptable risk", e.g.: social scoring, manipulation, mass biometric surveillance) | 4. Maximum: data subjects might experience significant, even irreparable consequences that they might not overcome<br>E.g.: death (e.g.: murder, suicide, fatal accident), inability to work, long-term or permanent psychological condition | G4. Critical: disastrous consequences for the organization (inability for the organization to ensure all or part of its activity, with possible serious impacts on people and property safety, the organization will likely not overcome the situation (its survival is threatened), severe [CRA] violations, CE marking withdrawal, product recall, fines up to €15M or 2.5% of total turnover)<br>E.g.: massive critical data leak, widespread malfunction, major legal/reputational impact, sustainability risk, permanent market ban |
+| 1. Minimal<br><br>("Minimal or no risk", e.g.: spam filters, gadget AI) | 1. Negligible: data subjects will not be impacted or might experience some inconveniences that they will overcome without difficulty<br>E.g.: time lost to repeat procedures or to wait to carry them out, receipt of unsolicited mail (e.g.: _spam_), feeling of privacy violation without real or objective harm (e.g.: commercial intrusion) | G1. Minor: negligible consequences for the organization (no operational impact on activity performance or on people and property safety, the organization will overcome the situation without too much difficulty (margin consumption), minor [EU-CRA] non-conformities easily remediated)<br>E.g.: very limited disruption, no sensitive data, rapid recovery, no legal or reputational impact, minor documentation gaps |
+| 2. Limited<br><br>("Limited risk", e.g.: chatbot, non-critical generative AI) | 2. Limited: data subjects might experience significant inconveniences that they can overcome despite some difficulties<br>E.g.: minor physical condition (e.g.: benign illness following non-compliance with contraindications), cost increase (e.g.: insurance price increase), relational difficulties with personal or professional entourage (e.g.: image, tarnished reputation, loss of recognition) | G2. Significant: significant but limited consequences for the organization (activity performance degradation without impact on people and property safety, the organization will overcome the situation despite some difficulties (degraded mode operation), [EU-CRA] non-conformities requiring remediation plan)<br>E.g.: temporary degradation, low-sensitivity data, rapid intervention, potential market surveillance inquiry |
+| 3. High<br><br>("High risk", e.g.: AI for health, employment, justice) | 3. High: data subjects might experience significant consequences that they should be able to overcome, but with real and significant difficulties<br>E.g.: serious physical condition causing long-term harm (e.g.: health deterioration following poor care, or non-compliance with contraindications), banking ban, serious psychological condition (e.g.: depression, phobia development) | G3. Serious: significant consequences for the organization (strong activity performance degradation, with possible significant impacts on people and property safety, the organization will overcome the situation with serious difficulties (very degraded mode operation), serious [EU-CRA] violations, potential CE marking suspension)<br>E.g.: sensitive data compromise, prolonged interruption, crisis management necessary, legal and reputational risks, market access restrictions |
+| 4. Maximum<br><br>("Unacceptable risk", e.g.: social scoring, manipulation, mass biometric surveillance) | 4. Maximum: data subjects might experience significant, even irreparable consequences that they might not overcome<br>E.g.: death (e.g.: murder, suicide, fatal accident), inability to work, long-term or permanent psychological condition | G4. Critical: disastrous consequences for the organization (inability for the organization to ensure all or part of its activity, with possible serious impacts on people and property safety, the organization will likely not overcome the situation (its survival is threatened), severe [EU-CRA] violations, CE marking withdrawal, product recall, fines up to €15M or 2.5% of total turnover)<br>E.g.: massive critical data leak, widespread malfunction, major legal/reputational impact, sustainability risk, permanent market ban |
 
 - **risk level estimation**: the risk level is judged as high on people and the organization, but rather low on the environment; the retained risk level is therefore 3. High.
 - **follow-up actions**: with this level, both compliance and scenario-based approaches should be implemented.
 
 ### Step 2. Compliance-based Approach
 
-First, the **best practices framework** has been chosen: since it involves implementing an AI system processing personal data, it is chosen to use [AI best practices](https://github.com/matthieu-grall/ai/blob/main/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md), with particular focus on information security (considering [Guide sécurité de la CNIL] and [CRA]) and privacy protection (considering fundamental principles of [RGPD] and AI-specific best practices [Recos CNIL]).
+First, the **best practices framework** has been chosen: since it involves implementing an AI system processing personal data, it is chosen to use [AI best practices](https://github.com/matthieu-grall/ai/blob/main/fr/IA%20-%20Gestion%20des%20risques%20-%20Bonnes%20pratiques.md), with particular focus on information security (considering [CNIL-Securite] and [EU-CRA]) and privacy protection (considering fundamental principles of [EU-GDPR] and AI-specific best practices [CNIL-AIRecos]).
 
 Then, a **[Statement of Applicability (SoA)](#statement-of-applicability-soa)** has been provided byt the AI project owner, in order to **explain and assess the implemented or planned practices**.
 
@@ -155,18 +156,18 @@ C1 --> C2 --> C3
 
 The **scales** are constructed:
 
-- for privacy protection (cf. [RGPD]), the **severity of consequences on people** will be estimated using the [PIA-3] guide scale;
+- for privacy protection (cf. [EU-GDPR]), the **severity of consequences on people** will be estimated using the [CNIL-PIA3] guide scale;
 
-- for information security (cf. [ISO/IEC 27005]) and [CRA] compliance, the **severity of consequences on the organization** will be estimated using the following scale (adapted for a small technology company):
+- for information security (cf. [ISO-27005]) and [EU-CRA] compliance, the **severity of consequences on the organization** will be estimated using the following scale (adapted for a small technology company):
 
 | <center>Severity of consequences on the organization</center> | <center>Financial consequences</center> | <center>Operational consequences</center> | <center>Reputational consequences</center> | <center>Legal and regulatory consequences</center> |
 | --- | --- | --- | --- | --- |
 | 1. Minimal | Up to €5,000 | Minor service degradation affecting <10% of users for <1 day, no security compromise | Internal awareness only, no external visibility | No regulatory action, internal documentation gaps only |
-| 2. Limited | €5,000 - €50,000 | Service degradation affecting <50% of users for <1 week, or limited security incident contained quickly | Local media mention or industry awareness, temporary customer concern | Regulatory inquiry, minor [CRA] non-conformity, potential market surveillance review, corrective action required |
-| 3. High | €50,000 - €250,000 | Major service disruption affecting >50% of users for >1 week, or significant security incident requiring customer notification | National media coverage, customer complaints, loss of new business opportunities | Formal regulatory investigation, [CRA] violation proceedings, [RGPD] sanctions, potential CE marking suspension, mandatory corrective actions |
-| 4. Maximum | >€250,000 or >5% of annual revenue | Complete service failure >1 month, or critical security breach compromising all customer data | Widespread negative media coverage, major customer defections, industry reputation damage | Severe [CRA] violations with fines up to €15M or 2.5% total turnover, [RGPD] fines up to €20M or 4% total turnover, CE marking withdrawal, product recall, potential company insolvency |
+| 2. Limited | €5,000 - €50,000 | Service degradation affecting <50% of users for <1 week, or limited security incident contained quickly | Local media mention or industry awareness, temporary customer concern | Regulatory inquiry, minor [EU-CRA] non-conformity, potential market surveillance review, corrective action required |
+| 3. High | €50,000 - €250,000 | Major service disruption affecting >50% of users for >1 week, or significant security incident requiring customer notification | National media coverage, customer complaints, loss of new business opportunities | Formal regulatory investigation, [EU-CRA] violation proceedings, [EU-GDPR] sanctions, potential CE marking suspension, mandatory corrective actions |
+| 4. Maximum | >€250,000 or >5% of annual revenue | Complete service failure >1 month, or critical security breach compromising all customer data | Widespread negative media coverage, major customer defections, industry reputation damage | Severe [EU-CRA] violations with fines up to €15M or 2.5% total turnover, [EU-GDPR] fines up to €20M or 4% total turnover, CE marking withdrawal, product recall, potential company insolvency |
 
-- for compliance with [Règlement AI] requirements, the **severity of consequences on fundamental rights** (cf. [Charte UE]) will be estimated using the following scale:
+- for compliance with [Règlement AI] requirements, the **severity of consequences on fundamental rights** (cf. [EU-Charter]) will be estimated using the following scale:
 
 | <center>Severity of Consequences on Fundamental Rights</center> | <center>Consequences on Dignity (cf. Art. 1–5)</center> | <center>Consequences on Freedoms (cf. Art. 6–19)</center> | <center>Consequences on Equality (cf. Art. 20–26)</center> | <center>Consequences on Solidarity (cf. Art. 27–38)</center> | <center>Consequences on Citizenship (cf. Art. 39–46)</center> | <center>Consequences on Justice (cf. Art. 47–54)</center> |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -291,14 +292,14 @@ The following table shows the actions to be taken in order to **provide a Fundam
 
 | <center>FRIA</center> | <center>← Action</center> | <center>← Element from the study →</center> | <center>Action →</center> | <center>DPIA</center> |
 | --- | --- | --- | --- | --- |
-|  |  | <center>Purpose →</center> | Use directly → | [RGPD] Art. 35(7)(a) Processing operations |
-| [AI Act] Art. 27(1)(a) Processes | ← Use directly | <center>← Functional description →</center> | Use directly → | [RGPD] Art. 35(7)(a) Processing operations |
-| [AI Act] Art. 27(1)(c) Persons affected | ← Use directly | <center>← Data subjects →</center> | Use directly → | [RGPD] Art. 35(7)(a) Processing operations |
+|  |  | <center>Purpose →</center> | Use directly → | [EU-GDPR] Art. 35(7)(a) Processing operations |
+| [AI Act] Art. 27(1)(a) Processes | ← Use directly | <center>← Functional description →</center> | Use directly → | [EU-GDPR] Art. 35(7)(a) Processing operations |
+| [AI Act] Art. 27(1)(c) Persons affected | ← Use directly | <center>← Data subjects →</center> | Use directly → | [EU-GDPR] Art. 35(7)(a) Processing operations |
 | [AI Act] Art. 27(1)(e) Human oversight measures | ← Filter human oversight practices only | <center>← SoA →</center> | Filter privacy practices only → | [RGPD] Art. 35(7)(b) Necessity and proportionality |
-| [AI Act] Art. 27(1)(f) Response measures | ← Filter response practices only | <center>← SoA →</center> | Evaluation by DPO already in the SoA → | [RGPD] Art. 35(2) Advice of DPO |
-| [AI Act] Art. 27(1)(d) Risks on fundamental rights | ← Filter risks with impact on fundamental rights only | <center>← Risks →</center><br><center>← Residual risks →</center> | Filter risks with impact on rights and freedoms only → | [RGPD] Art. 35(7)(c) Risks to rights and freedoms |
-|  |  | <center>Risk treatment plan →</center> | Use directly → | [RGPD] Art. 35(7)(d) Measures |
-| [AI Act] Art. 27(1)(b) Period and frequency of use | ← Describe period and frequency of use | <center>_(not from the study)_</center> | Define the way to seek the views of data subjects → | [RGPD] Art. 35(9) Views of data subjects |
+| [AI Act] Art. 27(1)(f) Response measures | ← Filter response practices only | <center>← SoA →</center> | Evaluation by DPO already in the SoA → | [EU-GDPR] Art. 35(2) Advice of DPO |
+| [AI Act] Art. 27(1)(d) Risks on fundamental rights | ← Filter risks with impact on fundamental rights only | <center>← Risks →</center><br><center>← Residual risks →</center> | Filter risks with impact on rights and freedoms only → | [EU-GDPR] Art. 35(7)(c) Risks to rights and freedoms |
+|  |  | <center>Risk treatment plan →</center> | Use directly → | [EU-GDPR] Art. 35(7)(d) Measures |
+| [AI Act] Art. 27(1)(b) Period and frequency of use | ← Describe period and frequency of use | <center>_(not from the study)_</center> | Define the way to seek the views of data subjects → | [EU-GDPR] Art. 35(9) Views of data subjects |
 
 **The study will be the essential component of the security dossier**. And the other components (e.g., FEROS/SSRS, policy, procedures) should, as much as possible, refer to the elements of the study rather than repeating them redundantly.
 
@@ -352,7 +353,7 @@ The following table shows the actions to be taken in order to **provide a Fundam
 | Adopt information security best practices | ☑ Yes<br>☐ No<br>☐ Don't know | A compliance assessment with [Guide sécurité de la CNIL] is performed (see below) | This approach effectively reduces risks on freedoms and justice by ensuring a structured security baseline. Residual risks remain low due to the limited scope of processing. | Evaluated as sufficient. |
 | Comply with [Recos ANSSI] | ☐ Yes<br>☑ No<br>☐ Don't know | The 2024 recommendations concern generative AI (out of scope) and the 2025 ones contain no specific measures | The absence of alignment with ANSSI recommendations leaves residual risks on justice and freedoms, but these remain acceptable given the system’s simplicity and the relevance of CNIL guidance already applied. | Evaluated as sufficient. |
 
-#### Information Security - Detail (cf. [Guide sécurité de la CNIL])
+#### Information Security - Detail (cf. [CNIL-Securite])
 
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Effects on risks</center> | <center>Evaluation</center> |
 | --- | --- | --- | --- | --- |
@@ -382,7 +383,7 @@ The following table shows the actions to be taken in order to **provide a Fundam
 | Artificial intelligence: design and learning | ☑ Yes<br>☐ No<br>☐ Don't know | Training data is documented and controlled before use. | This reduces risks on dignity and equality by ensuring data quality. | Evaluated as sufficient. |
 | APIs: application programming interfaces | ☐ Yes<br>☑ No<br>☐ Don't know | API access is limited and complete documentation is not necessary for this SME. | Residual risks on justice remain acceptable due to the very limited API exposure. | Evaluated as sufficient. |
 
-#### Cyber Resilience Act (CRA) Compliance
+#### [EU-CRA] Compliance
 
 | <center>CRA Requirements</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Effects on risks</center> | <center>Evaluation</center> |
 | --- | --- | --- | --- | --- |
@@ -419,7 +420,7 @@ The following table shows the actions to be taken in order to **provide a Fundam
 | Bring processing into compliance with regulations | ☑ Yes<br>☐ No<br>☐ Don't know | A compliance assessment with fundamental principles of [RGPD] is performed (see below) | This reduces risks on freedoms, dignity and justice by ensuring alignment with legal requirements. | Evaluated as sufficient. |
 | Comply with [Recos CNIL] | ☑ Yes<br>☐ No<br>☐ Don't know | A compliance assessment with [Recos CNIL] is performed (see below) | This reduces risks on freedoms and justice by following sector‑specific guidance. | Evaluated as sufficient. |
 
-#### Protection of Rights and Freedoms - Detail (cf. [RGPD])
+#### Protection of Rights and Freedoms - Detail (cf. [EU-GDPR])
 
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Effects on risks</center> | <center>Evaluation</center> |
 | --- | --- | --- | --- | --- |
@@ -436,7 +437,7 @@ The following table shows the actions to be taken in order to **provide a Fundam
 | Subcontracting: identified and contracted (Art. 28) | ☑ Yes<br>☐ No<br>☐ Don't know | The facial recognition software publisher is identified and a contract frames data security. | This reduces risks on justice and freedoms by ensuring proper contractual safeguards. | Evaluated as sufficient. |
 | Transfers: compliance with obligations outside the EU (Art. 44 to 49) | ☐ Yes<br>☑ No<br>☐ Don't know | The system is hosted on-site; no transfer outside the EU is performed, therefore not applicable. | Residual risks on freedoms are negligible due to the absence of international transfers. | Evaluated as sufficient. |
 
-#### Protection of Rights and Freedoms - Detail (cf. [Recos CNIL])
+#### Protection of Rights and Freedoms - Detail (cf. [CNIL-AIRecos])
 
 | <center>Best Practices</center> | <center>Applicability</center> | <center>If yes, how? If no, why?</center> | <center>Effects on risks</center> | <center>Evaluation</center> |
 | --- | --- | --- | --- | --- |
