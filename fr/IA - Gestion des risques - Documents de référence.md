@@ -99,9 +99,9 @@ Les références suivantes sont utilisées [entre crochets] dans le corps des do
 
 ## Relations : positionnement des documents de référence
 
-```mermaid
-
 Le schéma suivant montre les relations entre les documents de référence. Il n'a pas pour vocation d'être un élément de communication, c'est un outil qui permet de spécifier les relations et de contrôler la cohérence.
+
+```mermaid
 
 graph TB
 
