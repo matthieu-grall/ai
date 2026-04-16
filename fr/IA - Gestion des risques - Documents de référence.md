@@ -1,14 +1,16 @@
 # Intelligence artificielle - Documents de référence
 
 ## Objet du document
+
 **Ce document présente les documents de référence dans le cadre de l’intelligence artificielle (IA).**
 Il sert notamment à ne citer que les libellés courts [entre crochets] dans les [documents du projet](https://github.com/matthieu-grall/ai).
 
 [Avant-propos](#avant-propos)<br>
 [Références](#références)<br>
-[Annexe : positionnement des documents de référence et des livrables](#annexe--positionnement-des-documents-de-référence-et-des-livrables)<br>
+[Relations : positionnement des documents de référence](#relations--positionnement-des-documents-de-référence)<br>
 
 ## Avant-propos
+
 Ce document s’inscrit dans un [ensemble de documents méthodologiques](https://github.com/matthieu-grall/ai) en amélioration continue, destinés à aider les organismes à gérer les risques liés à l’IA, et qui peuvent être utiles ensemble ou séparément.
 
 Il est placé sous la **licence** suivante :
@@ -24,7 +26,7 @@ Les principaux **contributeurs** sont les suivants :
 - Matthieu GRALL, expert-conseil en management des données, sécurité de l’information, protection de la vie privée et nouvelles technologies.
 
 Les **versions** du document sont les suivantes :
-| <center>**Version**</center> | <center>**Action**</center> | <center>**Éditeur**</center> | 
+| <center>Version</center> | <center>Action</center> | <center>Éditeur</center> | 
 | --- | --- | --- | 
 | 11/07/2025 (v1.0) | Création du document, qui fusionne et remplace les documents de référence qui figuraient précédemment dans les autres documents, corrections mineures (mises en cohérence) | Matthieu GRALL | 
 | 18/07/2025 (v1.1) | Ajout de références utilisées dans les autres documents ([Guide de France IA], [Guide PIA-3 de la CNIL], [ISO 14001], [ISO 14004], [ISO 31000], [ISO/IEC 23894], [ISO/IEC 42005], [NF X30-205]), corrections mineures | Matthieu GRALL | 
@@ -33,12 +35,14 @@ Les **versions** du document sont les suivantes :
 | 23/10/2025 (v1.4) | Ajout de références ([ATT&CK], [EBIOS générique], [Guide PIA-1 de la CNIL], [IEC 61508], [ISO/IEC 27000], [ISO/IEC 27701], [ISO/IEC 29134]), ajout d'une annexe présentant le positionnnement des documents de référence et des livrables, corrections mineures (harmonisation des balises "br", améliorations de forme des liens externes, simplification des libellés courts, regroupement de références, etc.) | Matthieu GRALL | 
 | 01/11/2025 (v1.5) | Ajout de [Lignes directrices AIPD] | Matthieu GRALL | 
 | 08/04/2026 (v1.6) | Ajout de [EN 18283], [EN 18287], [ISO/IEC 22440-1], [ISO/IEC 24029-1], et [ISO/IEC 42105] | Matthieu GRALL | 
-| 16/04/2026 (v1.7) | Normalisation des références, ajout de [EU-Charter], [EU-CRA], [ISO-42102] | Matthieu GRALL |
+| 16/04/2026 (v1.7) | Normalisation des références, ajout d'un schéma Mermaid présentant les raltions entre références, ajout de [AFNOR-2314], [EU-Charter], [EU-CRA], [ISO-42102] | Matthieu GRALL |
 
 ## Références
+
 Les références suivantes sont utilisées [entre crochets] dans le corps des documents :
-| <center>**Libellé court**</center> | <center>**Libellé long**</center> |
+| <center>Libellé court<br>_{provenance}-{libellé}_</center> | <center>Libellé long<br>{libellé complet} ({année}) ↗ {lien}</center> |
 | --- | --- |
+| [AFNOR-2314] | AFNOR Spec 2314 - Référentiel général pour l'IA frugale - Mesurer et réduire l'impact environnemental de l'IA, Association française de normalisation (AFNOR, 2024) [↗](https://www.boutique.afnor.org/fr-fr/norme/afnor-spec-2314/referentiel-general-pour-lia-frugale-mesurer-et-reduire-limpact-environneme/fa208976/421140) |
 | [AFNOR-X30205] | NF X30-205 - Systèmes de management environnemental - Guide pour la mise en place par étapes d'un système de management environnemental, Association française de normalisation (AFNOR, 2018) [↗](https://www.boutique.afnor.org/fr-fr/norme/nf-x30205/systemes-de-management-environnemental-guide-pour-la-mise-en-place-par-etap/fa191164/81407) |
 | [ANSSI-AIRecos] | Recommandations de sécurité pour un système d'IA générative, Agence nationale de la sécurité des systèmes d'information (ANSSI, 2024) [↗](https://cyber.gouv.fr/sites/default/files/document/Recommandations_de_s%C3%A9curit%C3%A9_pour_un_syst%C3%A8me_d_IA_g%C3%A9n%C3%A9rative.pdf)<br>Développer la confiance dans l'IA par une approche par les risques cyber, Agence nationale de la sécurité des systèmes d'information (ANSSI, 2025) [↗](https://cyber.gouv.fr/sites/default/files/document/analyse_commune_haut_niveau_des_risques_cyber_ia.pdf) |
 | [ANSSI-EBIOSRM] | Expression des besoins et identification des objectifs de sécurité – Méthode de gestion des risques, EBIOS _Risk Manager_, Agence nationale de la sécurité des systèmes d’information (ANSSI, 2022) [↗](https://cyber.gouv.fr/la-methode-ebios-risk-manager) |
@@ -82,7 +86,7 @@ Les références suivantes sont utilisées [entre crochets] dans le corps des do
 | [ISO-31000] | ISO 31000 - Management du risque - Lignes directrices, _International Organization for Standardization_ (ISO, 2018) [↗](https://www.iso.org/fr/standard/65694.html) |
 | [ISO-42001] | ISO/IEC 42001 - Technologies de l’information – Intelligence artificielle – Système de management, _International Organization for Standardization_ (ISO, 2023) [↗](https://www.iso.org/fr/standard/81230.html) |
 | [ISO-42005] | ISO/IEC 42005 - Technologies de l'information - Intelligence artificielle - Évaluation de l'impact des systèmes d'IA, _International Organization for Standardization_ (ISO, 2025) [↗](https://www.iso.org/fr/standard/42005) |
-| [ISO-42102] |  ISO/IEC 42102 - Information technology - Artificial intelligence - Framework for characterizing AI system methods and capabilities, _International Organization for Standardization_ (ISO, projet) [↗](https://www.iso.org/fr/standard/86898.html) |
+| [ISO-42102] |  _ISO/IEC 42102 - Information technology - Artificial intelligence - Framework for characterizing AI system methods and capabilities_, _International Organization for Standardization_ (ISO, projet) [↗](https://www.iso.org/fr/standard/86898.html) |
 | [ISO-42105] | _ISO/IEC 42105 - Information technology - Artificial intelligence - Guidance for human oversight of AI systems, International Organization for Standardization_ (ISO, 2025) [↗](https://www.iso.org/fr/standard/86902.html) |
 | [ISO-Directives] | _Harmonized approach for management system standards - Harmonized structure for MSS with guidance for use_ (Directives / Annex SL / Appendix 2), _International Organization for Standardization_ (ISO, 2024) [↗](https://www.iso.org/sites/directives/current/consolidated/index.html#_Toc165305046) |
 | [MITRE-ATLAS] | _Adversarial Threat Landscape for Artificial-Intelligence Systems_ (ATLAS™), _Massachussets Insititute of Technology Research Establishment_ (MITRE) [↗](https://atlas.mitre.org/matrices/ATLAS) |
@@ -93,5 +97,199 @@ Les références suivantes sont utilisées [entre crochets] dans le corps des do
 | [US-EO13960] | _Promoting the Use of Trustworthy Artificial Intelligence in the Federal Government_, _Executive Order 13960_ (2020) [↗](https://trumpwhitehouse.archives.gov/presidential-actions/executive-order-promoting-use-trustworthy-artificial-intelligence-federal-government/) |
 | [W3C-WCAG] | Règles pour l’accessibilité des contenus Web (_Web Content Accessibility Guidelines_ - WCAG), _World Wide Web Consortium_ (W3C, 2023) [↗](https://www.w3.org/WAI/standards-guidelines/wcag/fr) |
 
-## Annexe : positionnement des documents de référence et des livrables
-![Positionnement IA](images/IA%20-%20Gestion%20des%20risques%20-%20Documents%20de%20r%C3%A9f%C3%A9rence%20-%20Positionnement.png)
+## Relations : positionnement des documents de référence
+
+```mermaid
+
+Le schéma suivant montre les relations entre les documents de référence. Il n'a pas pour vocation d'être un élément de communication, c'est un outil qui permet de spécifier les relations et de contrôler la cohérence.
+
+graph TB
+
+classDef type-trunks fill:#EE0000,stroke:#000000,color:#FFFFFF;
+classDef type-branches fill:#80340D,stroke:#000000,color:#FFFFFF;
+classDef type-leaves fill:#FFC000,stroke:#000000,color:#FFFFFF;
+
+%% =====================================================
+%% DOMAIN: ALL
+%% =====================================================
+subgraph ALL["Tous domaines / Transverse"]
+    ClubEBIOS-EBIOS["[ClubeEBIOS-EBIOS]"]
+    ISO-31000["[ISO-31000]"]
+    ISO-Directives["[ISO-Directives]"]
+end
+
+%% =====================================================
+%% DOMAIN: INFORMATION SECURITY
+%% =====================================================
+subgraph SECURITY["Domaine de la sécurité de l’information"]
+    ANSSI-EBIOSRM["[ANSSI-EBIOSRM]"]
+    ANSSI-Homologation["[ANSSI-Homologation]"]
+    ANSSI-Hygiene["[ANSSI-Hygiene]"]
+    FR-RGS["[FR-RGS]"]
+    HubFranceIA-Guide["[HubFranceIA-Guide]"]
+    ISO-27000["[ISO-27000]"]
+    ISO-27001["[ISO-27001]"]
+    ISO-27002["[ISO-27002]"]
+    ISO-27005["[ISO-27005]"]
+    MITRE-ATTACK["[MITRE-ATTACK]"]
+    subgraph AI-SECURITY["Application de la sécurité de l'information à l'IA"]
+        ANSSI-AIRecos["[ANSSI-AIRecos]"]
+        ISO-27090["[ISO-27090]"]
+    end
+end
+
+%% =====================================================
+%% DOMAIN: ARTIFICIAL INTELLIGENCE (AI)
+%% =====================================================
+subgraph AI["Domaine de l’IA en général"]
+    DATAVISIONS-Methode["DATAVISIONS-Methode"]
+    DATAVISIONS-BonnesPratiques["DATAVISIONS-BonnesPratiques"]
+    DATAVISIONS-CasUsages["DATAVISIONS-CasUsages"]
+    EU-AIAct["[EU-AIAct]"]
+    EU-AIRecos["[EU-AIRecos]"]
+    ISO-23894["[ISO-23894]"]
+    ISO-24030["[ISO-24030]"]
+    ISO-42001["[ISO-42001]"]
+    MITRE-ATLAS["[MITRE-ATLAS]"]
+    NIST-AIRMF["[NIST-AIRMF]"]
+    OECD-AIRecos["[OECD-AIRecos]"]
+end
+
+%% =====================================================
+%% DOMAIN: PROTECTION OF RIGHTS AND FREEDOMS (PRIVACY)
+%% =====================================================
+subgraph PRIVACY["Domaine de la protection de la vie privée"]
+    CNIL-PIA1["[CNIL-PIA1]"]
+    CNIL-PIA3["[CNIL-PIA3]"]
+    CNIL-Securite["[CNIL-Securite]"]
+    EU-AIPD["[EU-AIPD]"]
+    EU-GDPR["[EU-GDPR]"]
+    FR-LoiIL["[FR-LoiIL]"]
+    ISO-27701["[ISO-27701]"]
+    ISO-29134["[ISO-29134]"]
+    subgraph AI-PRIVACY["Application de la protection de la vie privée à l'IA"]
+        CNIL-AIRecos["[CNIL-AIRecos]"]
+        ISO-42005["[ISO-42005]"]
+    end
+end
+
+%% =====================================================
+%% DOMAIN: SAFETY
+%% =====================================================
+subgraph SAFETY["Domaine de la sûreté"]
+    IEC-61508["[IEC 61508]"]
+end
+
+%% =====================================================
+%% DOMAIN: INTEROPERABILITY
+%% =====================================================
+subgraph INTEROPERABILITY["Domaine de l'interopérabilité"]
+    FR-RGI["[FR-RGI]"]
+end
+
+%% =====================================================
+%% DOMAIN: ACCESSIBILITY
+%% =====================================================
+subgraph ACCESSIBILITY["Domaine de l'accessibilité"]
+    CEN-301549["[CEN-301549]"]
+    FR-RGAA["[FR-RGAA]"]
+    W3C-WCAG["[W3C-WCAG]"]
+end
+
+%% =====================================================
+%% DOMAIN: PROTECTION OF THE ENVIRONMENT (SUSTAINABILITY)
+%% =====================================================
+subgraph SUSTAINABILITY["Domaine de la protection de l'environnement"]
+    AFNOR-X30205["[AFNOR-X30205]"]
+    FR-RGESN["[FR-RGESN]"]
+    ISO-14001["[ISO-14001]"]
+    ISO-14004["[ISO-14004]"]
+    subgraph AI-SUSTAINABILITY["Application de la protection de l'environnement à l'IA"]
+        AFNOR-2314["[AFNOR-2314]"]
+        CEN-18287["[CEN-18287]"]
+        FR-RGIAF["[FR-RGIAF]"]
+    end
+end
+
+%% =====================================================
+%% RELATIONS
+%% =====================================================
+
+%% specializes (the source NARROWS down the target, e.g., to a specific domain)
+AFNOR-2314 --->|spécialise| ISO-14004
+ANSSI-EBIOSRM --->|spécialise| ClubEBIOS-EBIOS
+ANSSI-AIRecos --->|spécialise| ANSSI-Hygiene
+CEN-18287 --->|spécialise| ISO-14004
+CNIL-PIA1 --->|spécialise| ISO-29134
+CNIL-AIRecos --->|spécialise| CNIL-PIA3
+DATAVISIONS-Methode --->|spécialise| ANSSI-EBIOSRM
+DATAVISIONS-Methode --->|spécialise| ISO-27005
+DATAVISIONS-Methode --->|spécialise| ISO-31000
+FR-RGIAF -->|spécialize| FR-RGESN
+HubFranceIA-Guide --->|spécialise| ANSSI-Hygiene
+ISO-14001--->|spécialise| ISO-Directives
+ISO-23894 --->|spécialise| ISO-31000
+ISO-27000 -->|spécialise| ISO-Directives
+ISO-27001 -->|spécialise| ISO-Directives
+ISO-27005 --->|spécialise| ISO-31000
+ISO-29134 --->|spécialise| ISO-31000
+ISO-42001 -->|spécialise| ISO-Directives
+ISO-42005 --->|spécialise| ISO-29134
+
+%% specifies (the source explains HOW TO implement all or part of the target, e.g., a method to meet a requirement)
+AFNOR-X30205 -->|précise| ISO-14001
+ANSSI-EBIOSRM -->|précise| ISO-27005
+ANSSI-EBIOSRM -->|précise| FR-RGS
+ClubEBIOS-EBIOS -->|précise| ISO-31000
+CNIL-PIA1 -->|précise| EU-AIPD
+DATAVISIONS-CasUsages -->|précise à| ISO-24030
+DATAVISIONS-Methode -->|précise| ISO-29134
+DATAVISIONS-Methode -->|précise| ISO-42001
+DATAVISIONS-Methode -->|précise| ISO-42005
+DATAVISIONS-Methode -->|précise| EU-AIAct
+ISO-14004 -->|précise| ISO-14001
+ISO-27005 -->|précise| ISO-27001
+ISO-23894 -->|précise| ISO-42001
+ISO-23894 -->|précise| ISO-42005
+ISO-29134 -->|précise| ISO-27701
+EU-AIPD -->|précise| FR-LoiIL
+EU-AIPD -->|précise| EU-GDPR
+
+%% serves to (the source provides elements USEFUL for achieving all or part of the target, e.g., a knowledge base)
+AFNOR-2314 -->|sert à| DATAVISIONS-BonnesPratiques
+ANSSI-Hygiene -->|sert à| ANSSI-EBIOSRM
+ANSSI-Hygiene -->|sert à| DATAVISIONS-BonnesPratiques
+ANSSI-AIRecos -->|sert à| DATAVISIONS-BonnesPratiques
+CEN-18283 -->|sert à| DATAVISIONS-Methode
+CEN-301549 -->|sert à| DATAVISIONS-BonnesPratiques
+CNIL-PIA3 -->|sert à| CNIL-PIA1
+CNIL-PIA3 -->|sert à| DATAVISIONS-BonnesPratiques
+CNIL-AIRecos -->|sert à| DATAVISIONS-BonnesPratiques
+CNIL-Securite -->|sert à| CNIL-PIA1
+CNIL-Securite -->|sert à| DATAVISIONS-BonnesPratiques
+DATAVISIONS-BonnesPratiques -->|sert à| DATAVISIONS-Methode
+DATAVISIONS-BonnesPratiques -->|sert à| ISO-42001
+DATAVISIONS-CasUsages -->|sert à| DATAVISIONS-Methode
+EU-AIRecos -->|sert à| DATAVISIONS-BonnesPratiques
+FR-RGAA -->|sert à| DATAVISIONS-BonnesPratiques
+FR-RGI -->|sert à| DATAVISIONS-BonnesPratiques
+FR-RGIAF -->|sert à| AFNOR-2314
+FR-RGIAF -->|sert à| DATAVISIONS-BonnesPratiques
+HubFranceIA-Guide -->|sert à| DATAVISIONS-BonnesPratiques
+IEC-61508 -->|sert à| DATAVISIONS-BonnesPratiques
+ISO-27002 -->|sert à| DATAVISIONS-BonnesPratiques
+ISO-27002 -->|sert à| ISO-27005
+ISO-27090 -->|sert à| DATAVISIONS-BonnesPratiques
+ISO-27090 -->|sert à| DATAVISIONS-Methode
+ISO-27090 -->|sert à| ISO-27005
+MITRE-ATLAS -->|sert à| DATAVISIONS-Methode
+MITRE-ATTACK  -->|sert à| ANSSI-EBIOSRM
+NIST-AIRMF -->|sert à| DATAVISIONS-BonnesPratiques
+OECD-AIRecos -->|sert à| DATAVISIONS-BonnesPratiques
+W3C-WCAG -->|sert à| DATAVISIONS-BonnesPratiques
+
+class ISO-Directives,ISO-27000,ISO-27001,FR-RGS,ISO-42001,EU-AIAct,ISO-27701,EU-GDPR,FR-LoiIL,ISO-14001,FR-RGESN,FR-RGIAF type-trunks;
+class ISO-31000,ClubEBIOS-EBIOS,ISO-27005,ANSSI-EBIOSRM,ANSSI-Homologation,ISO-23894,DATAVISIONS-Methode,ISO-42005,ISO-29134,EU-AIPD,CNIL-PIA1,ISO-14004,AFNOR-X30205 type-branches;
+class ISO-27002,ISO-27090,MITRE-ATTACK,ANSSI-Hygiene,ANSSI-AIRecos,HubFranceIA-Guide,NIST-AIRMF,OECD-AIRecos,EU-AIRecos,ISO-24030,MITRE-ATLAS,AFNOR-2314,CEN-18287,FR-RGAA,W3C-WCAG,CEN-301549,FR-RGI,IEC-61508,CEN-18283,CNIL-AIRecos,CNIL-PIA3,CNIL-Securite,DATAVISIONS-CasUsages,DATAVISIONS-BonnesPratiques type-leaves;
+
+```
