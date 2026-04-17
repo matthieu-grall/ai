@@ -37,7 +37,7 @@ The document **versions** are as follows:
 | 13/04/2026 (v0.2) | Include a Mermaid drawing for the functional description, move and enrich SoA | Matthieu GRALL |
 | 14/04/2026 (v0.3) | Add a new section for step 4, finish to write sections 1 to 3 consistently, minor improvements | Matthieu GRALL |
 | 15/04/2026 (v0.4) | Simplify and finalize the document, many improvements | Matthieu GRALL |
-| 16/04/2026 (v0.5) | Normalize references, correct broken links | Matthieu GRALL |
+| 16/04/2026 (v0.5) | Normalize references, correct broken links, change step 4 diagram to a Mermaid diagram | Matthieu GRALL |
 
 ## Introduction
 
@@ -290,16 +290,104 @@ It will be proposed to the accreditation committee to **validate the risk treatm
 
 The following table shows the actions to be taken in order to **provide a Fundamental Rights Impact Assessment (FRIA) and a Data Protection Impact Assessment (DPIA) from the study**:
 
-| <center>FRIA</center> | <center>← Action</center> | <center>← Element from the study →</center> | <center>Action →</center> | <center>DPIA</center> |
-| --- | --- | --- | --- | --- |
-|  |  | <center>Purpose →</center> | Use directly → | [EU-GDPR] Art. 35(7)(a) Processing operations |
-| [AI Act] Art. 27(1)(a) Processes | ← Use directly | <center>← Functional description →</center> | Use directly → | [EU-GDPR] Art. 35(7)(a) Processing operations |
-| [AI Act] Art. 27(1)(c) Persons affected | ← Use directly | <center>← Data subjects →</center> | Use directly → | [EU-GDPR] Art. 35(7)(a) Processing operations |
-| [AI Act] Art. 27(1)(e) Human oversight measures | ← Filter human oversight practices only | <center>← SoA →</center> | Filter privacy practices only → | [RGPD] Art. 35(7)(b) Necessity and proportionality |
-| [AI Act] Art. 27(1)(f) Response measures | ← Filter response practices only | <center>← SoA →</center> | Evaluation by DPO already in the SoA → | [EU-GDPR] Art. 35(2) Advice of DPO |
-| [AI Act] Art. 27(1)(d) Risks on fundamental rights | ← Filter risks with impact on fundamental rights only | <center>← Risks →</center><br><center>← Residual risks →</center> | Filter risks with impact on rights and freedoms only → | [EU-GDPR] Art. 35(7)(c) Risks to rights and freedoms |
-|  |  | <center>Risk treatment plan →</center> | Use directly → | [EU-GDPR] Art. 35(7)(d) Measures |
-| [AI Act] Art. 27(1)(b) Period and frequency of use | ← Describe period and frequency of use | <center>_(not from the study)_</center> | Define the way to seek the views of data subjects → | [EU-GDPR] Art. 35(9) Views of data subjects |
+```mermaid
+
+block
+    columns 5
+
+    %% ============================
+    %% COLUMN FRIA
+    %% ============================
+    block:FRIA
+        columns 1
+        FRIA_Title{{"FRIA"}}
+        space
+        FRIA_27_1_a["[AI Act] Art. 27(1)(a) Processes"]
+        space
+        FRIA_27_1_c["[AI Act] Art. 27(1)(c) Persons affected"]
+        space
+        FRIA_27_1_e["[AI Act] Art. 27(1)(e) Human oversight measures"]
+        space
+        FRIA_27_1_f["[AI Act] Art. 27(1)(f) Response measures"]
+        space
+        FRIA_27_1_d["[AI Act] Art. 27(1)(d) Risks on fundamental rights"]
+        space
+        FRIA_27_1_b["[AI Act] Art. 27(1)(b) Period and frequency of use"]
+    end
+
+    space
+
+    %% ============================
+    %% COLUMN STUDY
+    %% ============================
+    block:Study
+        columns 1
+        Study_Title{{"Elements from the study"}}
+        space
+        Study_Purpose["Purpose"]
+        space
+        Study_Processes["Functional description"]
+        space
+        Study_Persons["Data subjects"]
+        space
+        Study_SoA["SoA"]
+        space
+        Study_Risks["Risks / Residual risks"]
+        space
+        Study_Measures["Risk treatment plan"]
+        space
+        Study_None[/"(not from the study)"/]
+    end
+
+    space
+
+    %% ============================
+    %% COLUMN DPIA
+    %% ============================
+    block:DPIA
+        columns 1
+        DPIA_Title{{"DPIA"}}
+        space
+        DPIA_35_7_a["[EU-GDPR] Art. 35(7)(a) Processing operations"]
+        space
+        DPIA_35_7_b["[RGPD] Art. 35(7)(b) Necessity and proportionality"]
+        space
+        DPIA_35_2["[EU-GDPR] Art. 35(2) Advice of DPIAO"]
+        space
+        DPIA_35_7_c["[EU-GDPR] Art. 35(7)(c) Risks to rights and freedoms"]
+        space
+        DPIA_35_7_d["[EU-GDPR] Art. 35(7)(d) Measures"]
+        space
+        DPIA_35_9["[EU-GDPR] Art. 35(9) Views of data subjects"]
+    end
+
+    %% ============================
+    %% ACTIONS TO BE TAKEN
+    %% ============================
+    Study_Purpose -- "Use directly" --> DPIA_35_7_a
+    Study_Processes -- "Use directly" --> FRIA_27_1_a
+    Study_Processes -- "Use directly" --> DPIA_35_7_a
+    Study_Persons -- "Use directly" --> FRIA_27_1_c
+    Study_Persons -- "Use directly" --> DPIA_35_7_a
+    Study_SoA -- "Filter human oversight practices only" --> FRIA_27_1_e
+    Study_SoA -- "Filter privacy practices only" --> DPIA_35_7_b
+    Study_SoA -- "Filter response practices only" --> FRIA_27_1_f
+    Study_SoA -- "Evaluation by DPIAO already in the SoA" --> DPIA_35_2
+    Study_Risks -- "Filter risks with impact on fundamental rights only" --> FRIA_27_1_d
+    Study_Risks -- "Filter risks with impact on rights and freedoms only" --> DPIA_35_7_c
+    Study_Measures -- "Use directly" --> DPIA_35_7_d
+    Study_None -- "Describe period and frequency of use" --> FRIA_27_1_b
+    Study_None -- "Define the way to seek the views of data subjects" --> DPIA_35_9
+
+    %% ============================
+    %% STYLES
+    %% ============================
+    style FRIA_Title fill:transparent,stroke:transparent
+    style Study_Title fill:transparent,stroke:transparent
+    style DPIA_Title fill:transparent,stroke:transparent
+    style Study_None fill:transparent,stroke:transparent
+
+```
 
 **The study will be the essential component of the security dossier**. And the other components (e.g., FEROS/SSRS, policy, procedures) should, as much as possible, refer to the elements of the study rather than repeating them redundantly.
 
