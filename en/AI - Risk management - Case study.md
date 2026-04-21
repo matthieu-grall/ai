@@ -38,23 +38,24 @@ The document **versions** are as follows:
 | 14/04/2026 (v0.3) | Add a new section for step 4, finish to write sections 1 to 3 consistently, minor improvements | Matthieu GRALL |
 | 15/04/2026 (v0.4) | Simplify and finalize the document, many improvements | Matthieu GRALL |
 | 16/04/2026 (v0.5) | Normalize references, correct broken links, change step 4 diagram to a Mermaid diagram | Matthieu GRALL |
+| 21/04/2026 (v0.6) | Improve introduction presenting the company and its obligations | Matthieu GRALL |
 
 ## Introduction
 
 This case study concerns **a small company that wishes to secure access to a specific area of its premises using a biometric device**.
 
-As part of its security accreditation process, it needs to produce a security dossier.
+The company is a private‑sector organisation with a mature governance structure and **an established Information Security Management System (ISMS)** aligned with [ISO-27001]. As part of its corporate responsibility strategy, the organisation ensures that it complies with applicable legal and regulatory obligations, not only those directly related to its core business activities. It therefore **maintains a comprehensive approach to risk management that integrates information security, data protection, artificial intelligence governance, environmental sustainability, interoperability, and accessibility requirements**.
 
-In addition, it wishes to comply with the [EU-GDPR] and the [EU-AIAct].
+In addition to meeting the minimum **obligations imposed on deployers of high‑risk AI systems under the [EU-AIAct]**, the company voluntarily applies **recognised best practices and management frameworks to ensure that risks are assessed, treated, and monitored throughout the lifecycle of the systems it deploy**s. This proactive stance reflects the organisation’s commitment to responsible and trustworthy technology deployment.
 
-As part of its regulatory compliance obligations, the company needs to:
-- Comply with the [EU-AIAct] (EU AI Act) as the facial recognition system is classified as a high-risk AI system under Annex III (biometric identification);
-- Ensure [EU-GDPR] compliance for the processing of biometric personal data.
+As a private‑sector deployer of a high‑risk biometric access‑control system, the organisation **must comply with the obligations set out in Article 26 of the [EU-AIAct]**, including using the system in accordance with the provider’s instructions, ensuring appropriate human oversight, supplying relevant and high‑quality input data, and reporting any serious incidents. Although the company is not required to implement a formal "risk‑management system" (for those who would ask: this weird term means a risk management process everywhere else) under Article 9, it **voluntarily applies recognised best practices to ensure responsible and trustworthy deployment**.
 
-The company must produce comprehensive documentation including:
-- Security dossier for system accreditation
-- Fundamental Rights Impact Assessment (FRIA) as required by the [EU-AIAct]
+Because the system processes biometric data for the purpose of uniquely identifying individuals, the organisation **must comply with the [EU-GDPR]’s strict requirements for special categories of personal data**, including establishing a valid legal basis and an Article 9(2) exemption, conducting a Data Protection Impact Assessment (DPIA), implementing appropriate technical and organisational measures, ensuring data minimisation and purpose limitation, and guaranteeing the rights of data subjects.
+
+The company **has to provide comprehensive documentation** including:
+- Security dossier as required by its own accreditation process;
 - Data Protection Impact Assessment (DPIA) as required by the [EU-GDPR]
+- Fundamental Rights Impact Assessment (FRIA) as required by the [EU-AIAct], if the organisation were (a public authority or) a private entity performing tasks of public interest.
 
 ## Method implementation
 
