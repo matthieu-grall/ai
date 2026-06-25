@@ -293,3 +293,75 @@ L'objectif est de maximiser l'utilisation des éléments de l'étude dans la cr�
 Pour ce faire, il convient de :
 
 <**à rédiger**>
+
+## Annexe : logique générale
+
+```mermaid
+
+flowchart LR
+    %% --- Mesures de base ---
+    subgraph Mesures["Approche par conformité - Mesures de base (exigences et bonnes pratiques)"]
+        direction LR
+        M1[Exigences]
+        M2[Bonnes pratiques]
+    end
+
+    %% --- Causes ---
+    subgraph Causes["Approche par scénarios - Causes"]
+        direction LR
+        C1["Usage\n(attendu, inattendu)"]
+        C2["Défauts de conception\n(ex : biais, règles incorrectes, données d'entraînement inadéquates)"]
+        C3["Défaillances techniques\n(ex : panne, latence, capteur défaillant)"]
+        C4["Attaques"]
+        C5["Évolution du contexte\n(ex : drift, changement population, obsolescence)"]
+    end
+
+    %% --- Événements sur les données ---
+    subgraph Evenements["Approche par scénarios - Événements sur les données"]
+        direction LR
+        E1["Disparition de données"]
+        E2["Modification non désirée de données"]
+        E3["Accès non autorisé à des données"]
+        E4["Inadéquation des données\n(ex : hors domaine, bruitées)"]
+        E5["Traitement non conforme\n(ex : sortie instable, non robuste)"]
+    end
+
+    %% --- Conséquences ---
+    subgraph Consequences["Approche par scénarios - Conséquences"]
+        direction LR
+        K1[Conséquences sur la santé]
+        K2[Conséquences sur la sûreté]
+        K3[Conséquences sur les droits fondamentaux]
+    end
+
+    %% --- Mesures additionnelles ---
+    subgraph MesuresAddtionnelles["Traitement des risques - Mesures additionnelles"]
+        direction LR
+        T1[Mesures de réduction de risques]
+        T2[Mesures d'évitement de risques]
+        T3[Mesures de transfert de risques]
+        T4[Mesures de prise de risques]
+    end
+
+    %% --- Relations entre blocs ---
+    Causes -- mènent à --> Evenements -- engendrent --> Consequences
+    Mesures -- traitent --> C1
+    Mesures -- traitent --> C2
+    Mesures -- traitent --> C3
+    Mesures -- traitent --> C5
+    Mesures -- traitent --> E4
+    Mesures -- traitent --> E5
+    Mesures -- sont corrigées par --> MesuresAddtionnelles
+    Causes -- sont traitées par --> MesuresAddtionnelles
+    Evenements -- sont traités par --> MesuresAddtionnelles
+    Consequences -- sont traitées par --> MesuresAddtionnelles
+
+    %% --- Styles ---
+    classDef contexte fill:#fff2cc,stroke:#d6b656,color:#000;
+    classDef appreciation fill:#dae8fc,stroke:#6c8ebf,color:#000;
+    classDef traitement fill:#f8cecc,stroke:#b85450,color:#000;
+
+    class Mesures contexte;
+    class Causes,Evenements,Consequences appreciation;
+    class MesuresAddtionnelles traitement;
+```
